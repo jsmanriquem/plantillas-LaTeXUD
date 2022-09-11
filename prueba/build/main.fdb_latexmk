@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1662928636 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/prueba/main.tex" "build/main.pdf" "main" 1662928639
+["pdflatex"] 1662932861 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/prueba/main.tex" "build/main.pdf" "main" 1662932863
   "C:/Users/jsman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662921307 838837 6ff83cb93b2c2dec76c79593b4802a1d ""
   "C:/Users/jsman/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1662921269 10785261 d0bbb8f0970cdd049d973f4036e18119 ""
   "C:/Users/jsman/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -207,9 +207,9 @@
   "C:/Users/jsman/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/jsman/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1650051284 2245 c8a4088d07cffc2e5207730c738edd76 ""
   "C:/Users/jsman/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1650051284 20785 71a3d72ab517959a6979c27e6176bec1 ""
-  "build/main.aux" 1662928639 67 d1f1d04f1f825549314e4f02ae5806bb "pdflatex"
-  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/prueba/main.tex" 1662928636 3537 8e555b1eac93f06ff1b0e847ebbbb9d9 ""
-  "main.tex" 1662928636 3537 8e555b1eac93f06ff1b0e847ebbbb9d9 ""
+  "build/main.aux" 1662932863 67 d1f1d04f1f825549314e4f02ae5806bb "pdflatex"
+  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/prueba/main.tex" 1662932860 3592 801caea7a9fcbcec2605e277129ed2a7 ""
+  "main.tex" 1662932860 3592 801caea7a9fcbcec2605e277129ed2a7 ""
   (generated)
   "build/main.aux"
   "build/main.log"
