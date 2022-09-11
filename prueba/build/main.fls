@@ -1,7 +1,7 @@
-PWD c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX
+PWD c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba
 INPUT C:\Users\jsman\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\main.tex
-OUTPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.log
+INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\main.tex
+OUTPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.log
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -823,10 +823,10 @@ INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\latex\tools\bm.sty
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\libs\pgflibrarypgfplots.colorbrewer.code.tex
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\libs\tikzlibrarycolorbrewer.code.tex
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\generic\pgfplots\libs\tikzlibrarycolorbrewer.code.tex
-INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.aux
-INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.aux
-INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.aux
-OUTPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.aux
+INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.aux
+INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.aux
+INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.aux
+OUTPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.aux
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -900,9 +900,9 @@ INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cme
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
-OUTPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.pdf
+OUTPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.pdf
 INPUT C:\Users\jsman\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.aux
+INPUT c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.aux
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\jsman\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb

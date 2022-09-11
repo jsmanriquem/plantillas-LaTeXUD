@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.11)  11 SEP 2022 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.11)  11 SEP 2022 15:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/main.tex"
-(c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/main.tex
+**"c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/prueba/main.tex"
+(c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/prueba/main.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-30> (C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -612,7 +612,7 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 \c@theorem=\count328
 \c@definition=\count329
 \c@problem=\count330
- (C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.colorbrewer.code.tex (C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarycolorbrewer.code.tex)) (c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.aux)
+ (C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.colorbrewer.code.tex (C:\Users\jsman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarycolorbrewer.code.tex)) (c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -698,17 +698,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
-{C:/Users/jsman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.aux) ) 
+{C:/Users/jsman/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.aux) ) 
 Here is how much of TeX's memory you used:
  28789 strings out of 475389
- 740331 string characters out of 2777000
- 1416784 words of memory out of 3000000
+ 740408 string characters out of 2777000
+ 1418784 words of memory out of 3000000
  49665 multiletter control sequences out of 15000+600000
  481428 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,103p,785b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,8n,103p,792b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/jsman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jsman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jsman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jsman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jsman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\build\main.pdf" (1 page, 57427 bytes).
+Output written on "c:\Users\jsman\OneDrive - correo.udistrital.edu.co\Documentos\LaTeX\prueba\build\main.pdf" (1 page, 58688 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
