@@ -10,3 +10,5 @@ Pasos a seguir para subir archivos a github:
 6. Finalmente, mandar el comando "git push origin main" para guardar todos los cambios realizados.
 
 Gracias por elegir este repositorio.
+
+by: jsmanriquem
