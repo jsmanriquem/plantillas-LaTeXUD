@@ -1,8 +1,5 @@
 \input{lib/config.tex}
 
-\usepgfplotslibrary{colorbrewer}
-\pgfplotsset{width=8cm,compat=1.9}
-
 \begin{document}
 
 \input{lib/preambulo.tex}
@@ -57,13 +54,18 @@
     \label{figura}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.32]{pollito.png}
+\caption{<<Comentario figura>>}
+\label{key_figura}
+\end{figure}
+
 \section{Conclusiones}
 
 <<Conclusión>>
 
-\section{Bibliografía}
-
-[1] <<Referencia>>
+\printbibliography
 
 \end{multicols}
 

@@ -1,14 +1,14 @@
 # Fdb version 3
-["biber build/main"] 1663045594 "build/main.bcf" "build/main.bbl" "build/main" 1663045606
-  "build/main.bcf" 1663045606 106835 bb0985e6e0ab9041111ca5927a6d9b5a "pdflatex"
+["biber build/main"] 1663100095 "build/main.bcf" "build/main.bbl" "build/main" 1663100574
+  "build/main.bcf" 1663100573 107185 96fe3a75e9d3067261f5852c15832832 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1663045602 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/main.tex" "build/main.pdf" "main" 1663045606
-  "build/main.aux" 1663045606 1437 9e7ea501bf0c6c949f93c2755d2c7972 "pdflatex"
-  "build/main.bbl" 1663045597 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
-  "build/main.run.xml" 1663045606 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
-  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/main.tex" 1663045289 1200 c896fabace8f8b5445ee7cd9291c4bab ""
+["pdflatex"] 1663100571 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex" "build/main.pdf" "main" 1663100574
+  "build/main.aux" 1663100573 1490 cb1dba54ef89af05d59b3d32b400099b "pdflatex"
+  "build/main.bbl" 1663100097 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
+  "build/main.run.xml" 1663100573 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
+  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex" 1663100141 1244 bec2a0d4e4cedf35927f94a09ae975d2 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1662946317 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1662942546 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1662942546 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -244,10 +244,10 @@
   "c:/texlive/2022/texmf.cnf" 1662956777 713 614551405fc44b98efbf516466e3c909 ""
   "img//Escudo_UD.svg.png" 1662933137 108313 df309a5e3f8acb0a21124662dd4bc649 ""
   "img//pollito.png" 1662933137 99819 47230b96e20865c28338837a049e3dd8 ""
-  "lib/config.tex" 1663045589 605 dcf5c2b9497f532a746c55fda70c3fb6 ""
+  "lib/config.tex" 1663099005 675 061fa754dd08306cb966964c3a2d72b7 ""
   "lib/preambulo.tex" 1663044372 712 a162c58fbcce3094d39e427a7c816aac ""
   "lib/resumen.tex" 1663045192 333 0a8e531cce21abfa4c34dceb96fb828b ""
-  "main.tex" 1663045289 1200 c896fabace8f8b5445ee7cd9291c4bab ""
+  "main.tex" 1663100141 1244 bec2a0d4e4cedf35927f94a09ae975d2 ""
   (generated)
   "build/main.aux"
   "build/main.bcf"

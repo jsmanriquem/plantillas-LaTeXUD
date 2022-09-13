@@ -1,8 +1,8 @@
-PWD c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas
+PWD c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD
 INPUT c:/texlive/2022/texmf.cnf
 INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/main.tex
+INPUT c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex
 OUTPUT build/main.log
 INPUT ./lib/config.tex
 INPUT lib/config.tex
@@ -1099,6 +1099,9 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT ./img//pollito.png
 INPUT img//pollito.png
 INPUT ./img//pollito.png
+INPUT ./img//pollito.png
+INPUT ./img//pollito.png
+INPUT img//pollito.png
 INPUT ./img//pollito.png
 INPUT c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT build/main.aux
