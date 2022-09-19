@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.11)  15 SEP 2022 08:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.11)  19 SEP 2022 01:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex"
-(c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex
+**"c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex"
+(c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-30> (./lib/config.tex (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -953,15 +953,49 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.colorbrewer.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorbrewer.code.tex)))
+)) (c:/texlive/2022/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+) (c:/texlive/2022/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+) (c:/texlive/2022/texmf-dist/tex/latex/listing/listing.sty
+Package: listing 1999/05/25
+
+Package `listing', V1.2, <1999/05/25>
+\c@listing=\count476
+) (c:/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks51
+\verbatim@line=\toks52
+\verbatim@in@stream=\read5
+) (c:/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (c:/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (c:/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen324
+\captionmargin=\dimen325
+\caption@leftmargin=\dimen326
+\caption@rightmargin=\dimen327
+\caption@width=\dimen328
+\caption@indent=\dimen329
+\caption@parindent=\dimen330
+\caption@hangindent=\dimen331
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count477
+\c@continuedfloat=\count478
+Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\c@subfigure=\count479
+\c@subtable=\count480
+) (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.colorbrewer.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorbrewer.code.tex)))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
- (build/main.aux
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
-)
+ (build/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1015,20 +1049,20 @@ LaTeX Info: Redefining \% on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\Hy@linkcounter=\count476
+\Hy@linkcounter=\count481
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count477
-\scratchdimen=\dimen324
+\scratchcounter=\count482
+\scratchdimen=\dimen332
 \scratchbox=\box122
-\nofMPsegments=\count478
-\nofMParguments=\count479
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count480
-\MPscratchDim=\dimen325
-\MPnumerator=\count481
-\makeMPintoPDFobject=\count482
-\everyMPtoPDFconversion=\toks52
+\nofMPsegments=\count483
+\nofMParguments=\count484
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count485
+\MPscratchDim=\dimen333
+\MPnumerator=\count486
+\makeMPintoPDFobject=\count487
+\everyMPtoPDFconversion=\toks54
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1048,11 +1082,14 @@ Package biblatex Info: Automatic encoding selection.
 \openout5 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (build/main.bbl)
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
- (./lib/preambulo.tex
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(./lib/preambulo.tex
 <img//Escudo_UD.svg.png, id=4, 803.0pt x 774.895pt>
 File: img//Escudo_UD.svg.png Graphic file (type png)
 <use img//Escudo_UD.svg.png>
@@ -1070,61 +1107,84 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 9.
- (c:/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-Overfull \hbox (8.57896pt too wide) in paragraph at lines 2--22
-[]$[]$ $[]$ 
- []
+))
 
-) (./lib/resumen.tex)
-<img//pollito.png, id=6, 476.78125pt x 476.78125pt>
-File: img//pollito.png Graphic file (type png)
-<use img//pollito.png>
-Package pdftex.def Info: img//pollito.png  used on input line 52.
-(pdftex.def)             Requested size: 152.5731pt x 152.5731pt.
+LaTeX Warning: Reference `eq1' on page 1 undefined on input line 46.
 
 
-LaTeX Warning: Empty bibliography on input line 61.
+LaTeX Warning: Reference `eq1' on page 1 undefined on input line 55.
 
+c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex:63: Missing $ inserted.
+<inserted text> 
+                $
+l.63 \begin{array}{c c c | c}
+                             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Overfull \vbox (65.00229pt too high) has occurred while \output is active []
+c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex:69: Missing $ inserted.
+<inserted text> 
+                $
+l.69 \end{array}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-
-Overfull \vbox (7.00066pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (7.00066pt too high) has occurred while \output is active []
-
- [1
+[1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img//Escudo_UD.svg.png> <./img//pollito.png>] [2] (build/main.aux
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img//Escudo_UD.svg.png>]
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 98.
+ (c:/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+<img//pollito.png, id=24, 476.78125pt x 476.78125pt>
+File: img//pollito.png Graphic file (type png)
+<use img//pollito.png>
+Package pdftex.def Info: img//pollito.png  used on input line 118.
+(pdftex.def)             Requested size: 152.5731pt x 152.5731pt.
+
+
+LaTeX Warning: Empty bibliography on input line 127.
+
+[2 <./img//pollito.png>] (build/main.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37983 strings out of 475075
- 909271 string characters out of 5782995
- 1994723 words of memory out of 5000000
- 58781 multiletter control sequences out of 15000+600000
- 478658 words of font info for 64 fonts, out of 8000000 for 9000
+ 39537 strings out of 475075
+ 940110 string characters out of 5782995
+ 2039247 words of memory out of 5000000
+ 60317 multiletter control sequences out of 15000+600000
+ 478686 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,15n,106p,829b,1790s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on build/main.pdf (2 pages, 276342 bytes).
+ 104i,15n,106p,817b,1801s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on build/main.pdf (2 pages, 327742 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
