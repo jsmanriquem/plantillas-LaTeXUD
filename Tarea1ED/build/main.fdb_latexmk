@@ -1,14 +1,14 @@
 # Fdb version 3
-["biber build/main"] 0 "build/main.bcf" "build/main.bbl" "build/main" 0
-  "build/main.bcf" 0 -1 0 "pdflatex"
+["biber build/main"] 1663646203 "build/main.bcf" "build/main.bbl" "build/main" 1663646214
+  "build/main.bcf" 1663646213 107185 96fe3a75e9d3067261f5852c15832832 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1663570168 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex" "build/main.pdf" "main" 1663570168
-  "build/main.aux" 1663570168 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "build/main.bbl" 0 -1 0 "biber build/main"
-  "build/main.run.xml" 0 -1 0 "pdflatex"
-  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex" 1663570159 4394 06413863f1b279f7ccf5af012ef18ac4 ""
+["pdflatex"] 1663646210 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex" "build/main.pdf" "main" 1663646214
+  "build/main.aux" 1663646213 1488 0b46d0eac4d7492b065a86425efe0bfb "pdflatex"
+  "build/main.bbl" 1663646206 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
+  "build/main.run.xml" 1663646213 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
+  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1ED/main.tex" 1663646201 4621 a7023d8692e4ed574faa8c241790996e ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1662946317 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1662942546 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1662942546 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -198,6 +198,7 @@
   "c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1662944682 7068 06f8d141725d114847527a66439066b6 ""
   "c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.def" 1662944682 21994 7c3666686e1e46dfb20bcc1d45956c07 ""
   "c:/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.sty" 1662944682 62527 c1a2953f6ae3644a1f3b43b82f2145d2 ""
+  "c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty" 1662945633 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1662945690 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1662945815 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "c:/texlive/2022/texmf-dist/tex/latex/float/float.sty" 1662946225 6749 16d2656a1984957e674b149555f1ea1d ""
@@ -257,9 +258,9 @@
   "c:/texlive/2022/texmf.cnf" 1662956777 713 614551405fc44b98efbf516466e3c909 ""
   "img//Escudo_UD.svg.png" 1662933137 108313 df309a5e3f8acb0a21124662dd4bc649 ""
   "img//pollito.png" 1662933137 99819 47230b96e20865c28338837a049e3dd8 ""
-  "lib/config.tex" 1663567367 807 417867acc33c3d20ce838c42bd7d08cf ""
+  "lib/config.tex" 1663645517 1142 dbbf85b1bb89ca3fb0191b266f38460e ""
   "lib/preambulo.tex" 1663542878 873 f5165abd0b67419c6edb818bd3520de2 ""
-  "main.tex" 1663570159 4394 06413863f1b279f7ccf5af012ef18ac4 ""
+  "main.tex" 1663646201 4621 a7023d8692e4ed574faa8c241790996e ""
   (generated)
   "build/main.aux"
   "build/main.bcf"
