@@ -1,0 +1,340 @@
+\input{lib/config.tex}
+
+\begin{document}
+
+\input{lib/preambulo.tex}
+
+\begin{multicols}{2}
+
+\subsection*{\textbf{Transformadas y relaciones}}
+
+
+Se tienen en cuenta las transformadas y relaciones obtenidas en \cite{R1}, las cuales son:
+   
+De azimutales a ecuatoriales
+\begin{center}
+   $(Az, a) \rightarrow  (h, \delta)$
+\end{center}
+\begin{align}
+   \sin h \cos \delta & = \sin Az \cos a \label{eq:sinh} \\ 
+   \cos h \cos \delta & =\cos Az \cos a \sin \varphi + \sin a \cos \varphi \label{eq:cosh} \\ 
+   \sin \delta & =-\cos Az \cos a \cos \varphi + \sin a \sin \varphi \label{eq:sind}
+\end{align}
+De ecuatoriales a azimutales:
+\begin{center}
+   $(h, \delta) \rightarrow (Az, a) $
+\end{center}
+\begin{align}
+   \sin Az \cos a & = \sin h \cos \delta \label{eq:sinaz}\\ 
+   \cos Az \cos a & =\cos h \cos \delta \sin \varphi - \sin \delta \cos \varphi \label{eq:cosaz} \\ 
+   \sin a & = \cos h \cos \delta \cos \varphi + \sin \delta \sin \varphi \label{eq:sina}
+\end{align}
+Tiempo sidéreo local:
+\begin{align}
+   TSL = h_{\star} + \alpha_{\star}
+\label{eq:tsl}
+\end{align}
+   
+   %Debido a que las coordenadas tienen un desfase entre el azimut norte ($Az_{N}$) y el azimut sur ($Az_{S}$) se tiene la siguiente relación:
+   %\begin{align}
+   %Az_{S} = Az_{N} + 180^{\circ}   
+   %\end{align}
+\section{Eclipse lunar}
+   
+El próximo\textbf{8 de Noviembre} el máximo del \textbf{eclipse lunar total ocurrirá a las 5:59:11} hora local de Bogotá, cuya latitud es $\varphi = 4^{\circ} ~ 38^{\prime}~ 57.48^{\prime \prime}$. Este eclipse será visible en Pacífico y costa Pacifica de Norte América.
+   
+\subsection{Inicio del eclipse}
+   
+El inicio de la totalidad será a las 5:16:39 (averigue el TSL para Bogotá en este instante), si las coordenadas ecuatoriales de la luna para el inicio del eclipse son:
+$\alpha = 2~\mathrm{h}~ 48~ \mathrm{min} ~27~ \mathrm{s}, \delta = +16^{\circ}~ 39^{\prime}~ 35^{\prime \prime}$.
+   
+\textbf{a) Determine las coordenadas azimutales para un observador en Bogotá.}
+   
+Contando el TSL encontrado en Stellarium, se tienen los siguientes datos:
+\begin{align*}
+    \alpha &= 2~\mathrm{h}~~ 48~ \mathrm{min}~~ 27~ \mathrm{s} \\
+    \delta &= 16^{\circ}~~ 39^{\prime}~~ 35^{\prime \prime}\\
+    TSL &= 8~\mathrm{h}~~ 30~\mathrm{min}~~ 40.3~\mathrm{s}
+\end{align*}
+Se calcula primero el ángulo horario $h$ despejándolo de la ecuación (\ref{eq:tsl}):
+\begin{align*}
+   h_{\star} &=  TSL - \alpha_{\star} \\
+   h_{\star} &=  8.5112~\mathrm{h} - 2.8075~\mathrm{h} \\
+   h_{\star} &=  5.7037~\mathrm{h}% ¿aparte la conversión o de una el resultado?
+\end{align*}
+Se realiza la conversión a grados de $h$:
+\begin{align*}
+    5.7037~ \cancel{\mathrm{h}} \cdot \frac{15 ^{\circ}}{1~ \cancel{\mathrm{h}}} & =85.5555 ^{\circ} 
+\end{align*}
+\begin{align}
+   h &= 85.5555 ^{\circ} \label{reso:hora}
+\end{align}
+Se realiza la respectiva conversión para la declinación ($\delta$):
+\begin{align*}
+   35^{\cancel{\prime \prime}}\cdot \frac{1^{\prime} }{60^{\cancel{\prime \prime}} } &=0.5833^{\prime}\\ 
+   39.5833 ^{\cancel{\prime}}\cdot \frac{1 ^{\circ} }{60^{\cancel{\prime}}} &=0.6597^{\circ}
+\end{align*}
+\begin{align}
+    \delta = 16.6597^{\circ} \label{reso:decli}
+\end{align}
+   
+Para hallar \textbf{la altura ($a$)}, se reemplazan los datos en la ecuación(\ref{eq:sina}):
+\begin{align*}
+    \sin a = &  \cos \left(85.5555^{\circ}\right)  \cos \left(16.6597^{\circ}\right) \cos \left(4.6493^{\circ}\right) + \\
+    & \sin \left(16.6597^{\circ}\right) \sin \left(4.6493^{\circ}\right)
+\end{align*}
+Despejando a de la anterior ecuación se tiene que:
+\begin{align*}
+   a = 5.58^{\circ}  \Longrightarrow a = 5^{\circ}~~ 34^{\prime}~~ 49^{\prime \prime}
+\end{align*}
+   
+Para el\textbf{ azimuth ($Az$)}, dividiendo las ecuaciones (\ref{eq:sinaz}) y (\ref{eq:cosaz}) resulta que:
+\begin{align}
+    \tan Az = \frac{\sin h \cos \delta}{\cos h \cos \delta \sin \varphi - \sin \delta \cos \varphi}
+\end{align}
+   
+   % Dividiendo las ecuaciones (\ref{eq:cosaz}) y (\ref{eq:sinaz}) resulta que:
+   
+   %\begin{align}
+       %\cot Az = \frac{\cos h \sen \varphi - \tan %\delta \cos \varphi}{\sin h}
+   %\end{align}
+   
+   Se reemplazan los datos conocidos en la ecuación:
+   \begin{align*}
+       \tan Az  = & \frac{\sin \left(85.5555^{\circ}\right) \cdot }{\cos\left(85.5555^{\circ}\right)  \cos  \left(16.6597^{\circ}\right)  \sin \left(4.6493^{\circ}\right)}\\
+        & \frac{\cos  \left(16.6597^{\circ}\right)}{- \sin \left(16.6597^{\circ}\right) \cos  \left(4.6493^{\circ}\right)}
+   \end{align*}
+   
+   %\begin{align*}
+   %\cot Az = & \frac{\cos \left(^{\circ}\right) \sin \left(^{\circ}\right)}{\sin \left(^{\circ}\right)} - \\
+   %& \frac{\tan \left(^{\circ}\right) \cos \left(^{\circ}\right)}{\sin \left(^{\circ}\right)}
+   %\end{align*}
+   
+   Despejando $Az$ y realizando una serie de cálculos
+   \begin{align}
+   Az = -73,677 ^{\circ} \Longrightarrow
+   Az = -73 ^{\circ}, 40', 37,2''  %Notación Kartunnen 
+   \end{align}
+   
+   \subsection{Máximo del eclipse}
+   
+   
+   \subsection{Final del eclipse}
+   
+   El final de la totalidad será a las $6:41:36$ (Averigue el TSL Bogotá), si las coordenadas ecuatoriales de la luna para el fin del
+   eclipse son: $\alpha= 2h 51m 31s, \delta = +16^{\circ} 50^{\prime} 53^{\prime \prime}$
+   
+   \textbf{Coordenadas azimutales para un observador en Bogotá.}
+   
+   Contando el TSL encontrado en Stellarium, se tienen los siguientes datos:
+   \begin{align*}
+   \alpha &= 2~\mathrm{h}~~ 51~ \mathrm{min}~~ 31~ \mathrm{s} \\
+   \delta &= 16^{\circ}~~ 50^{\prime}~~ 53^{\prime \prime}\\
+   TSL &= 7~\mathrm{h}~~ 4~\mathrm{min}~~ 20.3~\mathrm{s}
+   \end{align*}
+   Se calcula primero el ángulo horario $h$ despejándolo de la ecuación (\ref{eq:tsl}):
+   \begin{align*}
+       h_{\star} &=  TSL - \alpha_{\star} \\
+       h_{\star} &=  9.9309~\mathrm{h} - 2.8586~\mathrm{h} \\
+       h_{\star} &=  7.0723~\mathrm{h}% 
+   \end{align*}
+   Se realiza la conversión a grados de $h$:
+   \begin{align*}
+   7.0723~ \cancel{\mathrm{h}} \cdot \frac{15 ^{\circ}}{1~ \cancel{\mathrm{h}}} & =106.0845 ^{\circ} 
+   \end{align*}
+   \begin{align*}
+   h &= 106.0845 ^{\circ}
+   \end{align*}
+   Se realiza la respectiva conversión para la declinación ($\delta$):
+   \begin{align*}
+   53^{\cancel{\prime \prime}}\cdot \frac{1^{\prime} }{60^{\cancel{\prime \prime}} } &=0.8833^{\prime}\\ 
+   50.8833 ^{\cancel{\prime}}\cdot \frac{1 ^{\circ} }{60^{\cancel{\prime}}} &=0.8480^{\circ}
+   \end{align*}
+   \begin{align*}
+   \delta = 16.8480^{\circ}
+   \end{align*}
+   
+   Para hallar \textbf{la altura ($a$)}, se reemplazan los datos en la ecuación(\ref{eq:sina}):
+   \begin{align*}
+       \sin a = &  \cos \left(106.0845 ^{\circ}\right)  \cos \left(16.8480^{\circ}\right) \cos \left(4.6493^{\circ}\right) + \\
+       & \sin \left(16.8480^{\circ}\right) \sin \left(4.6493^{\circ}\right)
+   \end{align*}
+   Despejando a de la anterior ecuación se tiene que:
+   \begin{align*}
+   a = -13.934°^{\circ}  \Longrightarrow -13^{\circ}~~ 56^{\prime}~~ 2.4^{\prime \prime}
+   \end{align*}
+   
+   Para el\textbf{ azimuth ($Az$)}, dividiendo las ecuaciones (\ref{eq:sinaz}) y (\ref{eq:cosaz}) resulta que:
+   \begin{align}
+       \tan Az = \frac{\sin h \cos \delta}{\cos h \cos \delta \sin \varphi - \sin \delta \cos \varphi}
+   \end{align}
+   
+   % Dividiendo las ecuaciones (\ref{eq:cosaz}) y (\ref{eq:sinaz}) resulta que:
+   
+   %\begin{align}
+       %\cot Az = \frac{\cos h \sen \varphi - \tan %\delta \cos \varphi}{\sin h}
+   %\end{align}
+   
+   Se reemplazan los datos conocidos en la ecuación:
+   \begin{align*}
+       \tan Az  = & \frac{\sin \left(106.0845 ^{\circ}\right) \cdot }{\cos\left(106.0845 ^{\circ}\right)  \cos  \left(16.8480^{\circ}\right)  \sin \left(4.6493^{\circ}\right)}\\
+        & \frac{\cos  \left(16.8480^{\circ}\right)}{- \sin \left(16.8480^{\circ}\right) \cos  \left(4.6493^{\circ}\right)}
+   \end{align*}
+   
+   %\begin{align*}
+   %\cot Az = & \frac{\cos \left(^{\circ}\right) \sin \left(^{\circ}\right)}{\sin \left(^{\circ}\right)} - \\
+   %& \frac{\tan \left(^{\circ}\right) \cos \left(^{\circ}\right)}{\sin \left(^{\circ}\right)}
+   %\end{align*}
+   
+   Despejando $Az$ y realizando una serie de cálculos
+   \begin{align}
+   Az = -71,35 ^{\circ} \Longrightarrow
+   Az = -73 ^{\circ}, 21' %Notación Kartunnen 
+   \end{align}
+   
+   
+   
+   \section{Coordenadas azimutales y ecuatoriales}
+   
+   Teniendo en cuenta las coordenadas de los siguientes objetos celestes, realice las operaciones indicadas.
+   
+   Para observaciones realizadas en Bogotá $(\varphi = 4^{\circ} 38^{\prime} 57.48^{\prime \prime}$ el próximo Equinoccio de Otoño \textbf{22 de septiembre a las 20:03:00}
+   
+   \textbf{a. Antares:} Es la estrella $\alpha$ Scorpii ($\alpha$ Sco), la estrella más brillante de la constelación de Escorpión, conocida también como
+   el corazón del escorpión, es la decimosexta más brillante del cielo nocturno, situada aproximadamente a 550 años luz del
+   sistema solar.
+   
+   i. Sus coordenadas Azimutales para un observador en Bogotá en la fecha y hora indicada serán:
+   $Az = 56^{\circ} 46^{\prime} 45^{\prime \prime}, a = 27^{\circ} 40^{\prime} 48^{\prime \prime} $. Hallar las coordenadas ecuatoriales de la estrella.
+   \begin{align}
+   Az &=^{\circ}~ ^{\prime}~ ^{\prime \prime} \\
+   a &= ^{\circ}~ ^{\prime}~ ^{\prime \prime}
+   \end{align}
+   
+   Realizando la respectiva conversión para el azimut ($Az$), resulta:
+   \begin{align*}
+   ^{\cancel{\prime \prime}}\cdot \frac{1 ^{\prime} }{60  ^{\cancel{\prime \prime}} } &=0.7 '\\ 
+    ^{\cancel{\prime}}\cdot \frac{1 ^{\circ} }{60^{\cancel{\prime}}} &=0.645^{\circ}
+   \end{align*}
+   \begin{align}
+   Az = ^{\circ}
+   \end{align}
+   
+   Realizando la respectiva conversión para la altura ($a$), resulta:
+   \begin{align*}
+   ^{\cancel{\prime \prime}}\cdot \frac{1^{{\prime}} }{60^{\cancel{\prime \prime}}} &= '\\ 
+    ^{\cancel{\prime}}\cdot \frac{1 ^{\circ} }{60^{\cancel{\prime}}} &=^{\circ}
+   \end{align*}
+   \begin{align}
+   a = ^{\circ}
+   \end{align}
+   
+   Se halla el ángulo horario dividiendo la ecuación \ref{eq:sinh} entre la ecuación \ref{eq:cosh}
+   
+   %\begin{align}
+   %\cot h = \frac{\cos Az \sen \varphi - \tan a \cos \varphi}{\sin Az}
+   %\end{align}
+   
+   %\begin{align*}
+   %\cot h = & \frac{\cos (287,6450 ^{\circ}) \sen (4,6097 ^{\circ})}{\sin (287,6450 ^{\circ})} + \\
+   %& \frac{\tan (32,5076  ^{\circ})\cos (4,6097 ^{\circ})}{\sin (287,6450 ^{\circ})}
+   %\end{align*}
+   
+   \textbf{Despejando $h$} y realizando una serie de cálculos
+   \begin{align}
+   h &= ^{\circ} \\
+   h &=  ~ \mathrm{h}~~ ~ \mathrm{min}~~ ~ \mathrm{seg} 
+   \end{align}
+   
+   
+   Para hallar  $\delta$ se usa la ecuación \ref{eq:sind}
+   
+   \begin{align*}
+   \sin \delta= & - \cos (^{\circ}) \cos (^{\circ})\\
+   & \cos (^{\circ}) + sen(^{\circ})\\ 
+   & \sin (^{\circ})
+   \end{align*}
+   \textbf{Despejando $\delta$ }y realizando una serie de cálculos
+   \begin{align}
+   \delta =  ^{\circ}  \Longrightarrow
+   \delta = ^{\circ}, 
+   \end{align}
+   
+   \textbf{b. Vega de la Lyra:} Es la estrella $\alpha$  Lyra ($\alpha$  Ly), la estrella más brillante de la constelación de la Lyra. Es la quinta estrella más brillante del cielo nocturno . Se considera una estrella relativamente cercana, a solo 25 años luz de la Tierra, siendo una de las más brillantes cercanas al sistema solar.
+   
+   i. Sus coordenadas Azimutales para un observador en Bogotá en la fecha y hora indicada serán:
+   $Az = 150^{\circ} 40^{\prime} 20^{\prime \prime}, a = 49^{\circ} 25^{\prime} 47{\prime \prime} $. Hallar las coordenadas ecuatoriales de la estrella.
+   
+   \begin{align}
+   Az &= 150^{\circ}~ 40^{\prime}~ 20^{\prime \prime} \\
+   a &= 49^{\circ}~ 25^{\prime}~ 47^{\prime \prime}
+   \end{align}
+   
+   Realizando la respectiva conversión para el azimut ($Az$), resulta:
+   \begin{align*}
+   20^{\cancel{\prime \prime}}\cdot \frac{1 ^{\prime} }{60  ^{\cancel{\prime \prime}} } &=0.3333 ^{\prime} \\
+   40.3333 ^{\cancel{\prime}}\cdot \frac{1 ^{\circ} }{60^{\cancel{\prime}}} &=0.6722^{\circ}
+   \end{align*}
+   \begin{align}
+   Az = 150,6722 ^{\circ}
+   \end{align}
+   
+   Realizando la respectiva conversión para la altura ($a$), resulta:
+   \begin{align*}
+   47^{\cancel{\prime \prime}}\cdot \frac{1^{{\prime}} }{60^{\cancel{\prime \prime}}} &= 0.7833 1^{{\prime}\\ 
+   25,7833 ^{\cancel{\prime}}\cdot \frac{1 ^{\circ} }{60^{\cancel{\prime}}} &= 0,4297 ^{\circ}
+   \end{align*}
+   \begin{align}
+   a = 49,4297 ^{\circ}
+   \end{align}
+   
+   Se halla el ángulo horario dividiendo la ecuación \ref{eq:sinh} entre la ecuación \ref{eq:cosh}
+   
+   %\begin{align}
+   %\cot h = \frac{\cos Az \sen \varphi - \tan a \cos \varphi}{\sin Az}
+   %\end{align}
+   
+   %\begin{align*}
+   %\cot h = & \frac{\cos (287,6450 ^{\circ}) \sen (4,6097 ^{\circ})}{\sin (287,6450 ^{\circ})} + \\
+   %& \frac{\tan (32,5076  ^{\circ})\cos (4,6097 ^{\circ})}{\sin (287,6450 ^{\circ})}
+   %\end{align*}
+   
+   \textbf{Despejando $h$} y realizando una serie de cálculos
+   \begin{align}
+   h &= ^{\circ} \\
+   h &=  ~ \mathrm{h}~~ ~ \mathrm{min}~~ ~ \mathrm{seg} 
+   \end{align}
+   
+   Para hallar  $\delta$ se usa la ecuación \ref{eq:sind}
+   \begin{align*}
+   \sin \delta= & - \cos (^{\circ}) \cos (^{\circ})\\
+   & \cos (^{\circ}) + sen(^{\circ})\\ 
+   & \sin (^{\circ})
+   \end{align*}
+   \textbf{Despejando $\delta$ }y realizando una serie de cálculos
+   \begin{align}
+   \delta =  ^{\circ}  \Longrightarrow
+   \delta = ^{\circ}, 
+   \end{align}
+   
+   
+   
+   
+   %ctgAz = ctgh senphi - tandelta (cosphi/senh)
+   %=> ctgAz = (cosh senphi - tandelta cosphi)/senh
+   %ctgh = ctgAz senphi + tana (cosphi/senAz)
+   
+   \selectlanguage{spanish}
+   \begin{thebibliography}{99}
+   
+   
+   \bibitem{R1} 
+   
+   Manrique, J. S. Triana, L. C. (2022). Quiz 02. Astronomía y Laboratorio. Universidad Distrital FJDC.
+   
+   
+   \end{thebibliography}
+   
+   \end{multicols}
+   
+   \end{document}
