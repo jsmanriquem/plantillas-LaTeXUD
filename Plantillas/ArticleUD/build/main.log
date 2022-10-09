@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.11)  25 SEP 2022 18:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.11)  9 OCT 2022 05:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1123,11 +1123,11 @@ Package biblatex Info: Reference segment=0 on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./lib/preambulo.tex
-<img//Escudo_UD.svg.png, id=4, 803.0pt x 774.895pt>
-File: img//Escudo_UD.svg.png Graphic file (type png)
-<use img//Escudo_UD.svg.png>
-Package pdftex.def Info: img//Escudo_UD.svg.png  used on input line 2.
-(pdftex.def)             Requested size: 144.53375pt x 139.47508pt.
+<img//Escudo_UD.pdf, id=4, 625.96158pt x 619.66106pt>
+File: img//Escudo_UD.pdf Graphic file (type pdf)
+<use img//Escudo_UD.pdf>
+Package pdftex.def Info: img//Escudo_UD.pdf  used on input line 2.
+(pdftex.def)             Requested size: 150.23384pt x 148.72168pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1140,7 +1140,7 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 9.
  (c:/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )) (./lib/resumen.tex)
-<img//pollito.png, id=6, 476.78125pt x 476.78125pt>
+<img//pollito.png, id=5, 476.78125pt x 476.78125pt>
 File: img//pollito.png Graphic file (type png)
 <use img//pollito.png>
 Package pdftex.def Info: img//pollito.png  used on input line 52.
@@ -1150,20 +1150,20 @@ Package pdftex.def Info: img//pollito.png  used on input line 52.
 LaTeX Warning: Empty bibliography on input line 61.
 
 
-Overfull \vbox (68.39268pt too high) has occurred while \output is active []
+Overfull \vbox (77.63928pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (9.14915pt too high) has occurred while \output is active []
+Overfull \vbox (18.39575pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (9.14915pt too high) has occurred while \output is active []
+Overfull \vbox (18.39575pt too high) has occurred while \output is active []
 
  [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img//Escudo_UD.svg.png> <./img//pollito.png>] [2] (build/main.aux
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img//Escudo_UD.pdf> <./img//pollito.png>] [2] (build/main.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
@@ -1174,17 +1174,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  40330 strings out of 475075
- 960384 string characters out of 5782995
- 2051403 words of memory out of 5000000
+ 960372 string characters out of 5782995
+ 2051402 words of memory out of 5000000
  61091 multiletter control sequences out of 15000+600000
  478658 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,15n,106p,829b,1792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on build/main.pdf (2 pages, 276343 bytes).
+Output written on build/main.pdf (2 pages, 1545050 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

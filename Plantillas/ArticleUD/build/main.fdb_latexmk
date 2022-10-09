@@ -1,14 +1,14 @@
 # Fdb version 3
-["biber build/main"] 1663100095 "build/main.bcf" "build/main.bbl" "build/main" 1664149464
-  "build/main.bcf" 1664149463 107185 96fe3a75e9d3067261f5852c15832832 "pdflatex"
+["biber build/main"] 1665312561 "build/main.bcf" "build/main.bbl" "build/main" 1665312751
+  "build/main.bcf" 1665312750 107185 96fe3a75e9d3067261f5852c15832832 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1664149460 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex" "build/main.pdf" "main" 1664149464
-  "build/main.aux" 1664149463 1407 cda4a28f67eccd4f81ec544d771bba5a "pdflatex"
-  "build/main.bbl" 1663100097 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
-  "build/main.run.xml" 1664149463 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
-  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex" 1663247319 1101 3b7b62f3618d9c39828024c490a9befe ""
+["pdflatex"] 1665312746 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex" "build/main.pdf" "main" 1665312751
+  "build/main.aux" 1665312750 1407 cda4a28f67eccd4f81ec544d771bba5a "pdflatex"
+  "build/main.bbl" 1665312565 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
+  "build/main.run.xml" 1665312750 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
+  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Plantillas/ArticleUD/main.tex" 1665312588 1101 3b7b62f3618d9c39828024c490a9befe ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1662946317 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1662942546 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm" 1662942546 1120 200be8b775682cdf80acad4be5ef57e4 ""
@@ -253,12 +253,12 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1662956813 4635069 7677ee69604aae14ed48b153c111a7f7 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1662956916 3059283 2cd5e089c72b88446c076ee0c9e5b805 ""
   "c:/texlive/2022/texmf.cnf" 1662956777 713 614551405fc44b98efbf516466e3c909 ""
-  "img//Escudo_UD.svg.png" 1662933137 108313 df309a5e3f8acb0a21124662dd4bc649 ""
+  "img//Escudo_UD.pdf" 1665312543 1447741 1fac6e65c19704584231d6c4c6a290e9 ""
   "img//pollito.png" 1662933137 99819 47230b96e20865c28338837a049e3dd8 ""
   "lib/config.tex" 1664149455 1158 6b37ea2cadcc08af916a6590758e0443 ""
-  "lib/preambulo.tex" 1663044372 712 a162c58fbcce3094d39e427a7c816aac ""
+  "lib/preambulo.tex" 1665312744 708 e81ce92ab553808d28c6f08abda277e1 ""
   "lib/resumen.tex" 1663045192 333 0a8e531cce21abfa4c34dceb96fb828b ""
-  "main.tex" 1663247319 1101 3b7b62f3618d9c39828024c490a9befe ""
+  "main.tex" 1665312588 1101 3b7b62f3618d9c39828024c490a9befe ""
   (generated)
   "build/main.aux"
   "build/main.bcf"

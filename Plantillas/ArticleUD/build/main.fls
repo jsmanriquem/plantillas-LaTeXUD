@@ -1172,11 +1172,11 @@ INPUT ./lib/preambulo.tex
 INPUT lib/preambulo.tex
 INPUT ./lib/preambulo.tex
 INPUT lib/preambulo.tex
-INPUT ./img//Escudo_UD.svg.png
-INPUT img//Escudo_UD.svg.png
-INPUT ./img//Escudo_UD.svg.png
+INPUT ./img//Escudo_UD.pdf
+INPUT img//Escudo_UD.pdf
+INPUT ./img//Escudo_UD.pdf
 OUTPUT build/main.pdf
-INPUT ./img//Escudo_UD.svg.png
+INPUT ./img//Escudo_UD.pdf
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
