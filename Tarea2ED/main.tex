@@ -1,0 +1,302 @@
+\input{lib/config.tex}
+
+\begin{document}
+
+\input{lib/preambulo.tex}
+
+\begin{multicols}{2}
+
+\section{Serie de Fourier}
+
+\begin{enumerate}[leftmargin=15pt]
+    \item Utilizar la calculadora \textit{DESMOS} para calcular la serie de Fourier de la función $F(t) = \ln(t)$ con $F(t+T_f) = F(t)$ si $T_f = \pi$ (Figura \ref{figenu:1}). Representar gráficamente la solución junto con su serie de Fourier para, mínimo, 5 términos.
+    
+    \begin{figure}[H]
+    \begin{center}
+    \includegraphics[scale=0.5]{fig1.png}
+    \caption{$F(t) = \ln(t)$ con $F(t+T_f) = F(t)$ si $T_f = \pi$}
+    \label{figenu:1}
+    \end{center}
+    \end{figure}
+\end{enumerate}
+
+\subsubsection*{Solución:}
+
+Usando la calculadora \textit{DESMOS} se puede graficar la serie de Fourier para la función $F(t) = \ln(t)$. La cual es puede consultar en el siguiente link: \href{https://www.desmos.com/calculator/pu9ukvn7qk}{\textcolor{rojo}{\textit{gráfica de logaritmo natural en DESMOS}}}.
+
+A continuación la gráfica de la serie de Fourier para $F(t)$:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.28]{desmos-graph.png}
+\caption{Gráfica de la serie de Fourier para $F(t)=\ln(t)$ evaluada hasta $n=20$}
+\label{fig1}
+\end{center}
+\end{figure}
+
+\begin{enumerate}[leftmargin=15pt, resume]
+    \item Demostrar que la serie de Fourier para la función $F(t) = t^{2}$, en el intervalo $(-\pi,~\pi)$, y con $F(t) = F(t + T_f)$ es:
+    \begin{equation*}
+        F(t) = \frac{1}{3} \pi^{2} + 4 \sum_{n = 1}^{\infty} \frac{(-1)^{n}}{n^{2}} \cos(nt)
+    \end{equation*}
+    Luego, en la serie de Fourier, haga $t = \pi$, y demostrar que:
+    \begin{equation*}
+        \sum_{1}^{\infty} \frac{1}{n^{2}} = 1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} + \frac{1}{25} + \cdots = \frac{\pi^{2}}{6}
+    \end{equation*}
+\end{enumerate}
+
+\subsubsection*{Solución:}
+
+Primeramente, es sencillo analizar la función dada si fuese una función par o impar ya que para $F(t) = t^{2}$, $F(t)$ siempre es una función par, por lo tanto, los coeficientes que se van a calcular son:
+\begin{align}
+    a_0 &= \frac{4}{T_f} \int\limits_{0}^{\sfrac{T_{f}}{2}} F(t) \,dt \label{pro2:eq1}\\
+    a_n &= \frac{4}{T_f} \int\limits_{0}^{\sfrac{T_{f}}{2}} F(t) \cos(n \omega_f t) \,dt\label{pro2:eq2}
+\end{align}
+Y $b_n = 0$, para $\omega_f = \sfrac{2 \pi}{T_f}$.
+
+Conociendo esto, podemos comenzar a calcular los coeficientes para la serie de Fourier, por tanto:
+
+Para $a_0$ con $T_f = 2 \pi$ y $\omega_f = 1$:
+\begin{align*}
+    a_0 &= \frac{\cancel{4}}{\cancel{2} \pi} \int\limits_{0}^{\sfrac{\cancel{2} \pi}{\cancel{2}}} t^{2} \,dt\\
+    &= \frac{2}{\pi} \int\limits_{0}^{\pi} t^{2} \,dt\\
+    &= \frac{2}{\pi} \left(\frac{t^{3}}{3} \vert_{0}^{\pi}\right)\\
+    &= \frac{2}{\pi} \left(\frac{\left(\pi\right)^{3}}{3} - \cancel{\frac{\left(0\right)^{3}}{3}}\right)\\
+    &= \frac{2}{\cancel{\pi}} \left(\frac{\pi^{\cancel{3}}}{3}\right)\\
+    &= \frac{2\pi^{2}}{3}
+\end{align*}
+Por tanto, el coeficiente $a_0$ es:
+\begin{equation}
+    a_0 = \frac{2\pi^{2}}{3} \label{pro2:res1}
+\end{equation}
+Para $a_n$ con $T_f = 2 \pi$ y $\omega_f = 1$:
+\begin{align*}
+    a_n &= \frac{\cancel{4}}{\cancel{2} \pi} \int\limits_{0}^{\sfrac{\cancel{2} \pi}{\cancel{2}}} t^{2} \cos(nt) \,dt\\
+    &= \frac{2}{\pi} \int\limits_{0}^{\pi} t^{2} \cos(nt) \,dt\\
+\end{align*}
+Sustituyendo al usar integración por partes:
+\begin{align*}
+    u&=t^{2}           &  dv&=\cos\left(nt\right) dt\\
+    du&=2tdt         &  v&=\frac{1}{n} \sin\left(nt\right)
+\end{align*}
+Entonces:
+\begin{align*}
+    a_n = \frac{2}{\pi} \left[\frac{t^{2}}{n}\sin(nt) - \frac{2}{n} \int t \sin(nt) \,dt \right]_{0}^{\pi}
+\end{align*}
+Sustituyendo al usar integración por partes, nuevamente:
+\begin{align*}
+    u&=t          &  dv&=\sin\left(nt\right) dt\\
+    du&=dt         &  v&=-\frac{1}{n} \cos\left(nt\right)
+\end{align*}
+Entonces:
+\begin{align*}
+    a_n =& \frac{2}{\pi} \left[\frac{t^{2}}{n}\sin(nt)\right]_{0}^{\pi} - \frac{2}{n}\\
+    &\left[-\frac{t}{n}\cos(nt) + \frac{1}{n} \int \cos(nt) \,dt \right]_{0}^{\pi}\\
+    =& \frac{2}{\pi} \left[\frac{t^{2}}{n}\sin(nt)\right]_{0}^{\pi} - \frac{2}{n}\\ 
+    &\left[-\frac{t}{n}\cos(nt) + \frac{1}{n} \left(\frac{1}{n} \sin(nt)\right) \right]_{0}^{\pi}\\
+    =& \frac{2}{\pi} \left[\frac{t^{2}}{n} \sin(nt) + \frac{2t}{n^{2}} \cos(nt) - \frac{2}{n^{3}} \sin(nt)\right]_{0}^{\pi}\\
+    =& \frac{2}{\pi} \left(\frac{\pi^{2}}{n} \sin(n\pi) + \frac{2\pi}{n^{2}} \cos(n\pi) - \frac{2}{n^{3}} \sin(n\pi)\right)\\
+    &\textup{Evaluando en 0, el argumento se cancela}
+\end{align*}
+Ya que $\sin(n\pi) = 0$ y $\cos(n\pi) = (-1)^{n}$, resulta finalmente:
+\begin{align*}
+    a_n &= \frac{2}{\pi} \left(\cancel{\frac{\pi^{2}}{n}(0)} + \frac{2\pi}{n^{2}}\left(-1\right)^{n} - \cancel{\frac{2}{n^{3}}(0)}\right)\\
+    &= \frac{2}{\cancel{\pi}} \left(\frac{2\cancel{\pi}}{n^{2}}\left(-1\right)^{n}\right)\\
+    &= 4 \frac{\left(-1\right)^{n}}{n^{2}}
+\end{align*}
+Por tanto, el coeficiente $a_n$ es:
+\begin{equation}
+    a_n = 4 \frac{\left(-1\right)^{n}}{n^{2}} \label{pro2:res2}
+\end{equation}
+Conociendo que $b_n = 0$, usando (\ref{pro2:res1}) y (\ref{pro2:res2}), la serie trigonométrica de Fourier para $F(t) = F(t + 2\pi) = t^{2}$ es:
+\begin{equation*}
+    F(t) = \frac{1}{\cancel{2}}\left(\frac{\cancel{2}\pi^{2}}{3}\right) + \sum_{n = 1}^{\infty} 4 \frac{\left(-1\right)^{n}}{n^{2}} \cos(nt)
+\end{equation*}
+Desarrollando, resulta:
+\begin{equation}
+    \textcolor{rojo}{F(t) = \frac{1}{3}\pi^{2} + 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{2}} \cos(nt)} \label{pro2:res3}
+\end{equation}
+Como el ejercicio pide evaluar la serie de Fourier obtenida, evaluando $t = \pi$ en (\ref{pro2:res3}):
+\begin{align*}
+    (\pi)^{2} &= \frac{1}{3}\pi^{2} + 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{2}} \cos(n\pi)\\
+    &\textup{Ya que } \cos(n\pi) = (-1)^{n}\\
+    &\pi^{2} = \frac{1}{3}\pi^{2} + 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{2n}}{n^{2}}
+\end{align*}
+Como la forma par de $n$ es $2n$, entonces si $(-1)$ se eleva a un valor número par el resultado es siempre 1, es decir, $(-1)^{2n} = 1$, reemplazando esto y continuando con el desarrollo:
+\begin{align*}
+    \pi^{2} &= \frac{1}{3}\pi^{2} + 4 \sum_{n = 1}^{\infty} \frac{1}{n^{2}}\\
+    \pi^{2} - \frac{1}{3}\pi^{2} &= 4 \sum_{n = 1}^{\infty} \frac{1}{n^{2}}\\
+    \pi^{2}\left(1 - \frac{1}{3}\right) &= 4 \sum_{n = 1}^{\infty} \frac{1}{n^{2}}\\
+    \pi^{2}\left(\frac{2}{3}\right) &= 4 \sum_{n = 1}^{\infty} \frac{1}{n^{2}}\\
+    \sum_{n = 1}^{\infty} \frac{1}{n^{2}} &= \frac{\pi^{2}}{\cancel{4}}\left(\frac{\cancel{2}}{3}\right)\\
+    \sum_{n = 1}^{\infty} \frac{1}{n^{2}} &= \frac{\pi^{2}}{6}
+\end{align*}
+De esta manera, si evaluamos en la sumatoria para los primeros 5 términos de $n$, el resultado final es:
+\begin{equation}
+    \textcolor{rojo}{\sum_{n = 1}^{\infty} \frac{1}{n^{2}} = 1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} + \frac{1}{25} + \cdots = \frac{\pi^{2}}{6}} \label{pro2:res4}
+\end{equation}
+
+\begin{enumerate}[leftmargin=15pt, resume]
+    \item Integrar la serie de Fourier del problema anterior: $F(t) = t^{2}$, para obtener:
+    \begin{equation*}
+        \sum_{1}^{\infty} (-1)^{n} \frac{\sin(nt)}{n^{3}} = \frac{1}{12} t\left(t^{2} - \pi^{2}\right)
+    \end{equation*}
+    y
+    \begin{equation*}
+        \sum_{1}^{\infty} \frac{1}{n^{6}} = \frac{\pi^{6}}{945}
+    \end{equation*}
+\end{enumerate}
+
+\subsubsection*{Solución:}
+
+Tomando la serie de Fourier del problema anterior obtenida en (\ref{pro2:res3}), si la integramos indefinidamente en ambas partes con respecto a $t$, haciendo el respectivo tratamiento:
+\begin{equation*}
+    \int t^{2} \,dt = \int \left(\frac{1}{3}\pi^{2} + 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{2}} \cos(nt)\right) \,dt
+\end{equation*}
+Ya que la integral de una suma es la suma de sus integrales, esto gracias a la linealidad de la integral, se puede sacar la sumatoria de la integral y solamente integrar la parte que dependa netamente de $t$, mismo caso para las constantes distribuidas. 
+
+Resolviendo la integral resulta:
+\begin{align*}
+    \int t^{2} \,dt &= \frac{1}{3}\pi^{2 }\int \,dt + 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{2}} \int \cos(nt) \,dt\\
+    \frac{t^{3}}{3} &= \frac{1}{3}\pi^{2} \left(t\right) + 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{2}} \left(\frac{1}{n}\sin(nt)\right)\\
+    \frac{t^{3}}{3} &= \frac{t}{3}\pi^{2} + 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{3}} \sin(nt)\\
+    \frac{t^{3}}{3} - \frac{t}{3}\pi^{2} &= 4 \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{3}} \sin(nt)\\
+    \frac{t}{12} \left(t^{2} - \pi^{2}\right) &= \sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{3}} \sin(nt)
+\end{align*}
+Por tanto, la integral de la serie de Fourier de $F(t) = t^{2}$ es:
+\begin{equation}
+    \textcolor{rojo}{\sum_{n = 1}^{\infty} \frac{\left(-1\right)^{n}}{n^{3}} \sin(nt) = \frac{t}{12} \left(t^{2} - \pi^{2}\right)} \label{pro3:res1}
+\end{equation}
+Para la segunda parte de la demostración que exige el punto, es necesario aplicar la \textbf{identidad de Parseval} la cual viene dada por:
+\begin{equation*}
+    \frac{2}{T_f} \int\limits_{-\sfrac{T_f}{2}}^{\sfrac{T_f}{2}} \left[F(t)\right]^{2} \,dt = \frac{\left(a_0\right)^{2}}{2} + \sum_{n=1}^{\infty} \left[\left(a_n\right)^{2} + \left(b_n\right)^{2}\right]
+\end{equation*}
+La identidad mostrada se va a aplicar sobre la parte dependiente de $t$ obtenida en (\ref{pro3:res1}), es decir, $F(t) = \frac{t}{12} \left(t^{2} - \pi^{2}\right)$, que si analizamos el resultado de la integral, tiene la forma de una serie de Fourier, efectivamente se podría suponer que la integral de una serie de Fourier es igual a otra serie de Fourier, por lo que si recordamos la forma de una serie de Fourier, sabemos que el coeficiente que acompaña a la función $\sin(n\omega_ft)$ es $b_n$, por lo que se puede deducir también que $a_0 = a_n = 0$ y $b_n = \frac{(-1)^{n}}{n^{3}}$, donde gracias al argumento del seno ($\sin(nt)$), se ve claramente que $\omega_f = 1$ lo que implica que $T_f = 2\pi$.
+
+Usando todos estos resultados deducidos de solo analizar lo obtenido (\ref{pro3:res1}) en la identidad, resulta:
+\begin{align*}
+    \frac{\cancel{2}}{\cancel{2}\pi} \int\limits_{-\sfrac{\cancel{2}\pi}{\cancel{2}}}^{\sfrac{\cancel{2}\pi}{\cancel{2}}} \left[\frac{t}{12} \left(t^{2} - \pi^{2}\right)\right]^{2} \,dt &= \cancel{\frac{(0)^{2}}{2}} + \sum_{n=1}^{\infty} \left(\frac{(-1)^{n}}{n^{3}}\right)^{2}\\
+    \frac{1}{\pi} \int\limits_{-\pi}^{\pi} \left(\frac{t^{3} - t\pi^{2}}{12}\right)^{2} \,dt &= \sum_{n=1}^{\infty} \frac{(-1)^{2n}}{n^{6}}
+\end{align*}
+Se va a desarrollar a continuación solamente la parte de la izquierda correspondiente a la integral, esto debido a que la parte de la derecha se va a mantener constante y la integral será algo compleja de desarrollar. Siguiendo el mismo planteamiento del punto anterior dónde $(-1)^{2n} = 1$ y realizando lo mencionado:
+
+La integral resulta:
+\begin{gather*}
+    \int\limits_{-\pi}^{\pi} \left(\frac{t^{3} - t\pi^{2}}{12}\right)^{2} \,dt\\
+    \int\limits_{-\pi}^{\pi} \frac{t^{6} - 2t^{4}\pi^{2} + t^{2}\pi^{4}}{144} \,dt\\
+    \frac{1}{144} \left[\int\limits_{-\pi}^{\pi} t^{6} \,dt - 2\pi^{2}\int\limits_{-\pi}^{\pi} t^{4} \,dt + \pi^{4}\int\limits_{-\pi}^{\pi} t^{2} \,dt\right]\\
+    \frac{1}{144} \left[\left(\frac{t^{7}}{7}\vert_{-\pi}^{\pi}\right) - 2\pi^{2}\left(\frac{t^{5}}{5}\vert_{-\pi}^{\pi}\right) + \pi^{4}\left(\frac{t^{3}}{3}\vert_{-\pi}^{\pi}\right)\right]
+\end{gather*}
+Desarrollando las respectivas evaluaciones y multiplicando por los factores de cada integral:
+\begin{gather*}
+    \frac{1}{144} \left[\frac{2\pi^{7}}{7} - \frac{4\pi^{7}}{5} + \frac{2\pi^{7}}{3}\right]\\
+    \frac{1}{144} \left[\frac{30\pi^{7} - 84\pi^{7} + 70\pi^{7}}{105}\right]\\
+    \frac{1}{\cancel{144}} \left[\frac{\cancel{16}\pi^{7}}{105}\right]\\
+    \frac{1}{9} \left[\frac{\pi^{7}}{105}\right]\\
+    \frac{\pi^{7}}{945}
+\end{gather*}
+Por tanto el valor de la integral es:
+\begin{equation}
+    \int\limits_{-\pi}^{\pi} \left(\frac{t^{3} - t\pi^{2}}{12}\right)^{2} \,dt = \frac{\pi^{7}}{945} \label{pro3:res2}
+\end{equation}
+Reemplazando el valor obtenido en (\ref{pro3:res2}) en el tratamiento que ya se estaba realizando con base en la identidad de Parseval:
+\begin{align*}
+    \frac{1}{\cancel{\pi}} \left(\frac{\pi^{\cancel{7}}}{945}\right) &= \sum_{n=1}^{\infty} \frac{1}{n^{6}}\\
+    \frac{\pi^{6}}{945} &= \sum_{n=1}^{\infty} \frac{1}{n^{6}}
+\end{align*}
+Por tanto, la identidad de Parseval aplicada para (\ref{pro3:res1}) es:
+\begin{equation}
+    \textcolor{rojo}{\sum_{n=1}^{\infty} \frac{1}{n^{6}} = \frac{\pi^{6}}{945}} \label{pro3:res3}
+\end{equation}
+
+\begin{enumerate}[leftmargin=15pt, resume]
+    \item Utilizar el teorema de Parseval para probar que:
+    \begin{equation*}
+        \sum_{1}^{\infty} \frac{1}{(2n-1)} = \frac{\pi^{2}}{8}
+    \end{equation*}
+\end{enumerate}
+
+\subsubsection*{Solución:}
+
+Para la solución de este problema se va a volver a aplicar la identidad y/o teorema de Parseval, que recordando su forma:
+\begin{equation*}
+    \frac{2}{T_f} \int\limits_{-\sfrac{T_f}{2}}^{\sfrac{T_f}{2}} \left[F(t)\right]^{2} \,dt = \frac{\left(a_0\right)^{2}}{2} + \sum_{n=1}^{\infty} \left[\left(a_n\right)^{2} + \left(b_n\right)^{2}\right]
+\end{equation*}
+Se va a aplicar el teorema para la función periódica a trozos:
+\begin{equation}
+    F(t) =
+    \begin{cases}
+    -1,&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
+    1,&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
+    \end{cases}
+    \label{pro4:eq1}
+\end{equation}
+Que si recordamos de la anterior tarea (\textit{``Tarea 1: funciones periódicas y series trigonométricas de Fourier''}) realizada por el mismo autor de esta tarea, ya se sabe que la serie de Fourier de esta función viene expresada de la forma:
+\begin{equation}
+    F(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} \sin(2nt) \label{pro4:eq2}
+\end{equation}
+Donde $a_0 = a_n = 0$, $b_n = \frac{4}{n\pi}$ y $T_f = \pi$. Hay que tener en cuenta que la $n$ utilizada representa un valor de $n$ \textbf{impar}, esto es importante ya que si no se especifica ese pequeño detalle el resultado puede llegar a ser completamente diferente.
+
+Desarrollando el teorema de Parseval para (\ref{pro4:eq1}), resulta:
+\begin{align*}
+    \frac{2}{\pi} \int\limits_{-\sfrac{\pi}{2}}^{\sfrac{\pi}{2}} \left[F(t)\right]^{2} \,dt &= \cancel{\frac{\left(0\right)^{2}}{2}} + \sum_{n=1}^{\infty} \left(\frac{4}{n\pi}\right)^{2}\\
+    \frac{2}{\pi} \left[\int\limits_{-\sfrac{\pi}{2}}^{0} \left[-1\right]^{2} \,dt + \int\limits_{0}^{\sfrac{\pi}{2}} \left[1\right]^{2} \,dt\right] &= \sum_{n=1}^{\infty} \frac{16}{n^{2}\pi^{2}}\\
+    \frac{\cancel{2}}{\cancel{\pi}} \left[\int\limits_{-\sfrac{\pi}{2}}^{0} \,dt + \int\limits_{0}^{\sfrac{\pi}{2}} \,dt\right] &= \frac{\cancel{16}}{\pi^{\cancel{2}}} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
+    \left(t \vert_{\sfrac{-\pi}{2}}^{0}\right) + \left(t \vert_{0}^{\sfrac{\pi}{2}}\right) &= \frac{8}{\pi} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
+    \left(\frac{\pi}{2}\right) + \left(\frac{\pi}{2}\right) &= \frac{8}{\pi} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
+    \pi &= \frac{8}{\pi} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
+    \frac{\pi^{2}}{8} &= \sum_{n=1}^{\infty} \frac{1}{n^{2}}
+\end{align*}
+Como se había mencionado previamente, el valor de $n$ representa a una $n$ la cual es impar, o mejor dicho, $n$ es impar, lo que implica que puede ser reescrito de la forma $n = 2n-1$. 
+
+Sin embargo, para nuestro caso particular dónde tenemos $n^{2}$ en vez de simplemente $n$, esto puede ser nuevamente reescrito sencillamente como un número impar general, esto gracias a que si $n$ es impar, $n^{2}$ también lo es; a continuación dejo un video con la respectiva demostración de este hecho: \href{https://youtu.be/XMB3Aa6SscQ}{\textit{si $n$ es impar entonces $n^{2}$ es impar}}.
+
+Por tanto, el teorema de Parseval aplicado a (\ref{pro4:eq1}) es:
+\begin{equation}
+    \textcolor{rojo}{\sum_{n=1}^{\infty} \frac{1}{2n-1} = \frac{\pi^{2}}{8}} \label{pro4:res1}
+\end{equation}
+
+\section{Ecuaciones diferenciales}
+
+\begin{enumerate}[leftmargin=15pt]
+    \item Resolver la siguiente ecuación diferencial:
+    \begin{equation*}
+        \frac{d^{2}x}{dt^{2}} + \lambda \frac{dx}{dt} + \omega_{0}^{2}x = \frac{1}{m} F(t)
+    \end{equation*}
+    Para los siguientes casos:
+    \begin{enumerate}
+        \item Caso 1:
+        \begin{equation*}
+            F(t) =
+            \begin{cases}
+            -1,&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
+            1,&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
+            \end{cases}
+        \end{equation*}
+        \begin{center}$F(t)=F(t+\pi)$\end{center}
+        \item Caso 2:
+        \begin{equation*}
+            F(t) =
+            \begin{cases}
+            1 + \frac{4t}{\pi},&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
+            1 - \frac{4t}{\pi},&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
+            \end{cases}
+        \end{equation*}
+        \begin{center}$F(t)=F(t+\pi)$\end{center}
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection*{Solución:}
+
+Sabiendo que la solución de cualquier ecuación diferencial lineal se compone de la superposición de dos soluciones, una complementaria y una particular. La solución complementaria se halla tras resolver la ecuación diferencial homogénea asociada a la ecuación diferencial general, para el caso de una ecuación diferencial que de por sí es homogénea, pues la solución general termina siendo solamente la complementaria, cosa que para nuestro caso no es así. La solución particular se hallará por el método de los coeficientes indeterminados, esto depende del valor de $F(t)$ que más adelante se analizará para los casos correspondientes.
+
+A continuación, se hallará la solución complementaria tomando la ecuación diferencial homogénea asociada a la ecuación diferencial general, la cuál es:
+\begin{equation}
+    \frac{d^{2}x}{dt^{2}} + \lambda \frac{dx}{dt} + \omega_{0}^{2}x = 0 \label{pro5:eq1}
+\end{equation}
+Su desarrollo es el siguiente:
+
+
+\end{multicols}
+
+\end{document}
