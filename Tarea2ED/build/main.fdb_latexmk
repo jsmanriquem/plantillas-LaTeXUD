@@ -1,15 +1,15 @@
 # Fdb version 3
-["biber build/main"] 1665390842 "build/main.bcf" "build/main.bbl" "build/main" 1665391133
-  "build/main.bcf" 1665391132 106835 bb0985e6e0ab9041111ca5927a6d9b5a "pdflatex"
+["biber build/main"] 1665550632 "build/main.bcf" "build/main.bbl" "build/main" 1665550908
+  "build/main.bcf" 1665550907 106835 bb0985e6e0ab9041111ca5927a6d9b5a "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1665391126 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea2ED/main.tex" "build/main.pdf" "main" 1665391133
-  "build/main.aux" 1665391132 2518 d5a81aee52a008b4ec9a51b43c859003 "pdflatex"
-  "build/main.bbl" 1665390846 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
-  "build/main.out" 1665391132 295 becba6320ac7c0ad8edf60f9a85c8223 "pdflatex"
-  "build/main.run.xml" 1665391132 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
-  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea2ED/main.tex" 1665391125 18369 0613ed923b89629d76d5866f45211180 ""
+["pdflatex"] 1665550901 "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea2ED/main.tex" "build/main.pdf" "main" 1665550908
+  "build/main.aux" 1665550907 2869 51c671a960cdd01d4bec25772c1c5378 "pdflatex"
+  "build/main.bbl" 1665550636 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
+  "build/main.out" 1665550907 295 becba6320ac7c0ad8edf60f9a85c8223 "pdflatex"
+  "build/main.run.xml" 1665550907 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
+  "c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea2ED/main.tex" 1665550900 27172 0d2febce139c47f26161188bab95558b ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1662946317 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1662942546 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1662942546 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -62,6 +62,7 @@
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1662942546 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1662942546 36118 fad905eba93cff5bce1e185fe980a177 ""
   "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb" 1662942546 11493 4f5ed183a47d3197cf8cd322325db6de ""
+  "c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1662942546 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1662950562 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1662942796 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "c:/texlive/2022/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1662942997 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
@@ -289,7 +290,7 @@
   "fig//fig1.png" 1665368145 39151 9a4133d822688967182765e7e39de0d8 ""
   "lib/config.tex" 1665369143 1335 6da8513577b4f559b6b414e5581c7e61 ""
   "lib/preambulo.tex" 1665367316 867 75ed5b1a69c3428b6f71d8bb79c4d6e3 ""
-  "main.tex" 1665391125 18369 0613ed923b89629d76d5866f45211180 ""
+  "main.tex" 1665550900 27172 0d2febce139c47f26161188bab95558b ""
   (generated)
   "build/main.aux"
   "build/main.bcf"

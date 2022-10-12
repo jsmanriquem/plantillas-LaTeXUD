@@ -60,7 +60,7 @@ Para $a_0$ con $T_f = 2 \pi$ y $\omega_f = 1$:
 \begin{align*}
     a_0 &= \frac{\cancel{4}}{\cancel{2} \pi} \int\limits_{0}^{\sfrac{\cancel{2} \pi}{\cancel{2}}} t^{2} \,dt\\
     &= \frac{2}{\pi} \int\limits_{0}^{\pi} t^{2} \,dt\\
-    &= \frac{2}{\pi} \left(\frac{t^{3}}{3} \vert_{0}^{\pi}\right)\\
+    &= \frac{2}{\pi} \left(\left.\frac{t^{3}}{3} \right|_{0}^{\pi}\right)\\
     &= \frac{2}{\pi} \left(\frac{\left(\pi\right)^{3}}{3} - \cancel{\frac{\left(0\right)^{3}}{3}}\right)\\
     &= \frac{2}{\cancel{\pi}} \left(\frac{\pi^{\cancel{3}}}{3}\right)\\
     &= \frac{2\pi^{2}}{3}
@@ -185,7 +185,7 @@ La integral resulta:
     \int\limits_{-\pi}^{\pi} \left(\frac{t^{3} - t\pi^{2}}{12}\right)^{2} \,dt\\
     \int\limits_{-\pi}^{\pi} \frac{t^{6} - 2t^{4}\pi^{2} + t^{2}\pi^{4}}{144} \,dt\\
     \frac{1}{144} \left[\int\limits_{-\pi}^{\pi} t^{6} \,dt - 2\pi^{2}\int\limits_{-\pi}^{\pi} t^{4} \,dt + \pi^{4}\int\limits_{-\pi}^{\pi} t^{2} \,dt\right]\\
-    \frac{1}{144} \left[\left(\frac{t^{7}}{7}\vert_{-\pi}^{\pi}\right) - 2\pi^{2}\left(\frac{t^{5}}{5}\vert_{-\pi}^{\pi}\right) + \pi^{4}\left(\frac{t^{3}}{3}\vert_{-\pi}^{\pi}\right)\right]
+    \frac{1}{144} \left[\left(\left.\frac{t^{7}}{7}\right|_{-\pi}^{\pi}\right) - 2\pi^{2}\left(\left.\frac{t^{5}}{5}\right|_{-\pi}^{\pi}\right) + \pi^{4}\left(\left.\frac{t^{3}}{3}\right|_{-\pi}^{\pi}\right)\right]
 \end{gather*}
 Desarrollando las respectivas evaluaciones y multiplicando por los factores de cada integral:
 \begin{gather*}
@@ -242,7 +242,7 @@ Desarrollando el teorema de Parseval para (\ref{pro4:eq1}), resulta:
     \frac{2}{\pi} \int\limits_{-\sfrac{\pi}{2}}^{\sfrac{\pi}{2}} \left[F(t)\right]^{2} \,dt &= \cancel{\frac{\left(0\right)^{2}}{2}} + \sum_{n=1}^{\infty} \left(\frac{4}{n\pi}\right)^{2}\\
     \frac{2}{\pi} \left[\int\limits_{-\sfrac{\pi}{2}}^{0} \left[-1\right]^{2} \,dt + \int\limits_{0}^{\sfrac{\pi}{2}} \left[1\right]^{2} \,dt\right] &= \sum_{n=1}^{\infty} \frac{16}{n^{2}\pi^{2}}\\
     \frac{\cancel{2}}{\cancel{\pi}} \left[\int\limits_{-\sfrac{\pi}{2}}^{0} \,dt + \int\limits_{0}^{\sfrac{\pi}{2}} \,dt\right] &= \frac{\cancel{16}}{\pi^{\cancel{2}}} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
-    \left(t \vert_{\sfrac{-\pi}{2}}^{0}\right) + \left(t \vert_{0}^{\sfrac{\pi}{2}}\right) &= \frac{8}{\pi} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
+    \left(\left.t\right|_{\sfrac{-\pi}{2}}^{0}\right) + \left(\left.t \right|_{0}^{\sfrac{\pi}{2}}\right) &= \frac{8}{\pi} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
     \left(\frac{\pi}{2}\right) + \left(\frac{\pi}{2}\right) &= \frac{8}{\pi} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
     \pi &= \frac{8}{\pi} \sum_{n=1}^{\infty} \frac{1}{n^{2}}\\
     \frac{\pi^{2}}{8} &= \sum_{n=1}^{\infty} \frac{1}{n^{2}}
@@ -294,8 +294,126 @@ A continuación, se hallará la solución complementaria tomando la ecuación di
 \begin{equation}
     \frac{d^{2}x}{dt^{2}} + \lambda \frac{dx}{dt} + \omega_{0}^{2}x = 0 \label{pro5:eq1}
 \end{equation}
-Su desarrollo es el siguiente:
+Donde su desarrollo va a ser a partir de la parte compleja de la ecuación diferencial.
 
+Si nosotros sabemos que una función compleja se compone de dos partes, una parte real equivalente a una función real, y una parte imaginaria equivalente a una función real multiplicada por $i$,
+\begin{equation*}
+    Z(t) = X(t) + i Y(t)
+\end{equation*}
+podemos asumir el mismo tratamiento para una ecuación diferencial, por tanto, la parte compleja de la ecuación diferencial se puede expresar como la combinación lineal de dos ecuaciones diferenciales equivalentes, usando la notación de Newton:
+\begin{equation*}
+\ddot{Z} + \lambda \dot{Z} + \omega_{0}^{2}Z = 0
+    \begin{cases}
+        &\ddot{X} + \lambda \dot{X} + \omega_{0}^{2}X = 0\\
+        &\ddot{Y} + \lambda \dot{Y} + \omega_{0}^{2}Y = 0
+    \end{cases}
+\end{equation*}
+Donde $X(t)$ es la parte real de la función compleja $Z(t)$, y $Y(t)$ corresponde a la parte imaginaria. De esta manera, es solo cuestión de reemplazar la función original (\ref{pro5:eq1}) por la nueva función compleja en notación de Newton.
+
+Para resolver la ecuación diferencial homogénea lineal con coeficientes constantes se va a proponer un \textit{anzats} (intento en alemán), o mejor dicho, suponer una solución basándose en la forma de la ecuación diferencial, ya que estamos viendo una ecuación diferencial con funciones complejas, se supone que la solución sea la forma elemental de un número complejo, la cual es:
+\begin{equation*}
+    z = \rho e^{i\theta}
+\end{equation*}
+Donde $\rho$ y $\theta$ pertenecen a $\mathbb{R}$. De esta manera, se supone de igual forma la solución teniendo la misma forma pero ajustada a nuestro caso, por tanto:
+\begin{equation}
+    z = Ae^{iBt} \label{pro5:eq2}
+\end{equation}
+Tomando (\ref{pro5:eq2}) como anzats, se deriva dos veces buscando que sea solución de la ecuación diferencial.
+\begin{align*}
+    z &= Ae^{iBt}\\
+    \dot{z} &= iABe^{iBt}\\
+    \ddot{z} &= -A^{2}B^{2}e^{iBt}
+\end{align*}
+Reemplazando en la ecuación diferencial:
+\begin{align*}
+    \left(-A^{2}B^{2}e^{iBt}\right) + \lambda\left(iABe^{iBt}\right) + \omega_{0}^{2}\left(Ae^{iBt}\right) &= 0\\
+    Ae^{iBt}\left(-B^{2} + \lambda iB + \omega_{0}^{2}\right) &= 0
+\end{align*}
+De donde se tienen dos posibles soluciones, una trivial la cual sería que $A = 0$, cosa que no nos daría ningún tipo de información, y la otra sería que el argumento factorizado sea igual a 0, caso en el cuál nos vamos a centrar.
+
+Nos podemos dar cuenta que dicho argumento tiene la forma de una ecuación general cuadrática, por lo que aplicando la \textit{fórmula de Bhaskara} resulta:
+\begin{align*}
+    B &= \frac{-\lambda i \pm \sqrt{\left(\lambda i\right)^{2} -4\left(-1\right)\left(\omega_{0}^{2}\right)}}{-2}\\
+    B &= \frac{i\lambda}{2} \mp \frac{\sqrt{-\lambda^{2} + 4^{\omega_{0}^{2}}}}{2}\\
+    B &= \frac{i\lambda}{2} \mp \textcolor{azul}{\sqrt{\omega_{0}^{2} - \left(\frac{\lambda}{2}\right)^{2}}}
+\end{align*}
+La raíz de color azul se va a reemplazar por $\omega_a$, esto más que todo por efectos prácticos que curiosamente contiene un sentido físico. De esta manera obtenemos dos soluciones las cuales son:
+\begin{equation}
+    B_{1} = \frac{i \lambda}{2} - \omega_a ~~~;~~~ B_{2} = \frac{i \lambda}{2} + \omega_a \label{pro5:res1}
+\end{equation}
+Reemplazando las soluciones obtenidas en (\ref{pro5:res1}) en (\ref{pro5:eq2}):
+\begin{align*}
+    z_1 &= Ae^{i\left(\frac{i \lambda}{2} - \omega_a\right)t} & z_2 &= Ae^{i\left(\frac{i \lambda}{2} + \omega_a\right)t}\\
+    z_1 &= Ae^{iB_{1}t} & z_2 &= Ae^{iB_{2}t}
+\end{align*}
+Por tanto, la solución general para la ecuación diferencial corresponderán a una combinación lineal de las soluciones obtenidas:
+\begin{equation*}
+    z(t) = \sum_{n=1}^{2} C_{n} Ae^{iB_{n}t} \Rightarrow z(t) = C_{1} Ae^{iB_{1}t} + C_{2} Ae^{iB_{2}t}
+\end{equation*}
+Que si tomamos $c_{1} = C_{1}A$ y $c_{2} = C_{2}A$, se puede escribir finalmente como:
+\begin{equation}
+    z(t) = c_{1} e^{iB_{1}t} + c_{2} e^{iB_{2}t} \label{pro5:res2}
+\end{equation}
+Ya teniendo la solución de la parte compleja de la ecuación diferencial, se debe hallar la parte real ya que es esa la solución que necesitamos, para ello se usará la definición de la conjugada de un número complejo dónde decimos que si sumamos un número complejo $z$ con su conjugada $\bar{z}$, el resultado es la parte real de $z$, que para nuestro caso sería $\mathrm{Re}[z(t)] = x(t)$.
+
+Sin embargo, no solo $z$ es complejo, si no que también sus constantes arbitrarias $c_{1}$ y $c_{2}$ por lo que necesitamos igualar $\bar{z}$ con $z$ para hallar las condiciones necesarias para las constantes, entonces:
+\begin{align*}
+    z &= \bar{z}\\
+    \cancel{e^{-\frac{\lambda}{2}}} \left(c_{1} e^{-i\omega_a t} + c_{2} e^{i\omega_a t}\right) &= \cancel{e^{-\frac{\lambda}{2}}} \left(\bar{c_{1}} e^{i\omega_a t} + \bar{c_{2}} e^{-i\omega_a t}\right)\\
+    c_{1} e^{-i\omega_a t} + c_{2} e^{i\omega_a t} &= \bar{c_{1}} e^{i\omega_a t} + \bar{c_{2}} e^{-i\omega_a t}
+\end{align*}
+De donde se concluye que $c_{1} = \bar{c_{2}}$ y $c_{2} = \bar{c_{1}}$. Realizando un cambio de variables dándole un valor a las constantes respetando la forma general de un número complejo donde:
+\begin{align*}
+    c_{1} = D e^{i\alpha} &\Rightarrow \bar{c_{2}} = D e^{i\alpha}\\
+    c_{2} = D e^{-i\alpha} &\Rightarrow \bar{c_{1}} = D e^{-i\alpha}
+\end{align*}
+Ya con esto, sumando y reemplazando los valores correspondientes:
+\begin{align*}
+    \mathrm{Re} = x(t) &= 2De^{-\frac{\lambda}{2}} \left(e^{i\alpha}e^{i\omega_at} + e^{-i\alpha}e^{-i\omega_at}\right)\\
+    x(t) &= 2De^{-\frac{\lambda}{2}} \left(e^{i\left(\omega_at + \alpha\right)} + e^{-i\left(\omega_at + \alpha\right)}\right)\\
+\end{align*}
+Si llamamos a $2D = A_0$, desarrollando las exponenciales complejas, resulta finalmente:
+\begin{equation}
+    \textcolor{rojo}{x(t) = A_0e^{-\frac{\lambda}{2}} \cos\left(\omega_a t + \alpha_a\right)} \label{pro5:res3}
+\end{equation}
+Teniendo la solución complementaria de la ecuación diferencial expuesta, ahora se pueden hallar las soluciones para cada caso.
+
+\begin{itemize}
+    \item[$a)$] Para el caso 1, con:
+    \begin{equation*}
+        F(t) =
+        \begin{cases}
+        -1,&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
+        1,&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
+        \end{cases}
+    \end{equation*}
+    \begin{center}$F(t)=F(t+\pi)$\end{center}
+    Que si nos remitimos nuevamente a la tarea anterior (\textit{``Tarea 1: funciones periódicas y series trigonométricas de Fourier''}), sabemos ya la serie trigonométrica de Fourier para $F(t)$ es:
+    \begin{equation}
+        F(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} \sin\left(2nt\right)\label{pro5:eq3}
+    \end{equation}
+    Donde $a_0 = a_n = 0$ y $b_n = \frac{4}{n\pi}$. Por efecto prácticos es necesario expresar esta serie de la forma:
+    \begin{equation*}
+        F(t) = c_0 + \sum_{n=1}^{\infty} c_n \cos\left(n\omega_f t - \theta_n\right)
+    \end{equation*}
+    Donde $c_0 = \frac{a_0}{2}$, $c_n = \sqrt{a_{n}^{2} + b_{n}^{2}}$ y $\theta_n = \arctan\left(\frac{b_n}{a_n}\right)$. Que para este caso, debido a las condiciones que nos ofrece (\ref{pro5:eq3}), solo es cuestión de aplicar un desfase a la función seno de tal forma que esta sea un coseno, dicho desfase será $\theta_n = \frac{\pi}{2}$. La serie de Fourier resulta:
+    \begin{equation}
+        F(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} \cos\left(2nt - \frac{\pi}{2}\right) \label{pro5:eq4}
+    \end{equation}
+    Realizando el mismo tratamiento hecho para la solución complementaria, se va a tomar la parte compleja para (\ref{pro5:eq4}) que gracias a que está expresada con un coseno, se puede rápidamente cómo:
+    \begin{equation*}
+        Z(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} e^{i\left(2nt - \frac{\pi}{2}\right)}
+    \end{equation*}
+    Una pequeña aclaración, cuando se está usando $Z(t)$ como la parte compleja o la función compleja equivalente para $F(t)$, en ningún momento se está hablando de tomar eso como si fuese una solución ya para la ecuación, es solo notación, que quizá más adelante tenga alguna equivalencia pero nuevamente, es solo notación.
+
+    Partiendo de ahí, usando el método de los coeficientes indeterminados, si tenemos una forma para $Z(t)$ así, se espera que las soluciones sean iguales o por lo menos equivalentes, por lo que se va a suponer un $Z_p$ el cual sea solución. Para demostrar que es solución, se derivará dos veces y reemplazará en la ecuación diferencial no homogénea asociada y se buscarán las condiciones para que se cumpla que sea solución. Entonces:
+    \begin{align*}
+        Z_p &= A + \sum_{\mathrm{impar}}^{\infty} B e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\\
+        \dot{Z_p} &= \sum_{\mathrm{impar}}^{\infty} i2nB e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\\
+        \ddot{Z_p} &= \sum_{\mathrm{impar}}^{\infty} -4n^{2}B^{2} e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}
+    \end{align*}
+    Reemplazando en la ecuación diferencial:
+\end{itemize}
 
 \end{multicols}
 
