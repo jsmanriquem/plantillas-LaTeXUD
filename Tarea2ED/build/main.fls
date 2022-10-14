@@ -1131,6 +1131,18 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -1409,6 +1421,13 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -1435,6 +1454,7 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
@@ -1457,6 +1477,10 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./fig//fig2.png
+INPUT fig//fig2.png
+INPUT ./fig//fig2.png
+INPUT ./fig//fig2.png
 INPUT build/main.aux
 INPUT build/main.out
 INPUT build/main.out
@@ -1480,3 +1504,4 @@ INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb

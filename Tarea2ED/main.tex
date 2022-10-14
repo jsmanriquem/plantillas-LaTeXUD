@@ -378,43 +378,332 @@ Si llamamos a $2D = A_0$, desarrollando las exponenciales complejas, resulta fin
 \end{equation}
 Teniendo la solución complementaria de la ecuación diferencial expuesta, ahora se pueden hallar las soluciones para cada caso.
 
-\begin{itemize}
-    \item[$a)$] Para el caso 1, con:
-    \begin{equation*}
-        F(t) =
-        \begin{cases}
+$a)$ Para el caso 1, con:
+\begin{equation*}
+    F(t) =
+    \begin{cases}
+    -1,&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
+    1,&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
+    \end{cases}
+\end{equation*}
+\begin{center}$F(t)=F(t+\pi)$\end{center}
+Que si nos remitimos nuevamente a la tarea anterior (\textit{``Tarea 1: funciones periódicas y series trigonométricas de Fourier''}), sabemos ya la serie trigonométrica de Fourier para $F(t)$ es:
+\begin{equation}
+    F(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} \sin\left(2nt\right)\label{pro5:eq3}
+\end{equation}
+Donde $a_0 = a_n = 0$ y $b_n = \frac{4}{n\pi}$. Por efecto prácticos es necesario expresar esta serie de la forma:
+\begin{equation*}
+    F(t) = c_0 + \sum_{n=1}^{\infty} c_n \cos\left(n\omega_f t - \theta_n\right) 
+\end{equation*}
+Donde $c_0 = \frac{a_0}{2}$, $c_n = \sqrt{a_{n}^{2} + b_{n}^{2}}$ y $\theta_n = \arctan\left(\frac{b_n}{a_n}\right)$. Que para este caso, debido a las condiciones que nos ofrece (\ref{pro5:eq3}), solo es cuestión de aplicar un desfase a la función seno de tal forma que esta sea un coseno, dicho desfase será $\theta_n = \frac{\pi}{2}$. La serie de Fourier resulta:
+\begin{equation}
+    F(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} \cos\left(2nt - \frac{\pi}{2}\right) \label{pro5:eq4}
+\end{equation}
+Realizando el mismo tratamiento hecho para la solución complementaria, se va a tomar la parte compleja para (\ref{pro5:eq4}) que gracias a que está expresada con un coseno, se puede rápidamente cómo:
+\begin{equation}
+    Z(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} e^{i\left(2nt - \frac{\pi}{2}\right)} \label{pro5:eq5}
+\end{equation}
+Una pequeña aclaración, cuando se está usando $Z(t)$ como la parte compleja o la función compleja equivalente para $F(t)$, en ningún momento se está hablando de tomar eso como si fuese una solución ya para la ecuación, es solo notación, que quizá más adelante tenga alguna equivalencia pero nuevamente, es solo notación.
+
+Partiendo de ahí, usando el método de los coeficientes indeterminados, si tenemos una forma para $Z(t)$ así, se espera que las soluciones sean iguales o por lo menos equivalentes, por lo que se va a suponer un $Z_p$ el cual sea solución. Para demostrar que es solución, se derivará dos veces y reemplazará en la ecuación diferencial no homogénea asociada y se buscarán las condiciones para que se cumpla que sea solución. Entonces:
+\begin{align*}
+    Z_p &= A + \sum_{\mathrm{impar}}^{\infty} B e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\\
+    \dot{Z_p} &= \sum_{\mathrm{impar}}^{\infty} i2nB e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\\
+    \ddot{Z_p} &= \sum_{\mathrm{impar}}^{\infty} -4n^{2}B^{2} e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}
+\end{align*}
+Reemplazando en la ecuación diferencial, desarrollando y usando (\ref{pro5:eq5}):
+\end{multicols}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+\begin{gather*}
+    \sum_{\mathrm{impar}}^{\infty} -4n^{2}B^{2} e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)} + \lambda\left(\sum_{\mathrm{impar}}^{\infty} i2nB e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\right) + \omega_{0}^{2}\left(A + \sum_{\mathrm{impar}}^{\infty} B e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\right) = \frac{1}{m} Z(t)
+\end{gather*}
+\begin{gather*}
+    \left[\sum_{\mathrm{impar}}^{\infty} e^{i\left(2nt - \frac{\pi}{2}\right)}e^{-\varphi} \left(-4n^{2}B^{2} + \lambda i2nB + \omega_{0}^{2} B\right) \right] + \omega_{0}^{2} A = \frac{1}{m} \left(\sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} e^{i\left(2nt - \frac{\pi}{2}\right)}\right)
+\end{gather*}
+\begin{center}
+    Si igualamos las componentes similares, obtenemos qué:
+\end{center}
+\begin{gather*}
+    \omega_{0}^{2} A = 0 \Longrightarrow A = 0\\
+    e^{-\varphi} \left(-4n^{2}B^{2} + \lambda i2nB + \omega_{0}^{2} B\right) = \frac{4}{mn\pi}
+\end{gather*}
+\begin{center}
+    Desarrollando lo obtenido para $B$ y para $\varphi$, resulta:
+\end{center}
+\begin{gather*}
+    \frac{4}{mn\pi} = e^{-\varphi} \left(-4n^{2}B^{2} + \lambda i2nB + \omega_{0}^{2} B\right)\\
+    \frac{4}{mn\pi} e^{\varphi} = B\left(-4n^{2} + \omega_{0}^{2}\right) + i\left(2nB\lambda\right)\\
+    \frac{4}{mn\pi} \left(\cos(\varphi) + i\sin(\varphi)\right) = B\left(-4n^{2} + \omega_{0}^{2}\right) + i\left(2nB\lambda\right)
+\end{gather*}
+\begin{center}
+    Si se iguala la parte real con la compleja en ambas partes, se genera el siguiente sistema de ecuaciones:
+\end{center}
+\begin{gather*}
+    \begin{cases}
+    \frac{4}{mn\pi} \cos(\varphi) = B\left(-4n^{2} + \omega_{0}^{2}\right) & (1)\\
+    \frac{4}{mn\pi} \sin(\varphi) = 2nB\lambda & (2)
+    \end{cases}
+\end{gather*}
+\begin{center}
+    Usando (2) en (1):
+\end{center}
+\begin{gather*}
+    \frac{\cancel{\frac{4}{mn\pi}}}{\cancel{\frac{4}{mn\pi}}} \tan(\varphi) = \frac{2n\cancel{B}\lambda}{\cancel{B} \left(-4n^{2} + \omega_{0}^{2}\right)} \Longrightarrow \textcolor{rojo}{\varphi_n = \arctan\left(\frac{2n\lambda}{-4n^{2} + \omega_{0}^{2}}\right)}
+\end{gather*}
+\begin{center}
+    Usando $(2)^{2}$ + $(1)^{2}$:
+\end{center}
+\begin{align*}
+    \left(\frac{4}{mn\pi}\right)^{2} \left(\cancel{\sin^{2}(\varphi) + \cos^{2}(\varphi)}\right) &= \left(2nB\lambda\right)^{2} + \left(B\left(-4n^{2} + \omega_{0}^{2}\right)\right)^{2}\\
+    \frac{16}{m^{2}n^{2}\pi^{2}} &= 4n^{2}\lambda^{2} B^{2} + B^{2}\left(-4n^{2} + \omega_{0}^{2}\right)^{2}\\
+    \frac{16}{m^{2}n^{2}\pi^{2}} &= B^{2} \left[4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}\right]\\
+    B^{2} &= \left(\frac{16}{m^{2}n^{2}\pi^{2}}\right) \left(\frac{1}{4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}}\right)\\
+    B &= \frac{4}{mn\pi} \left(\frac{1}{\sqrt{4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}}}\right)
+\end{align*}
+\begin{center}
+    Para este caso, $B$ puede ser reescrito como $B_n$ siendo netamente función de $n$, por tanto:
+\end{center}
+\begin{gather*}
+    B = m\frac{\pi}{4} B_n\\
+    \textup{donde,}\\
+    \textcolor{rojo}{B_n = n\left(4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}\right)^{-\sfrac{1}{2}}}
+\end{gather*}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+
+\begin{multicols}{2}
+
+Tras realizado el tratamiento mostrado con anterioridad, tenemos los valores para $B$ y para $\varphi$, conocemos su naturaleza como constantes ya que no dependen en ningún momento de un parámetro como $t$, aunque dependan de $n$ siendo funciones de ella, recordando la naturaleza de $n$ podemos seguir diciendo que $B$ y $\varphi$ son constantes.
+
+Usando los resultados en rojo para $B$ y $\varphi$, transformadas en función de $n$ y teniendo que $A = 0$, la solución particular $Z_p$ es:
+\begin{equation*}
+    Z_p = \sum_{\mathrm{impar}}^{\infty} m\frac{\pi}{4} B_n e^{i\left(2nt - \frac{\pi}{2} - \varphi_n\right)}
+\end{equation*}
+Pero, en realidad lo que necesitamos es la parte real de esa expresión que por tratamientos previamente hechos ya sabemos que la obtenemos desarrollando la exponencial compleja, de esta manera volviendo a la forma original para $F(t)$, teniendo así la solución particular $x_p$, resulta:
+\begin{equation}
+    \textcolor{rojo}{x_p = m\frac{\pi}{4} \sum_{\mathrm{impar}}^{\infty} B_n \sin\left(2nt - \varphi_n\right)} \label{pro5:res4}
+\end{equation}
+
+$b)$ Para el caso 2, con:
+\begin{equation*}
+    F(t) =
+    \begin{cases}
+    1 + \frac{4t}{\pi},&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
+    1 - \frac{4t}{\pi},&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
+    \end{cases}
+\end{equation*}
+\begin{center}$F(t)=F(t+\pi)$\end{center}
+
+Gracias al caso anterior, podemos sustentarnos de esa misma explicación para este caso volviendo así mucho más corto el desarrollo, sin embargo, no tenemos la serie de Fourier para este ejercicio ya hecha por lo que es necesario calcularla, para ello nos vamos a ayudar del software \textit{DESMOS} de tal manera que conozcamos la naturaleza de la función, es decir, si es par o impar y así saber que coeficientes calcular.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.28]{fig2.png}
+\caption{Gráfica para $F(t)$ junto a su serie de Fourier. Puede verla aquí: \href{https://www.desmos.com/calculator/y9swhr0e0u}{\textit{Gráfica $F(t)$}}}
+\label{fig2}
+\end{center}
+\end{figure}
+
+En la Figura \ref{fig2} se puede ver la función $F(t)$ para este caso, junto a su serie de Fourier calculada, de ahí nos podemos dar cuenta que la serie pareciera ser primeramente par, sin embargo, el valor de $a_0$ es 0, corroborando los resultados su coeficiente $b_n$ también es igual a 0, teniendo así que a la hora de hallar el valor de $a_0$ la integral se anula. A continuación el tratamiento usando (\ref{pro2:eq1}):
+\begin{align*}
+    a_0 &= \frac{4}{\pi} \int\limits_{0}^{\sfrac{\pi}{2}} \left(1 - \frac{4t}{\pi}\right) \,dt\\
+    &= \frac{4}{\pi} \left[\int\limits_{0}^{\sfrac{\pi}{2}} \,dt - \frac{4}{\pi} \int\limits_{0}^{\sfrac{\pi}{2}} t \,dt\right]\\
+    &= \frac{4}{\pi} \left[\left(\left. t \right|_{0}^{\sfrac{\pi}{2}}\right) - \frac{4}{\pi}\left(\left.\frac{t^{2}}{2}\right|_{0}^{\sfrac{\pi}{2}}\right)\right]\\
+    &= \frac{4}{\pi} \left[\frac{\pi}{2} - \frac{\cancel{4}}{\cancel{\pi}}\left(\frac{\pi^{\cancel{2}}}{\cancel{8}}\right)\right]\\
+    &= \frac{4}{\pi} \cancel{\left[\frac{\pi}{2} - \frac{\pi}{2}\right]}\\
+    &= 0
+\end{align*}
+De esta manera, tenemos que $a_0 = b_0 = 0$, quedándonos solamente por hallar el valor de $a_n$. Usando (\ref{pro2:eq2}), resulta:
+\begin{align*}
+    a_n &= \frac{4}{\pi} \int\limits_{0}^{\sfrac{\pi}{2}} \left(1 - \frac{4t}{\pi}\right) \cos(2nt) \,dt\\
+    &= \frac{4}{\pi} \left[\int\limits_{0}^{\sfrac{\pi}{2}} \cos(2nt) \,dt - \frac{4}{\pi} \int\limits_{0}^{\sfrac{\pi}{2}} t \cos(2nt) \,dt\right]
+\end{align*}
+Sustituyendo al usar integración por partes:
+\begin{align*}
+    u&=t          &  dv&=\cos\left(2nt\right) dt\\
+    du&=dt         &  v&=\frac{1}{2n} \sin\left(2nt\right)
+\end{align*}
+Desarrollando esta integral por separado:
+\begin{gather*}
+    \int\limits_{0}^{\sfrac{\pi}{2}} t \cos(2nt) \,dt\\
+    \left[\frac{t}{2n} \sin\left(2nt\right) - \frac{1}{2n} \int \sin\left(2nt\right) dt\right]_{0}^{\sfrac{\pi}{2}}\\
+    \left[\frac{t}{2n} \sin\left(2nt\right) - \frac{1}{2n} \left(-\frac{1}{2n}\cos(2nt)\right)\right]_{0}^{\sfrac{\pi}{2}}\\
+    \left[\frac{t}{2n} \sin\left(2nt\right) + \frac{1}{4n^{2}} \cos(2nt)\right]_{0}^{\sfrac{\pi}{2}}
+\end{gather*}
+Evaluando en los límites de integración y operando resulta:
+\begin{equation*}
+    \int\limits_{0}^{\sfrac{\pi}{2}} t \cos(2nt) \,dt = \frac{(-1)^{n}-1}{4n^{2}}
+\end{equation*}
+Reemplazando lo obtenido en el desarrollo del coeficiente:
+\begin{align*}
+    a_n &= \frac{4}{\pi} \left[\cancel{\left(\left.\frac{1}{2n}\sin(2nt)\right|_{0}^{\sfrac{\pi}{2}}\right)} - \frac{\cancel{4}}{\pi}\left(\frac{(-1)^{n}-1}{\cancel{4}n^{2}}\right)\right]\\
+    &= \frac{4}{\pi} \left[-\frac{(-1)^{n}-1}{n^{2}\pi}\right]\\
+    &= \frac{4\left(1-(-1)^{n}\right)}{n^{2}\pi^{2}}
+\end{align*}
+Teniendo el valor de $a_n$, la serie de Fourier para $F(t)$ es:
+\begin{equation}
+    F(t) = \sum_{n=1}^{\infty} \frac{4\left(1-(-1)^{n}\right)}{n^{2}\pi^{2}} \cos(2nt) \label{pro5:res5}
+\end{equation}
+Para este caso, no es necesario colocar la función de la forma usada en el caso anterior, ya que ese tratamiento se realiza por la facilidad de transformación del coseno como exponencial compleja. Por tanto podemos expresar directamente la parte compleja para $F(t)$ como:
+\begin{equation}
+    Z(t) = \sum_{n=1}^{\infty} \frac{4\left(1-(-1)^{n}\right)}{n^{2}\pi^{2}} e^{i2nt} \label{pro5:res6}
+\end{equation}
+Suponiendo el mismo anzats que del caso anterior y haciendo las derivadas, resulta:
+\begin{align*}
+    Z_p &= A + \sum_{n=1}^{\infty} Be^{i\left(2nt - \varphi\right)}\\
+    \dot{Z_p} &= \sum_{n=1}^{\infty} i2nB e^{i\left(2nt - \varphi\right)}\\
+    \ddot{Z_p} &= \sum_{n=1}^{\infty} -4n^{2}B^{2} e^{i\left(2nt - \varphi\right)}
+\end{align*}
+Reemplazando en la ecuación diferencial, desarrollando y usando (\ref{pro5:res6}):
+
+\end{multicols}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+
+\begin{gather*}
+    \sum_{n=1}^{\infty} -4n^{2}B^{2} e^{i\left(2nt - \varphi\right)} + \lambda\left(\sum_{n=1}^{\infty} i2nB e^{i\left(2nt - \varphi\right)}\right) + \omega_{0}^{2}\left(A + \sum_{n=1}^{\infty} B e^{i\left(2nt - \varphi\right)}\right) = \frac{1}{m} Z(t)\\
+    \left[\sum_{n=1}^{\infty} e^{i\left(2nt\right)}e^{-\varphi} \left(-4n^{2}B^{2} + \lambda i2nB + \omega_{0}^{2} B\right) \right] + \omega_{0}^{2} A = \frac{1}{m} \left(\sum_{n=1}^{\infty} \frac{4\left(1-(-1)^{n}\right)}{n^{2}\pi^{2}} e^{i2nt}\right)
+\end{gather*}
+\begin{center}
+    Si igualamos las componentes similares, obtenemos qué:
+\end{center}
+\begin{gather*}
+    \omega_{0}^{2} A = 0 \Longrightarrow A = 0\\
+    e^{-\varphi} \left(-4n^{2}B^{2} + \lambda i2nB + \omega_{0}^{2} B\right) = \frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}}
+\end{gather*}
+\begin{center}
+    Desarrollando lo obtenido para $B$ y para $\varphi$, resulta:
+\end{center}
+\begin{gather*}
+    \frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}} = e^{-\varphi} \left(-4n^{2}B^{2} + \lambda i2nB + \omega_{0}^{2} B\right)\\
+    \frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}} e^{\varphi} = B\left(-4n^{2} + \omega_{0}^{2}\right) + i\left(2nB\lambda\right)\\
+    \frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}} \left(\cos(\varphi) + i\sin(\varphi)\right) = B\left(-4n^{2} + \omega_{0}^{2}\right) + i\left(2nB\lambda\right)
+\end{gather*}
+\begin{center}
+    Si se iguala la parte real con la compleja en ambas partes, se genera el siguiente sistema de ecuaciones:
+\end{center}
+\begin{gather*}
+    \begin{cases}
+    \frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}} \cos(\varphi) = B\left(-4n^{2} + \omega_{0}^{2}\right) & (1)\\
+    \frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}} \sin(\varphi) = 2nB\lambda & (2)
+    \end{cases}
+\end{gather*}
+\begin{center}
+    Usando (2) en (1):
+\end{center}
+\begin{gather*}
+    \frac{\cancel{\frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}}}}{\cancel{\frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}}}} \tan(\varphi) = \frac{2n\cancel{B}\lambda}{\cancel{B} \left(-4n^{2} + \omega_{0}^{2}\right)} \Longrightarrow \textcolor{rojo}{\varphi_n = \arctan\left(\frac{2n\lambda}{-4n^{2} + \omega_{0}^{2}}\right)}
+\end{gather*}
+\begin{center}
+    Usando $(2)^{2}$ + $(1)^{2}$:
+\end{center}
+\begin{align*}
+    \left(\frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}}\right)^{2} \left(\cancel{\sin^{2}(\varphi) + \cos^{2}(\varphi)}\right) &= \left(2nB\lambda\right)^{2} + \left(B\left(-4n^{2} + \omega_{0}^{2}\right)\right)^{2}\\
+    \frac{16\left(1-(-1)^{n}\right)^{2}}{m^{2}n^{4}\pi^{4}} &= 4n^{2}\lambda^{2} B^{2} + B^{2}\left(-4n^{2} + \omega_{0}^{2}\right)^{2}\\
+    \frac{16\left(1-(-1)^{n}\right)^{2}}{m^{2}n^{4}\pi^{4}} &= B^{2} \left[4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}\right]\\
+    B^{2} &= \left(\frac{16\left(1-(-1)^{n}\right)^{2}}{m^{2}n^{4}\pi^{4}}\right) \left(\frac{1}{4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}}\right)\\
+    B &= \frac{4\left(1-(-1)^{n}\right)}{mn^{2}\pi^{2}} \left(\frac{1}{\sqrt{4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}}}\right)
+\end{align*}
+\begin{center}
+    Para este caso, $B$ puede ser reescrito como $B_n$ siendo netamente función de $n$, por tanto:
+\end{center}
+\begin{gather*}
+    B = m\frac{\pi^{2}}{4} B_n
+\end{gather*}\
+\begin{center}
+    donde,
+\end{center}
+\begin{gather*}
+    \textcolor{rojo}{B_n = \frac{1-(-1)^{n}}{n^{2} \sqrt{4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}}}}
+\end{gather*}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+
+\begin{multicols}{2}
+
+Tras realizado el tratamiento mostrado, tenemos los valores para $B$ y $\varphi$, nuevamente constantes y sus transformadas en función netamente de $n$. De esta manera, reemplazando para $Z_p$:
+\begin{equation*}
+    Z_p = \sum_{n=1}^{\infty} m\frac{\pi^{2}}{4} B_n e^{i\left(2nt - \varphi_n\right)}
+\end{equation*}
+Pero, como necesitamos es su parte real, se desarrolla la exponencial compleja lo que resulta:
+\begin{equation}
+    \textcolor{rojo}{x_p = m\frac{\pi^{2}}{4} \sum_{n=1}^{\infty} B_n \cos(2nt - \varphi_n)} \label{pro5:res7}
+\end{equation}
+
+Finalizando con el ejercicio, a continuación se expresan ambas soluciones generales para las ecuaciones diferenciales no homogéneas para cada caso.
+
+\end{multicols}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+
+\subsubsection*{Caso 1:}
+
+\begin{equation*}
+    \frac{d^{2}x}{dt^{2}} + \lambda \frac{dx}{dt} + \omega_{0}^{2}x = \frac{1}{m}F(t) \textup{ con }
+    F(t) = F(t+\pi) =
+    \begin{cases}
         -1,&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
         1,&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
-        \end{cases}
-    \end{equation*}
-    \begin{center}$F(t)=F(t+\pi)$\end{center}
-    Que si nos remitimos nuevamente a la tarea anterior (\textit{``Tarea 1: funciones periódicas y series trigonométricas de Fourier''}), sabemos ya la serie trigonométrica de Fourier para $F(t)$ es:
-    \begin{equation}
-        F(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} \sin\left(2nt\right)\label{pro5:eq3}
-    \end{equation}
-    Donde $a_0 = a_n = 0$ y $b_n = \frac{4}{n\pi}$. Por efecto prácticos es necesario expresar esta serie de la forma:
-    \begin{equation*}
-        F(t) = c_0 + \sum_{n=1}^{\infty} c_n \cos\left(n\omega_f t - \theta_n\right)
-    \end{equation*}
-    Donde $c_0 = \frac{a_0}{2}$, $c_n = \sqrt{a_{n}^{2} + b_{n}^{2}}$ y $\theta_n = \arctan\left(\frac{b_n}{a_n}\right)$. Que para este caso, debido a las condiciones que nos ofrece (\ref{pro5:eq3}), solo es cuestión de aplicar un desfase a la función seno de tal forma que esta sea un coseno, dicho desfase será $\theta_n = \frac{\pi}{2}$. La serie de Fourier resulta:
-    \begin{equation}
-        F(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} \cos\left(2nt - \frac{\pi}{2}\right) \label{pro5:eq4}
-    \end{equation}
-    Realizando el mismo tratamiento hecho para la solución complementaria, se va a tomar la parte compleja para (\ref{pro5:eq4}) que gracias a que está expresada con un coseno, se puede rápidamente cómo:
-    \begin{equation*}
-        Z(t) = \sum_{\mathrm{impar}}^{\infty} \frac{4}{n\pi} e^{i\left(2nt - \frac{\pi}{2}\right)}
-    \end{equation*}
-    Una pequeña aclaración, cuando se está usando $Z(t)$ como la parte compleja o la función compleja equivalente para $F(t)$, en ningún momento se está hablando de tomar eso como si fuese una solución ya para la ecuación, es solo notación, que quizá más adelante tenga alguna equivalencia pero nuevamente, es solo notación.
+    \end{cases}
+\end{equation*}
 
-    Partiendo de ahí, usando el método de los coeficientes indeterminados, si tenemos una forma para $Z(t)$ así, se espera que las soluciones sean iguales o por lo menos equivalentes, por lo que se va a suponer un $Z_p$ el cual sea solución. Para demostrar que es solución, se derivará dos veces y reemplazará en la ecuación diferencial no homogénea asociada y se buscarán las condiciones para que se cumpla que sea solución. Entonces:
-    \begin{align*}
-        Z_p &= A + \sum_{\mathrm{impar}}^{\infty} B e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\\
-        \dot{Z_p} &= \sum_{\mathrm{impar}}^{\infty} i2nB e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}\\
-        \ddot{Z_p} &= \sum_{\mathrm{impar}}^{\infty} -4n^{2}B^{2} e^{i\left(2nt - \frac{\pi}{2} - \varphi\right)}
-    \end{align*}
-    Reemplazando en la ecuación diferencial:
-\end{itemize}
+La solución de la ecuación diferencial es:
 
+\begin{equation}
+    \textcolor{rojo}{x(t) = A_0e^{-\frac{\lambda}{2}} \cos\left(\omega_a t + \alpha_a\right) + m\frac{\pi}{4} \sum_{\mathrm{impar}}^{\infty} B_n \sin\left(2nt - \varphi_n\right)} \label{pro5:resf1}
+\end{equation}
+
+Donde:
+
+\begin{equation*}
+    B_n = n\left(4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}\right)^{-\sfrac{1}{2}} \textup{, y }\varphi_n = \arctan\left(\frac{2n\lambda}{-4n^{2} + \omega_{0}^{2}}\right)
+\end{equation*}
+
+\subsubsection*{Caso 2:}
+
+\begin{equation*}
+    \frac{d^{2}x}{dt^{2}} + \lambda \frac{dx}{dt} + \omega_{0}^{2}x = \frac{1}{m}F(t) \textup{ con }
+    F(t) = F(t+\pi) =
+    \begin{cases}
+        1 + \frac{4t}{\pi},&\text{si } \sfrac{-\pi}{2} \leq t < 0\\
+        1 - \frac{4t}{\pi},&\text{si } \hspace{18pt} 0 \leq t < \sfrac{\pi}{2}
+    \end{cases}
+\end{equation*}
+
+La solución de la ecuación diferencial es:
+
+\begin{equation}
+    \textcolor{rojo}{x(t) = A_0e^{-\frac{\lambda}{2}} \cos\left(\omega_a t + \alpha_a\right) + m\frac{\pi^{2}}{4} \sum_{n=1}^{\infty} B_n \cos(2nt - \varphi_n)} \label{pro5:resf2}
+\end{equation}
+
+Donde:
+
+\begin{equation*}
+    B_n = \frac{1-(-1)^{n}}{n^{2} \sqrt{4n^{2}\lambda^{2} + \left(-4n^{2} + \omega_{0}^{2}\right)^{2}}} \textup{, y }\varphi_n = \arctan\left(\frac{2n\lambda}{-4n^{2} + \omega_{0}^{2}}\right)
+\end{equation*}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+
+\begin{multicols}{2}
+
+\begin{enumerate}[leftmargin=15pt]
+    \item[$2$.] Averiguar como se calcula la transformada de Laplace de la función periódica $F(t)$ de periodo $T_{F}$, tal que $F(t) =F(t+T_{F})$. Luego calcule la Transformada de Laplace de la función periódica  del caso 1 del problema anterior, $\mathscr{L}\{F(t)\}$:
+    \[ F(t) = 
+      \left \{
+        \begin{aligned}
+          -1 &,\ \text{si} \ -\pi/2 \le t < 0\\
+          1 &,\ \text{si} \ 0 \le t < \pi/2 \\
+        \end{aligned}
+      \right .
+    \] 
+    \[y\]
+    \[
+    F(t) = F(t+\pi)\]
+    
+    ¿Cómo se resolvería la ecuación diferencial  \[\frac{d^2x}{dt^2}+\lambda\frac{dx}{dt}+\omega_{0}^2x= \frac{1}{m}F(t) \] usando la técnica de la transformada de Laplace?. ¡Realice una propuesta!
+\end{enumerate}
+    
 \end{multicols}
 
 \end{document}
