@@ -6,8 +6,271 @@
 
 \begin{multicols}{2}
 
+\begin{center}\section*{Operaciones entre vectores}\end{center}
+
+A continuación, algunas operaciones e identidades entre vectores:
+\begin{gather}
+    \mathbf{a} \times \left(\mathbf{b} \times \mathbf{c}\right) = \left(\mathbf{a} \cdot \mathbf{c}\right)\mathbf{b} - \left(\mathbf{a} \cdot \mathbf{b}\right)\mathbf{c} \label{vec:1}\\
+    \mathbf{\nabla} \times \mathbf{\nabla} \psi = 0 \label{vec:2}\\
+    \mathbf{\nabla} \cdot \left(\mathbf{\nabla} \times \mathbf{a}\right) = 0 \label{vec:3}\\
+    \mathbf{\nabla} \times \left(\mathbf{\nabla} \times \mathbf{a}\right) = \mathbf{\nabla} \left(\mathbf{\nabla} \cdot \mathbf{a}\right) - \mathbf{\nabla}^{2} \mathbf{a} \label{vec:4}
+\end{gather}
+
+\section*{Ejercicio:}
+
+Considere el siguiente conjunto de ecuaciones de Maxwell modificadas, para cargas y corrientes en el vacío:
+\begin{align}
+    &\mathbf{\nabla} \cdot \mathbf{E} = 4\pi \rho - \alpha^{2} \phi \label{ecu:1} \\ 
+    &\mathbf{\nabla} \times \mathbf{E} + \frac{1}{c} \frac{\partial \mathbf{B}}{\partial t} = 0 \label{ecu:2} \\ 
+    &\mathbf{\nabla} \cdot \mathbf{B} = 0  \label{ecu:3} \\
+    &\mathbf{\nabla} \times \mathbf{B} - \frac{1}{c} \frac{\partial \mathbf{E}}{\partial t} = \frac{4\pi}{c} \mathbf{J} - \alpha^{2} \mathbf{A} \label{ecu:4}
+\end{align}
+con $\alpha$ constante.
+
+\begin{itemize}[leftmargin=15pt]
+    \item[$a)$] ¿Es cierto todavía el campo eléctrico (\ref{ecu:5}) y el campo magnético (\ref{ecu:6})?
+    \begin{align}
+        &\mathbf{E} = - \mathbf{\nabla} \phi - \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t} \label{ecu:5}\\
+        &\mathbf{B} = \mathbf{\nabla} \times \mathbf{A} \label{ecu:6}
+    \end{align}
+    \item[$b)$] ¿Las nuevas ecuaciones son invariantes bajo transformaciones gauge de $\mathbf{A}$ y $\phi$?
+    \item[$c)$] Demuestre que la conservación de carga convierte en \textit{necesaria} la condición de Lorentz:
+    \begin{equation*}
+        \mathbf{\nabla} \cdot \mathbf{A} + \frac{1}{c} \frac{\partial \phi}{\partial t} = 0 
+    \end{equation*}
+    Si no se impone la condición de Lorentz entonces el modelo permite la creación de carga. ¿Cuál es la rata de generación de carga?
+    \item[$d)$] Obtenga las nuevas ecuaciones de onda para $\mathbf{A}$ y $\phi$. ¿Son invariantes gauge este par de ecuaciones?
+\end{itemize}
+
+\subsubsection*{Solución:}
+
+Para la solución de los ítems a continuación se tendrán en cuenta diferentes operaciones entre vectores referenciadas al principio del documento.
+
+$a)$ Para demostrar que todavía es cierto expresar los campos eléctrico y magnético de las formas (\ref{ecu:5}) y (\ref{ecu:6}), nos vamos a ir a las ecuaciones de Maxwell modificadas para este caso y a realizar una serie de tratamientos, por tanto:
+
+Para el campo magnético $\mathbf{B}$, usando la ecuación (\ref{ecu:3}), la cual nos dice que la divergencia del campo magnético es igual a 0, si usamos (\ref{vec:3}), podemos ver que la divergencia de un rotor es igual a 0 también, conociendo la naturaleza del rotor siendo un producto vectorial, es decir, siendo en esencia un vector podemos decir qué:
+\begin{align*}
+    \mathbf{\nabla} \cdot \mathbf{B} = 0 \Rightarrow \mathbf{\nabla} \cdot \left(\mathbf{\nabla} \times \mathbf{A}\right) = 0
+\end{align*}
+Donde $\mathbf{A}$ para nuestro caso no es un vector arbitrario, si no es el \textit{vector potencial} del campo. De esta manera, podemos denotar que \textcolor{rojo}{$\mathbf{B} = \mathbf{\nabla} \times \mathbf{A}$}, demostrando así (\ref{ecu:6}).
+
+Para el campo eléctrico $\mathbf{E}$, si reemplazamos la igualdad ya demostrada, es decir, (\ref{ecu:6}) en la ecuación (\ref{ecu:2}), resulta:
+\begin{align*}
+    \mathbf{\nabla} \times \mathbf{E} + \frac{1}{c} \frac{\partial}{\partial t}\left(\mathbf{\nabla} \times \mathbf{A}\right) &= 0\\
+    \mathbf{\nabla} \times \mathbf{E} + \frac{1}{c} \left(\mathbf{\nabla} \times \frac{\partial \mathbf{A}}{\partial t}\right) &= 0\\
+    \mathbf{\nabla} \times \left[\mathbf{E} + \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t}\right] &= 0
+\end{align*}
+Realizando la misma suposición con base en la identidad hecha con el campo magnético solo que esta vez se usará (\ref{vec:3}), ecuación que nos dice que el rotor de la divergencia de un escalar es igual a 0. Si asumimos por la naturaleza del argumento contenido en los corchetes cuadrados que es la divergencia de un escalar, es correcto decir que:
+\begin{align*}
+    \mathbf{\nabla} \times \left[\mathbf{E} + \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t}\right] = 0 \Rightarrow \mathbf{\nabla} \times \left[\mathbf{\nabla}\phi\right] = 0
+\end{align*}
+Donde nuevamente $\phi$ no es una constante arbitraria, dentro de nuestro contexto será conocido como el \textit{potencial escalar} del campo. De esta manera, podemos denotar que
+\begin{align*}
+    \mathbf{E} + \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t} = -\mathbf{\nabla}\phi \Rightarrow \textcolor{rojo}{\mathbf{E} = -\mathbf{\nabla}\phi - \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t}}
+\end{align*}
+demostrando así (\ref{ecu:5}).
+
+$b)$ Teniendo los ya mencionados potenciales de campo $\mathbf{A}$ y $\phi$, vectorial y escalar respectivamente; y también conociendo las formas de $\mathbf{B}$ y $\mathbf{E}$ en términos de los potenciales. Los campos están determinados por las ecuaciones de Maxwell y por las condiciones de frontera, cosa que no sucede con los potenciales, ya que estos no están determinados por los campos, de esta manera se puede hacer una recalibración, también llamada como \textit{transformaciones gauge} para ellos de la forma:
+
+Para $\mathbf{A}$, podemos reescribirla como $\mathbf{A}^{\prime} = \mathbf{A} + \mathbf{\nabla}\Lambda$, de esta forma, si damos la equivalencia directa con una transformación gauge también en, por ejemplo, el campo magnético $\mathbf{B}$, resulta:
+\begin{align*}
+    \mathbf{B}^{\prime} = \mathbf{\nabla} \times \mathbf{A}^{\prime} = \mathbf{\nabla} \times \left(\mathbf{A} + \mathbf{\nabla}\Lambda\right)
+\end{align*}
+Que distribuyendo el rotor de la parte derecha de la igualdad y usando la identidad (\ref{vec:2}):
+\begin{align*}
+    \mathbf{B}^{\prime} = \mathbf{\nabla} \times \mathbf{A}^{\prime} = \mathbf{\nabla} \times \mathbf{A} = \mathbf{B}
+\end{align*}
+O mejor dicho, $\mathbf{B}^{\prime} = \mathbf{B}$, demostrando así que la transformación gauge para $\mathbf{A}$ es invariante para el campo magnético.
+
+Ya sabiendo que ambos potenciales no están determinados por los campos, se realizará el mismo proceso para el potencial escalar $\phi$, donde su transformación gauge será: $\phi^{\prime} = \phi + \lambda$. Que es necesaria para demostrar la invariancia del campo eléctrico $\mathbf{E}$.
+
+Haciendo la equivalencia de las dos transformaciones gauge de los potenciales para una transformación gauge $\mathbf{E}^{\prime}$:
+\begin{align*}
+    \mathbf{E}^{\prime} &= -\mathbf{\nabla} \phi^{\prime} - \frac{1}{c} \frac{\partial \mathbf{A}^{\prime}}{\partial t}\\
+    &= -\mathbf{\nabla} \left(\phi + \lambda\right) - \frac{1}{c} \frac{\partial}{\partial t} \left(\mathbf{A} + \mathbf{\nabla}\Lambda\right)\\
+    &= -\mathbf{\nabla} \phi - \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t} - \mathbf{\nabla} \left(\lambda + \frac{1}{c} \frac{\partial \Lambda}{\partial t}\right)\\
+    &= \mathbf{E} - \mathbf{\nabla} \left(\lambda + \frac{1}{c} \frac{\partial \Lambda}{\partial t}\right)
+\end{align*}
+Sin embargo, para este caso no es tan directa la invariancia de $\mathbf{E}$ frente a su transformación gauge, ya que para cumplir que $\mathbf{E} = \mathbf{E}^{\prime}$,
+\begin{align*}
+    \lambda = - \frac{1}{c} \frac{\partial \Lambda}{\partial t}
+\end{align*}
+y así demostrar invariancia.
+
+Finalmente, las \textbf{transformaciones gauge} de $\mathbf{A}$ y $\phi$, invariantes ante los campos (\ref{ecu:5}) y (\ref{ecu:6}), son:
+\begin{align*}
+    \textcolor{rojo}{\mathbf{A}^{\prime} = \mathbf{A} + \mathbf{\nabla} \Lambda,~~~\phi^{\prime} = \phi - \frac{1}{c} \frac{\partial \Lambda}{\partial t}}
+\end{align*}
+
+$c)$ Para demostrar que la conservación de carga convierte en necesaria la condición de Lorentz, tenemos que citar una ecuación llamada la \textit{ecuación de continuidad} la cual describe la generación de carga y es:
+\begin{equation}
+    \mathbf{\nabla} \cdot \mathbf{J} + \frac{\partial \rho}{\partial t} = 0 \label{ecu:7}
+\end{equation}
+De esta forma, usando (\ref{ecu:1}) siendo la única ecuación que nos relaciona el potencial $\phi$ con la densidad de carga $\rho$. Despejando $\phi$:
+\begin{align*}
+    \mathbf{\nabla} \cdot \mathbf{E} &= 4\pi \rho - \alpha^{2} \phi\\
+    \phi &= \frac{4\pi \rho - \mathbf{\nabla} \cdot \mathbf{E}}{\alpha^{2}}
+\end{align*}
+Si ahora reemplazamos este valor en la condición de Lorentz, entonces:
+\begin{align*}
+    \mathbf{\nabla} \cdot \mathbf{A} + \frac{1}{c} \frac{\partial \left(\frac{4\pi \rho - \mathbf{\nabla} \cdot \mathbf{E}}{\alpha^{2}}\right)}{\partial t} &= 0\\
+    \mathbf{\nabla} \cdot\mathbf{A} + \frac{1}{c} \left[\frac{4\pi}{\alpha^{2}} \frac{\partial \rho}{\partial t} - \frac{1}{\alpha^{2}}\left(\mathbf{\nabla}\cdot\frac{\partial \mathbf{E}}{\partial t}\right)\right] &= 0
+\end{align*}
+Ahora realizando el tratamiento para despejar la derivada parcial de la densidad de carga con respecto al tiempo, resulta esta finalmente:
+\begin{align*}
+    - \frac{\partial \rho}{\partial t} = \frac{\alpha^{2}c}{4\pi} \mathbf{\nabla} \cdot \mathbf{A} - \frac{1}{4\pi} \left(\mathbf{\nabla}\cdot\frac{\partial \mathbf{E}}{\partial t}\right)
+\end{align*}
+Si ahora despejamos $\mathbf{\nabla} \cdot \mathbf{J}$ de (\ref{ecu:7}):
+\begin{align*}
+    \mathbf{\nabla} \cdot \mathbf{J} = - \frac{\partial \rho}{\partial t}
+\end{align*}
+Por tanto:
+\begin{align*}
+    \mathbf{\nabla} \cdot \mathbf{J} = \frac{\alpha^{2}c}{4\pi} \mathbf{\nabla} \cdot \mathbf{A} - \frac{1}{4\pi} \left(\mathbf{\nabla}\cdot\frac{\partial \mathbf{E}}{\partial t}\right)
+\end{align*}
+Teniendo la divergencia de la corriente en esos términos, ahora se va a utilizar la ecuación (\ref{ecu:4}), donde el objetivo es extraer $\mathbf{J}$ ya que es la única ecuación de Maxwell que la posee. Realizando el tratamiento mencionado:
+\begin{align*}
+    \mathbf{\nabla} \times \mathbf{B} - \frac{1}{c} \frac{\partial \mathbf{E}}{\partial t} &= \frac{4\pi}{c} \mathbf{J} - \alpha^{2} \mathbf{A}\\
+    \mathbf{J} &= \frac{c}{4\pi} \left(\mathbf{\nabla} \times \mathbf{B}\right) - \frac{1}{4\pi} \frac{\partial \mathbf{E}}{\partial t} + \frac{\alpha^{2} c}{4\pi} \mathbf{A}
+\end{align*}
+Donde si aplicamos la divergencia en ambos lados de la igualdad, gracias a identidades de los vectores vistas previamente unos términos se cancelan y demás, por tanto, la divergencia de $\mathbf{J}$ es:
+\begin{align*}
+    \mathbf{\nabla} \cdot \mathbf{J} = \frac{\alpha^{2}c}{4\pi} \mathbf{\nabla} \cdot \mathbf{A} - \frac{1}{4\pi} \left(\mathbf{\nabla}\cdot\frac{\partial \mathbf{E}}{\partial t}\right)
+\end{align*}
+Donde claramente es la misma que obtuvimos tras reemplazar en la condición de Lorentz, lo que convierte en necesaria que esta esté, ya que si no es así la ecuación de la continuidad no sería cierta.
+
+$d)$ Para hallar las ecuaciones de onda para $\mathbf{A}$ y $\phi$, si reemplazamos los valores de los campos en términos de sus potenciales en las ecuaciones (\ref{ecu:1}) y (\ref{ecu:4}), resulta:
+
+Para la divergencia de $\mathbf{E}$:
+\begin{align*}
+    \mathbb{\nabla} \cdot \left(-\mathbf{\nabla}\phi - \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t}\right) &= 4\pi \rho - \alpha^{2} \phi\\
+    \mathbf{\nabla}^{2} \phi + \frac{1}{c} \frac{\partial}{\partial t} \left(\mathbf{\nabla} \cdot \mathbf{A}\right) &= \alpha^{2} \phi - 4\pi \rho
+\end{align*}
+Realizando el mismo proceso pero en este caso para el rotor de $\mathbf{B}$:
+\begin{align*}
+    \mathbf{\nabla} \times \left(\mathbf{\nabla} \times \mathbf{A}\right) + \frac{1}{c} \frac{\partial}{\partial t}\left( \mathbf{\nabla} \phi + \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t}\right) = \frac{4\pi}{c} \mathbf{J} - \alpha^{2} \mathbf{A}
+\end{align*}
+Usando (\ref{vec:4}) y desarrollando la ecuación:
+
+\end{multicols}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+\vspace{-0.75cm}
+\begin{align*}
+    \mathbf{\nabla} \times \left(\mathbf{\nabla} \times \mathbf{A}\right) + \frac{1}{c} \frac{\partial}{\partial t}\left( \mathbf{\nabla} \phi + \frac{1}{c} \frac{\partial \mathbf{A}}{\partial t}\right) &= \frac{4\pi}{c} \mathbf{J} - \alpha^{2} \mathbf{A}\\
+    \mathbf{\nabla}\left(\mathbf{\nabla} \cdot \mathbf{A}\right) - \mathbf{\nabla}^{2}\mathbf{A} + \frac{1}{c} \left(\mathbf{\nabla} \frac{\partial \phi}{\partial t}\right) + \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{A}}{\partial t^{2}} &= \frac{4\pi}{c} \mathbf{J} - \alpha^{2} \mathbf{A}\\
+    \mathbf{\nabla}\left(\mathbf{\nabla} \cdot \mathbf{A}\right) - \mathbf{\nabla}^{2}\mathbf{A} + \frac{1}{c} \left(\mathbf{\nabla} \frac{\partial \phi}{\partial t}\right) + \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{A}}{\partial t^{2}} + \alpha^{2} \mathbf{A} &= \frac{4\pi}{c} \mathbf{J}
+\end{align*}
+\begin{center}factorizando el gradiente,\end{center}
+\vspace{-0.3cm}
+\begin{align*}
+    \mathbf{\nabla}\left(\mathbf{\nabla} \cdot \mathbf{A}\right) - \mathbf{\nabla}^{2}\mathbf{A} + \frac{1}{c} \left(\mathbf{\nabla} \frac{\partial \phi}{\partial t}\right) + \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{A}}{\partial t^{2}} + \alpha^{2} \mathbf{A} &= \frac{4\pi}{c} \mathbf{J}\\
+    \mathbf{\nabla} \left(\textcolor{purple}{\mathbf{\nabla} \cdot \mathbf{A} + \frac{1}{c} \frac{\partial \phi}{\partial t}}\right) - \mathbf{\nabla}^{2} \mathbf{A} + \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{A}}{\partial t^{2}} + \alpha^{2} \mathbf{A} &= \frac{4\pi}{c} \mathbf{J}
+\end{align*}
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+
+\begin{multicols}{2}
+
+Donde la expresión que está de color morado representa el \textit{gauge de Lorentz}, visto ya previamente e igualado a 0 para dar condición, por ende, lo podemos eliminar de la ecuación resultando:
+\begin{align*}
+    \mathbf{\nabla}^{2} \mathbf{A} - \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{A}}{\partial t^{2}} = \alpha^{2} \mathbf{A} - \frac{4\pi}{c} \mathbf{J}
+\end{align*}
+Obteniendo así la ecuación de onda para $\mathbf{A}$.
+
+Pero, todavía falta hallar la ecuación de onda para $\phi$, para esto nos vamos a remitir al gauge de Lorentz, el cual puede ser reescrito como:
+\begin{align*}
+    \mathbf{\nabla} \cdot \mathbf{A} + \frac{1}{c} \frac{\partial \phi}{\partial t} = 0 \Rightarrow \mathbf{\nabla} \cdot \mathbf{A} = - \frac{1}{c} \frac{\partial \phi}{\partial t}
+\end{align*}
+Reemplazando la divergencia de $\mathbf{A}$ en el primer tratamiento que se realizó, es decir, en la divergencia de $\mathbf{E}$, desarrollando:
+\begin{align*}
+    \mathbf{\nabla}^{2} \phi + \frac{1}{c} \frac{\partial}{\partial t} \left(- \frac{1}{c} \frac{\partial \phi}{\partial t}\right) &= \alpha^{2} \phi - 4\pi \rho\\
+    \mathbf{\nabla}^{2} \phi - \frac{1}{c^{2}} \frac{\partial^{2} \phi}{\partial t^{2}} &= \alpha^{2} \phi - 4\pi \rho
+\end{align*}
+De esta manera, las ecuaciones de onda tanto para $\mathbf{A}$ como para $\phi$ son:
+\begin{gather*}
+    \textcolor{rojo}{\mathbf{\nabla}^{2} \mathbf{A} - \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{A}}{\partial t^{2}} = \alpha^{2} \mathbf{A} - \frac{4\pi}{c} \mathbf{J}}\\
+    \textcolor{rojo}{\mathbf{\nabla}^{2} \phi - \frac{1}{c^{2}} \frac{\partial^{2} \phi}{\partial t^{2}} = \alpha^{2} \phi - 4\pi \rho}
+\end{gather*}
+Donde gracias a los gauge demostrados en el ítem ``$b)$'', los cuales gracias a la libertad de los potenciales como agentes matemáticos implica a que esas calibraciones son correctas siempre para cualquier caso e invariantes para el gauge de Lorentz.
+
+
+
 
 
 \end{multicols}
 
 \end{document}
+
+$a)$ Si reemplazamos (\ref{ecu:6}) en (\ref{ecu:2}), podemos hallar el valor del para el campo eléctrico, por tanto:
+\begin{align*}
+    \nabla \times \vec{E} + \frac{1}{c} \left[\frac{\partial}{\partial t} \left(\nabla \times \vec{A} \right)\right] = 0
+\end{align*}
+La cual puede ser reescrita como:
+\begin{align*}
+    \nabla \times \vec{E} + \frac{1}{c} \left[\nabla \times \left(\frac{\partial \vec{A}}{\partial t}\right)\right] = 0
+\end{align*}
+Si se factoriza el rotor:
+\begin{align*}
+    \nabla \times \left[\vec{E} + \frac{1}{c} \frac{\partial \vec{A}}{\partial t}\right] = 0
+\end{align*}
+Usando la ecuación (\ref{vec:1}), podemos reemplazar el 0 a la derecha del igual y eliminar los rotores para cada parte, por tanto:
+\begin{align*}
+    \nabla \times \left[\vec{E} + \frac{1}{c} \frac{\partial \vec{A}}{\partial t}\right] &= \nabla \times \nabla \phi\\
+    \vec{E} + \frac{1}{c} \frac{\partial \vec{A}}{\partial t} &= -\nabla \phi
+\end{align*}
+Donde $\nabla \phi$ se puede escribir negativo o positivo debido a que independientemente de va a valer 0, para el caso de la demostración, es requerido que sea negativo. Finalmente resulta el campo eléctrico:
+\begin{equation*}
+    \textcolor{rojo}{\vec{E} = -\nabla \phi - \frac{1}{c} \frac{\partial \vec{A}}{\partial t}}
+\end{equation*}
+La cual es claramente la ecuación (\ref{ecu:5}), de esta manera, queda demostrado que todavía esas expresiones para el campo eléctrico y magnético son esas, debido a que ya se demostró que con una podemos llegar a la otra lo que por linealidad podemos hacer el tratamiento opuesto para demostrar en ese caso el campo magnético con el eléctrico.
+$b)$ Para este caso, si reemplazamos los campos eléctrico y magnético expresados en (\ref{ecu:5}) y en (\ref{ecu:6}), en la ecuación (\ref{ecu:4}), desarrollando solo la parte de la izquierda del igual, resulta:
+\begin{align*}
+    \nabla \times \left(\nabla \times \vec{A}\right) - \frac{1}{c} \frac{\partial}{\partial t} \left(- \nabla \phi - \frac{1}{c} \frac{\partial \vec{A}}{\partial t}\right)
+\end{align*}
+Usando (\ref{vec:2}) se puede desarrollar el triple producto vectorial como:
+\begin{align*}
+    \nabla \times \left(\nabla \times \vec{A}\right) &= \left(\nabla \cdot \vec{A}\right)\nabla - \left(\cancel{\nabla \cdot \nabla}\right)\vec{A}\\
+    &= \nabla\left(\nabla \cdot \vec{A}\right) - \nabla^{2}\vec{A}
+\end{align*}
+Desarrollando ahora las derivadas parciales:
+\begin{gather*}
+    - \frac{1}{c} \frac{\partial}{\partial t} \left(- \nabla \phi - \frac{1}{c} \frac{\partial \vec{A}}{\partial t}\right) = \frac{1}{c} \left(\nabla \frac{\partial \phi}{\partial t}\right) + \frac{1}{c^{2}} \frac{\partial^{2} \vec{A}}{\partial t^{2}}
+\end{gather*}
+Que si reemplazamos todo esto en (\ref{ecu:4}) ya que de ahí fue de dónde se inició, resulta:
+
+\end{multicols}
+
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+\vspace{-0.75cm}
+\begin{align*}
+    \nabla \times \vec{B} - \frac{1}{c} \frac{\partial \vec{E}}{\partial t} &= \frac{4\pi}{c} \vec{J} - \alpha^{2} \vec{A}\\
+    \nabla\left(\nabla \cdot \vec{A}\right) - \nabla^{2}\vec{A} + \frac{1}{c} \left(\nabla \frac{\partial \phi}{\partial t}\right) + \frac{1}{c^{2}} \frac{\partial^{2} \vec{A}}{\partial t^{2}} &= \frac{4\pi}{c} \vec{J} - \alpha^{2} \vec{A}\\
+    \nabla\left(\nabla \cdot \vec{A}\right) - \nabla^{2}\vec{A} + \frac{1}{c} \left(\nabla \frac{\partial \phi}{\partial t}\right) + \frac{1}{c^{2}} \frac{\partial^{2} \vec{A}}{\partial t^{2}} + \alpha^{2} \vec{A} &= \frac{4\pi}{c} \vec{J}
+\end{align*}
+\begin{center}factorizando el gradiente,\end{center}
+\vspace{-0.3cm}
+\begin{align*}
+    \nabla\left(\nabla \cdot \vec{A}\right) - \nabla^{2}\vec{A} + \frac{1}{c} \left(\nabla \frac{\partial \phi}{\partial t}\right) + \frac{1}{c^{2}} \frac{\partial^{2} \vec{A}}{\partial t^{2}} + \alpha^{2} \vec{A} &= \frac{4\pi}{c} \vec{J}\\
+    \nabla \left(\textcolor{purple}{\nabla \cdot \vec{A} + \frac{1}{c} \frac{\partial \phi}{\partial t}}\right) - \nabla^{2} \vec{A} + \frac{1}{c^{2}} \frac{\partial^{2} \vec{A}}{\partial t^{2}} + \alpha^{2} \vec{A} &= \frac{4\pi}{c} \vec{J}
+\end{align*}
+\centerline{\rule{0.95\textwidth}{0.4pt}} % Línea negra
+
+\begin{multicols}{2}
+
+Donde la expresión que está de color morado, representa la calibración de Lorentz (\textit{Lorentz's gauge}), de esta manera queda demostrado que estas nuevas ecuaciones de Maxwell son invariantes.
+
+Para la calibración de Coulomb (\textit{Coulomb's gauge}), simplemente se va a hacer la divergencia al campo eléctrico (\ref{ecu:5}), lo que resulta:
+\begin{align*}
+    \vec{E} &= -\nabla \phi - \frac{1}{c} \frac{\partial \vec{A}}{\partial t}\\
+    \nabla \cdot \vec{E} &= - \nabla^{2} \phi - \frac{1}{c} \frac{\partial}{\partial t} \left(\textcolor{cyan}{\nabla \cdot \vec{A}}\right)
+\end{align*}
+La expresión de color azul representa la calibración de Coulomb, no obstante se va a manejar un tratamiento con base en esta ecuación obtenida, para ello se va a reemplazar (\ref{ecu:1}), por tanto:
+\begin{align*}
+    4\pi \rho - \alpha^{2} \phi = - \nabla^{2} \phi - \frac{1}{c} \frac{\partial}{\partial t} \left(\nabla \cdot \vec{A}\right)
+\end{align*}
+
+Cabe resaltar que estas calibraciones son dadas cuando lo mencionado se iguala a 0, esto para cumplir ciertas condiciones. Finalmente, las calibraciones de Lorentz y Coulomb para este caso son:
+\begin{gather}
+    \textcolor{rojo}{\nabla \cdot \vec{A} = - \frac{1}{c} \frac{\partial \phi}{\partial t}} \label{Lorentz} \\
+    \textcolor{rojo}{\nabla^{2} \phi + \frac{1}{c} \frac{\partial}{\partial t} \left(\nabla \cdot \vec{A}\right) = -4\pi \rho - \alpha^{2} \phi} \label{Coulomb}
+\end{gather}
