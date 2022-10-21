@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.11)  18 OCT 2022 05:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.11)  21 OCT 2022 00:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1Electro/main.tex"
-(c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea1Electro/main.tex
+**"c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea3ED/main.tex"
+(c:/Users/jsman/OneDrive - correo.udistrital.edu.co/Documentos/LaTeX/Tarea3ED/main.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-08-30> (./lib/config.tex (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -1021,14 +1021,98 @@ Package: xfrac 2022-06-22 L3 Experimental split-level fractions
 Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 (xtemplate)             line 80.
 
+) (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup9
+) (c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+ (c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+ (c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count484
+)
+\@linkdim=\dimen339
+\Hy@linkcounter=\count485
+\Hy@pagecounter=\count486
+ (c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count487
+ (c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4408.
+\c@Hy@tempcnt=\count488
+LaTeX Info: Redefining \url on input line 4746.
+\XeTeXLinkMargin=\dimen340
+ (c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count489
+\Field@Width=\dimen341
+\Fld@charsize=\dimen342
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring OFF on input line 6044.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
+\Hy@abspage=\count490
+\c@Item=\count491
+\c@Hfootnote=\count492
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (c:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
+ (c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\HyAnn@Count=\count493
+\Fld@listcount=\count494
+\c@bookmark@seq@number=\count495
+ (c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (c:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip154
 ) (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.colorbrewer.code.tex (c:/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarycolorbrewer.code.tex)))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
  (build/main.aux
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `main.aux'.
 
@@ -1045,6 +1129,10 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
@@ -1083,19 +1171,18 @@ LaTeX Info: Redefining \% on input line 3.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\Hy@linkcounter=\count484
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count485
-\scratchdimen=\dimen339
+\scratchcounter=\count496
+\scratchdimen=\dimen343
 \scratchbox=\box125
-\nofMPsegments=\count486
-\nofMParguments=\count487
+\nofMPsegments=\count497
+\nofMParguments=\count498
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count488
-\MPscratchDim=\dimen340
-\MPnumerator=\count489
-\makeMPintoPDFobject=\count490
+\MPscratchCnt=\count499
+\MPscratchDim=\dimen344
+\MPnumerator=\count500
+\makeMPintoPDFobject=\count501
 \everyMPtoPDFconversion=\toks55
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1121,9 +1208,15 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Info: Reference section=0 on input line 3.
 Package biblatex Info: Reference segment=0 on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 3.
+ (build/main.out) (build/main.out)
+\@outlinefile=\write6
+\openout6 = `main.out'.
+
  (./lib/preambulo.tex
-<fig//Escudo_UD.pdf, id=4, 625.96158pt x 619.66106pt>
+<fig//Escudo_UD.pdf, id=7, 625.96158pt x 619.66106pt>
 File: fig//Escudo_UD.pdf Graphic file (type pdf)
 <use fig//Escudo_UD.pdf>
 Package pdftex.def Info: fig//Escudo_UD.pdf  used on input line 2.
@@ -1135,33 +1228,101 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [1
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+ (c:/texlive/2022/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+))
+
+pdfTeX warning: pdflatex.exe (file ./fig//sistema.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<fig//sistema.pdf, id=8, 1084.05pt x 1445.4pt>
+File: fig//sistema.pdf Graphic file (type pdf)
+<use fig//sistema.pdf>
+Package pdftex.def Info: fig//sistema.pdf  used on input line 15.
+(pdftex.def)             Requested size: 216.80615pt x 289.07487pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./fig//diagrama.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<fig//diagrama.pdf, id=10, 1084.05pt x 1445.4pt>
+File: fig//diagrama.pdf Graphic file (type pdf)
+<use fig//diagrama.pdf>
+Package pdftex.def Info: fig//diagrama.pdf  used on input line 39.
+(pdftex.def)             Requested size: 195.12057pt x 260.16077pt.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 40.
+(c:/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig//Escudo_UD.pdf>] [2] [3] [4] (build/main.aux
-LaTeX Info: Redefining \sptext on input line 10.
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig//Escudo_UD.pdf> <./fig//sistema.pdf> <./fig//diagrama.pdf>]
+LaTeX Font Info:    Calculating math sizes for size <7.665> on input line 71.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.83249> not available
+(Font)              size <5> substituted on input line 71.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.83249> not available
+(Font)              size <5> substituted on input line 71.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.83249> not available
+(Font)              size <5> substituted on input line 71.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <3.83249> not available
+(Font)              size <5> substituted on input line 71.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <3.83249> not available
+(Font)              size <5> substituted on input line 71.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.83249> not available
+(Font)              size <5> substituted on input line 71.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.83249> not available
+(Font)              size <5> substituted on input line 71.
+
+
+Overfull \vbox (12.7444pt too high) has occurred while \output is active []
+
+ [2]
+
+Package caption Warning: Unused \captionsetup[sub] on input line 35.
+See the caption package documentation for explanation.
+
+[3] (build/main.aux
+LaTeX Info: Redefining \sptext on input line 24.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 )
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 2.90001pt have occurred.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40303 strings out of 475075
- 959709 string characters out of 5782995
- 2067536 words of memory out of 5000000
- 61072 multiletter control sequences out of 15000+600000
- 478580 words of font info for 61 fonts, out of 8000000 for 9000
+ 46407 strings out of 475075
+ 1053749 string characters out of 5782995
+ 2187721 words of memory out of 5000000
+ 67073 multiletter control sequences out of 15000+600000
+ 486361 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,11n,106p,822b,1790s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on build/main.pdf (4 pages, 1526346 bytes).
+ 104i,19n,106p,817b,1831s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on build/main.pdf (3 pages, 2239919 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
