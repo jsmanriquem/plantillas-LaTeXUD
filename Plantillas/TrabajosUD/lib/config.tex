@@ -30,6 +30,16 @@
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{xfrac}
+\usepackage[load-configurations = abbreviations]{siunitx}
+\usepackage{fix-cm}
+\usepackage{yhmath}
+\usepackage[bookmarks=true,colorlinks=true,linkcolor=black,citecolor=black,menucolor=black,urlcolor=black,hidelinks,breaklinks=true]{hyperref}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{amsfonts}
+\usepackage[bb=ams]{mathalpha}
+\usepackage{mathrsfs}
+\usepackage{xstring}
 
 \graphicspath{{fig/}}
 \addbibresource{biblio.bib}
@@ -47,3 +57,49 @@
 \definecolor{limegreen}{cmyk}{0.75,0,1,0}
 \definecolor{orange}{cmyk}{0,0.8,0.95,0}
 \definecolor{purple}{cmyk}{0.75,1,0,0}
+
+\newcommand{\uvec}[1]{~ \boldsymbol{\hat{\textbf{#1}}}}
+
+\newsavebox\foobox
+\newlength{\foodim}
+\newcommand{\slantbox}[2][0]{\mbox{%
+        \sbox{\foobox}{#2}%
+        \foodim=#1\wd\foobox
+        \hskip \wd\foobox
+        \hskip -0.5\foodim
+        \pdfsave
+        \pdfsetmatrix{1 0 #1 1}%
+        \llap{\usebox{\foobox}}%
+        \pdfrestore
+        \hskip 0.5\foodim
+}}
+\def\Laplacesymb{\slantbox[-.45]{$\mathscr{L}$}}
+\def\inverseLaplacesymb{\Laplacesymb^{-1}}
+\def\Fouriersymb{\slantbox[-.45]{$\mathscr{F}$}}
+\def\Fouriersinsymb{\Fouriersymb_{\textup{s}}}
+\def\Fouriercossymb{\Fouriersymb_{\textup{c}}}
+\def\inverseFouriersymb{\Fouriersymb^{-1}}
+
+\newcommand{\Laplace}[2]{
+    \IfEqCase{#1}{
+        {}{\Laplacesymb\left\lbrace#2\right\rbrace}
+        {i}{\inverseLaplacesymb\left\lbrace#2\right\rbrace}
+    }[\PackageError{tree}{Undefined option to tree: #1}{}]
+}
+\newcommand{\Fourier}[2]{
+    \IfEqCase{#1}{
+        {}{\Fouriersymb\left\lbrace#1\right\rbrace}
+        {i}{\inverseFouriersymb\left\lbrace#2\right\rbrace}
+        {sin}{\Fouriersinsymb\left\lbrace#2\right\rbrace}
+        {cos}{\Fouriercossymb\left\lbrace#2\right\rbrace}
+    }[\PackageError{tree}{Undefined option to tree: #1}{}]
+}
+
+\sisetup{
+  detect-family,
+  per-mode = symbol,
+  separate-uncertainty = true,
+  inter-unit-product = \cdot,
+  %output-decimal-marker = {,},
+  %exponent-product = \cdot
+}
