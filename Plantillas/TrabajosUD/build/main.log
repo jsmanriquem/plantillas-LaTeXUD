@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  8 MAR 2023 15:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  10 MAR 2023 19:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1420,7 +1420,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  104i,15n,106p,830b,1831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on build/main.pdf (2 pages, 1577431 bytes).
+Output written on build/main.pdf (2 pages, 1576954 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream

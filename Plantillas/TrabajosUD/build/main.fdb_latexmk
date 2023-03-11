@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber build/main"] 1678305621 "build/main.bcf" "build/main.bbl" "build/main" 1678305631 0
+["biber build/main"] 1678305621 "build/main.bcf" "build/main.bbl" "build/main" 1678492972 0
   "./biblio.bib" 1663098596 186 f2e2c3102cdccbf935bfcb249f47c6db ""
-  "build/main.bcf" 1678305630 106835 bb0985e6e0ab9041111ca5927a6d9b5a "pdflatex"
+  "build/main.bcf" 1678492971 106835 bb0985e6e0ab9041111ca5927a6d9b5a "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1678305627 "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/TrabajosUD/main.tex" "build/main.pdf" "main" 1678305631 0
-  "build/main.aux" 1678305630 2118 6403e00c7634160d63b26faa6070c7cd "pdflatex"
+["pdflatex"] 1678492967 "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/TrabajosUD/main.tex" "build/main.pdf" "main" 1678492972 0
+  "build/main.aux" 1678492971 2118 6403e00c7634160d63b26faa6070c7cd "pdflatex"
   "build/main.bbl" 1678305623 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
-  "build/main.out" 1678305630 864 1bdd0392c136892c761e4757d9ada4ba "pdflatex"
-  "build/main.run.xml" 1678305630 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
+  "build/main.out" 1678492971 864 1bdd0392c136892c761e4757d9ada4ba "pdflatex"
+  "build/main.run.xml" 1678492971 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1677099022 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1677094790 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1677094790 1004 54797486969f23fa377b128694d548df ""
@@ -300,7 +300,7 @@
   "fig//Escudo_UD.pdf" 1678300097 1447741 1fac6e65c19704584231d6c4c6a290e9 ""
   "fig//pollito.png" 1678300097 99819 47230b96e20865c28338837a049e3dd8 ""
   "lib/config.tex" 1678305560 3111 851f1b9c1b5439371932eb2cb59c36f2 ""
-  "lib/preambulo.tex" 1678300097 705 720a3cfe5bc5884d6f4758a3e0b63ba9 ""
+  "lib/preambulo.tex" 1678492965 702 47284a5ff06fe63b55f2ef7c549aaf1f ""
   "lib/resumen.tex" 1678300097 446 436d884a722078155238c56973982630 ""
   "main.tex" 1678305616 1468 5062b46034672bbfab2070debfcba7e1 ""
   "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/TrabajosUD/main.tex" 1678305616 1468 5062b46034672bbfab2070debfcba7e1 ""
