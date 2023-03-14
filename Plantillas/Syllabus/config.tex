@@ -1,0 +1,105 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[top=2cm,bottom=2cm,right=2cm,left=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{psfrag}
+\usepackage{pgfplots}
+\usepackage{bm}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{biblatex}
+\usepackage{csquotes}
+\usepackage{parskip}
+\usepackage{cancel}
+\usepackage{listing}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage[load-configurations = abbreviations]{siunitx}
+\usepackage{fix-cm}
+\usepackage{yhmath}
+\usepackage[bookmarks=true,colorlinks=true,linkcolor=black,citecolor=black,menucolor=black,urlcolor=black,hidelinks,breaklinks=true]{hyperref}
+\usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage{amsfonts}
+\usepackage[bb=ams]{mathalpha}
+\usepackage{mathrsfs}
+\usepackage{xstring}
+
+\graphicspath{{fig/}}
+\addbibresource{biblio.bib}
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{width=8cm,compat=1.9}
+\definecolor{negro}{RGB}{0,0,0}
+\definecolor{azul}{RGB}{0,0,255}
+\definecolor{verde}{RGB}{0,255,0}
+\definecolor{cian}{RGB}{0,255,255}
+\definecolor{rojo}{RGB}{255,0,0}
+\definecolor{magenta}{RGB}{255,0,255}
+\definecolor{amarillo}{RGB}{255,255,0}
+\definecolor{blanco}{RGB}{255,255,255}
+
+\definecolor{limegreen}{cmyk}{0.75,0,1,0}
+\definecolor{orange}{cmyk}{0,0.8,0.95,0}
+\definecolor{purple}{cmyk}{0.75,1,0,0}
+
+\newcommand{\uvec}[1]{~ \boldsymbol{\hat{\textbf{#1}}}}
+
+\newsavebox\foobox
+\newlength{\foodim}
+\newcommand{\slantbox}[2][0]{\mbox{%
+        \sbox{\foobox}{#2}%
+        \foodim=#1\wd\foobox
+        \hskip \wd\foobox
+        \hskip -0.5\foodim
+        \pdfsave
+        \pdfsetmatrix{1 0 #1 1}%
+        \llap{\usebox{\foobox}}%
+        \pdfrestore
+        \hskip 0.5\foodim
+}}
+\def\Laplacesymb{\slantbox[-.45]{$\mathscr{L}$}}
+\def\inverseLaplacesymb{\Laplacesymb^{-1}}
+\def\Fouriersymb{\slantbox[-.45]{$\mathscr{F}$}}
+\def\Fouriersinsymb{\Fouriersymb_{\textup{s}}}
+\def\Fouriercossymb{\Fouriersymb_{\textup{c}}}
+\def\inverseFouriersymb{\Fouriersymb^{-1}}
+
+\newcommand{\Laplace}[2]{
+    \IfEqCase{#1}{
+        {}{\Laplacesymb\left\lbrace#2\right\rbrace}
+        {i}{\inverseLaplacesymb\left\lbrace#2\right\rbrace}
+    }[\PackageError{tree}{Undefined option to tree: #1}{}]
+}
+\newcommand{\Fourier}[2]{
+    \IfEqCase{#1}{
+        {}{\Fouriersymb\left\lbrace#1\right\rbrace}
+        {i}{\inverseFouriersymb\left\lbrace#2\right\rbrace}
+        {sin}{\Fouriersinsymb\left\lbrace#2\right\rbrace}
+        {cos}{\Fouriercossymb\left\lbrace#2\right\rbrace}
+    }[\PackageError{tree}{Undefined option to tree: #1}{}]
+}
+
+\sisetup{
+  detect-family,
+  per-mode = symbol,
+  separate-uncertainty = true,
+  inter-unit-product = \cdot,
+  %output-decimal-marker = {,},
+  %exponent-product = \cdot
+}
