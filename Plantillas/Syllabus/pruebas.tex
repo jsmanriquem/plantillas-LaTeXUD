@@ -1,0 +1,8 @@
+\documentclass{article}
+\usepackage{iexec,shellesc}
+\usepackage[paperwidth=3in]{geometry}
+\pagestyle{empty}
+\begin{document}
+Today is \textbf{%
+\iexec{date +\%e-\%b-\%Y}}
+\end{document}

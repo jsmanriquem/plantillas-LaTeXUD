@@ -2,13 +2,47 @@
 
 % Las funciones \input representan la inserción de código .tex al documento principal, de esta manera podemos reducir varias líneas de código que en realidad, no se modifican con frecuencia.
 
-\input{config.tex}
+\documentclass[letterpaper,11pt]{article}
+\usepackage[spanish,es-tabla]{babel}
+% Texto
+\usepackage{lipsum}
+% Figuras
+\usepackage{graphicx}
+\graphicspath{{./fig/}}
+% Geometría
+\usepackage[left=25mm, right=25mm, top=35mm, bottom=30mm, headheight=35mm]{geometry}
+% Manejo de muchas columnas
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{array}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{float}
+\newcommand{\untercio}{0.333333333333333333333333333333333333333333333333}
+\usepackage{parskip}
+
+\cfoot{}
+\rhead{\framebox[\untercio\textwidth][c]{text}}
+\chead{
+    \begin{minipage}[c]{\textwidth}
+        \begin{multicols}{3}
+            \lipsum
+        \end{multicols}
+    \end{minipage}
+}
 
 \begin{document}
 
+
+
 \begin{multicols}{2}
 
-Aquí comienza el texto
+\begin{tabularx}{\textwidth}{| c | X | X | X |}
+    \hline
+    \textbf{Nombre del espacio académico} & \multicolumn{3}{l}{hola} \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline 
+\end{tabularx}
 
 \end{multicols}
 
