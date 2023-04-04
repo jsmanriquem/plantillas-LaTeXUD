@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  18 MAR 2023 20:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  4 APR 2023 00:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -207,41 +207,59 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count281
-)) (build/main.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+)) (c:/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip63
+\LTright=\skip64
+\LTpre=\skip65
+\LTpost=\skip66
+\LTchunksize=\count282
+\LTcapwidth=\dimen168
+\LT@head=\box101
+\LT@firsthead=\box102
+\LT@foot=\box103
+\LT@lastfoot=\box104
+\LT@gbox=\box105
+\LT@cols=\count283
+\LT@rows=\count284
+\c@LT@tables=\count285
+\c@LT@chunks=\count286
+\LT@p@ftn=\toks23
+) (build/main.aux
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
-\scratchdimen=\dimen168
-\scratchbox=\box101
-\nofMPsegments=\count283
-\nofMParguments=\count284
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count285
-\MPscratchDim=\dimen169
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count287
+\scratchdimen=\dimen169
+\scratchbox=\box106
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen170
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks25
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -264,8 +282,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \textheight=610.02708pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-97.26999pt
-* \headheight=99.58464pt
+* \topmargin=-9.68535pt
+* \headheight=130.4353pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
@@ -283,56 +301,68 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\OT1/cmr/bx/n/10.95 N^^Sume-ro de
  []
 
 
-Overfull \hbox (241.01563pt too wide) in paragraph at lines 45--46
+Overfull \hbox (241.01563pt too wide) in paragraph at lines 71--72
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]\OT1/cmr/m/n/10.95 Nulla ma-le-suada port-ti-tor
+Overfull \hbox (12.79999pt too wide) in alignment at lines 77--81
+ [] 
  []
 
 
-Underfull \hbox (badness 6461) has occurred while \output is active
-\OT1/cmr/m/n/10.95 no-nummy pel-len-tes-que ante.
+Overfull \hbox (12.79999pt too wide) in alignment at lines 81--83
+ [] 
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-\OT1/cmr/m/n/10.95 Pha-sel-lus adi-pi-scing sem-per
+Overfull \hbox (12.79999pt too wide) in alignment at lines 83--85
+ [] 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (99.58464pt): 
-(fancyhdr)                Make it at least 719.2003pt, for example:
-(fancyhdr)                \setlength{\headheight}{719.2003pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-619.61566pt}.
+Overfull \hbox (12.79999pt too wide) in alignment at lines 85--88
+ [] 
+ []
 
-[1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(./fig/Escudo_UD.eps_tex) (./fig/Escudo_UD.eps_tex) (./fig/Escudo_UD.eps_tex) (./fig/Escudo_UD.eps_tex
+Package epstopdf Info: Source file: <./fig//Escudo_UD.eps>
+(epstopdf)                    date: 2023-03-13 22:43:07
+(epstopdf)                    size: 865460 bytes
+(epstopdf)             Output file: <./fig//Escudo_UD-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-16 07:45:05
+(epstopdf)                    size: 230629 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig//Escudo_UD-eps-converted-to.pdf ./fig//Escudo_UD.eps>
+(epstopdf)             \includegraphics on input line 56.
+Package epstopdf Info: Output file is already uptodate.
+File: ./fig//Escudo_UD-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig//Escudo_UD-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig//Escudo_UD-eps-converted-to.pdf  used on input line 56.
+(pdftex.def)             Requested size: 108.60782pt x 104.71457pt.
+) [1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] (build/main.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+ <./fig//Escudo_UD-eps-converted-to.pdf>] (build/main.aux
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 4947 strings out of 476029
- 83853 string characters out of 5794158
- 1874340 words of memory out of 5000000
- 25350 multiletter control sequences out of 15000+600000
- 515687 words of font info for 43 fonts, out of 8000000 for 9000
+ 5087 strings out of 476029
+ 86015 string characters out of 5794158
+ 1862340 words of memory out of 5000000
+ 25472 multiletter control sequences out of 15000+600000
+ 516897 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,16n,77p,587b,377s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on build/main.pdf (1 page, 36469 bytes).
+ 72i,27n,77p,587b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on build/main.pdf (1 page, 285978 bytes).
 PDF statistics:
- 18 PDF objects out of 1000 (max. 8388607)
- 10 compressed objects within 1 object stream
+ 30 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

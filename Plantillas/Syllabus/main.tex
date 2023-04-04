@@ -10,7 +10,7 @@
 \usepackage{graphicx}
 \graphicspath{{./fig/}}
 % Geometría
-\usepackage[left=25mm, right=25mm, top=35mm, bottom=30mm, headheight=35mm]{geometry}
+\usepackage[left=25mm, right=25mm, top=35mm, bottom=30mm]{geometry}
 % Manejo de muchas columnas
 \usepackage{multicol}
 \usepackage{tabularx}
@@ -19,31 +19,72 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \usepackage{float}
-\newcommand{\untercio}{0.333333333333333333333333333333333333333333333333}
 \usepackage{parskip}
 
+\usepackage{longtable}
+%\usepackage{ltablex}
+
+\setlength{\headheight}{130.4353pt}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\renewcommand\tabularxcolumn[1]{m{#1}}
+
 \cfoot{}
-\rhead{\framebox[\untercio\textwidth][c]{text}}
 \chead{
-    \begin{minipage}[c]{\textwidth}
-        \begin{multicols}{3}
-            \lipsum
-        \end{multicols}
-    \end{minipage}
+    \centering
+    \begin{tabularx}{\textwidth}{| >{\hsize=.5\hsize\linewidth=\hsize}X | X | >{\hsize=.5\hsize\linewidth=\hsize}X |} \hline
+            
+    \vspace*{5pt}
+    \begin{center} \begin{minipage}{\linewidth}{\def\svgwidth{\columnwidth}\input{fig/Escudo_UD.eps_tex}}   \end{minipage} \end{center} & 
+    
+    \begin{minipage}[t]{\linewidth}
+    \centering
+    \vspace*{-47pt}
+    \large{\textbf{UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS}}
+    \vspace{5pt}
+
+    \Large{Facultad de Ciencias 
+    
+    Matemáticas y Naturales}
+    \vspace{5pt}
+            
+    \textbf{Syllabus}
+    \end{minipage} & 
+    
+    \begin{center}
+            hola
+        \end{center} \\
+        \hline
+    \end{tabularx}
 }
 
 \begin{document}
 
-
-
 \begin{multicols}{2}
 
+%\vspace*{50pt}
 \begin{tabularx}{\textwidth}{| c | X | X | X |}
     \hline
     \textbf{Nombre del espacio académico} & \multicolumn{3}{l}{hola} \\ \hline
     \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline 
 \end{tabularx}
 
+\lipsum[1-2]
+
 \end{multicols}
+
+\begin{longtable}{|>{\centering\arraybackslash}p{\columnwidth}|}
+    \hline
+    \textbf{Columna 1}\\
+    \hline
+    \endhead % Cabecera de las páginas siguientes
+    \hline
+    \endfoot % Pie de tabla en cada página, excepto en la última
+    \hline
+    \endlastfoot % Pie de tabla en la última página
+    \lipsum[1-2] \\
+    \hline
+\end{longtable}
 
 \end{document}
