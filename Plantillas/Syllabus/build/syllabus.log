@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  4 APR 2023 00:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  5 APR 2023 00:17
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/main.tex"
-(u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/main.tex
+**"u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/syllabus.tex"
+(u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/syllabus.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-07> (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -22,7 +22,7 @@ File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
+) (./lib/config.tex (c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2023/02/13 3.86 The Babel package
 \babel@savecnt=\count193
 \U@D=\dimen141
@@ -225,41 +225,87 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@tables=\count285
 \c@LT@chunks=\count286
 \LT@p@ftn=\toks23
-) (build/main.aux
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+) (c:/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen169
+\c@nlinenum=\count287
+\TeXr@lab=\toks24
+) (c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count288
+\calc@Bcount=\count289
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count290
+\calc@Cskip=\skip69
+) (c:/texlive/2022/texmf-dist/tex/latex/printlen/printlen.sty
+Package: printlen 2009/09/03 v1.1a print lengths with units
+) (c:/texlive/2022/texmf-dist/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+ (c:/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+)) (c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-\openout1 = `main.aux'.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks25
+\minrowclearance=\skip70
+\rownum=\count291
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+))
+\myspace=\skip71
+ (build/syllabus.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
+\openout1 = `syllabus.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen169
+\scratchcounter=\count292
+\scratchdimen=\dimen172
 \scratchbox=\box106
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen170
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count293
+\nofMParguments=\count294
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count295
+\MPscratchDim=\dimen173
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
+\everyMPtoPDFconversion=\toks27
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -283,7 +329,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
 * \topmargin=-9.68535pt
-* \headheight=130.4353pt
+* \headheight=140.95526pt
 * \headsep=25.0pt
 * \topskip=11.0pt
 * \footskip=30.0pt
@@ -300,37 +346,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
-[]|\OT1/cmr/bx/n/10.95 N^^Sume-ro de
- []
-
-
-Overfull \hbox (241.01563pt too wide) in paragraph at lines 71--72
-[][] 
- []
-
-
-Overfull \hbox (12.79999pt too wide) in alignment at lines 77--81
- [] 
- []
-
-
-Overfull \hbox (12.79999pt too wide) in alignment at lines 81--83
- [] 
- []
-
-
-Overfull \hbox (12.79999pt too wide) in alignment at lines 83--85
- [] 
- []
-
-
-Overfull \hbox (12.79999pt too wide) in alignment at lines 85--88
- [] 
- []
-
-(./fig/Escudo_UD.eps_tex) (./fig/Escudo_UD.eps_tex) (./fig/Escudo_UD.eps_tex) (./fig/Escudo_UD.eps_tex
+(./lib/contenido.tex) (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex
 Package epstopdf Info: Source file: <./fig//Escudo_UD.eps>
 (epstopdf)                    date: 2023-03-13 22:43:07
 (epstopdf)                    size: 865460 bytes
@@ -344,25 +360,68 @@ File: ./fig//Escudo_UD-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig//Escudo_UD-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig//Escudo_UD-eps-converted-to.pdf  used on input line 56.
 (pdftex.def)             Requested size: 108.60782pt x 104.71457pt.
+) (./fig/phisica.pdf_tex
+File: ./fig//phisica.pdf Graphic file (type pdf)
+<use ./fig//phisica.pdf, page 1>
+Package pdftex.def Info: ./fig//phisica.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 108.60782pt x 53.6272pt.
 ) [1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./fig//Escudo_UD-eps-converted-to.pdf>] (build/main.aux
-LaTeX Info: Redefining \. on input line 10.
-LaTeX Info: Redefining \% on input line 10.
+ <./fig//Escudo_UD-eps-converted-to.pdf> <./fig//phisica.pdf>] (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex
+Package epstopdf Info: Source file: <./fig//Escudo_UD.eps>
+(epstopdf)                    date: 2023-03-13 22:43:07
+(epstopdf)                    size: 865460 bytes
+(epstopdf)             Output file: <./fig//Escudo_UD-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-16 07:45:05
+(epstopdf)                    size: 230629 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig//Escudo_UD-eps-converted-to.pdf ./fig//Escudo_UD.eps>
+(epstopdf)             \includegraphics on input line 56.
+Package epstopdf Info: Output file is already uptodate.
+File: ./fig//Escudo_UD-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig//Escudo_UD-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig//Escudo_UD-eps-converted-to.pdf  used on input line 56.
+(pdftex.def)             Requested size: 108.60782pt x 104.71457pt.
+) (./fig/phisica.pdf_tex
+File: ./fig//phisica.pdf Graphic file (type pdf)
+<use ./fig//phisica.pdf, page 1>
+Package pdftex.def Info: ./fig//phisica.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 108.60782pt x 53.6272pt.
+) [2] (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex) (./fig/phisica.pdf_tex) (./fig/Escudo_UD.eps_tex
+Package epstopdf Info: Source file: <./fig//Escudo_UD.eps>
+(epstopdf)                    date: 2023-03-13 22:43:07
+(epstopdf)                    size: 865460 bytes
+(epstopdf)             Output file: <./fig//Escudo_UD-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-03-16 07:45:05
+(epstopdf)                    size: 230629 bytes
+(epstopdf)             Command: <repstopdf --outfile=./fig//Escudo_UD-eps-converted-to.pdf ./fig//Escudo_UD.eps>
+(epstopdf)             \includegraphics on input line 56.
+Package epstopdf Info: Output file is already uptodate.
+File: ./fig//Escudo_UD-eps-converted-to.pdf Graphic file (type pdf)
+<use ./fig//Escudo_UD-eps-converted-to.pdf>
+Package pdftex.def Info: ./fig//Escudo_UD-eps-converted-to.pdf  used on input line 56.
+(pdftex.def)             Requested size: 108.60782pt x 104.71457pt.
+) (./fig/phisica.pdf_tex
+File: ./fig//phisica.pdf Graphic file (type pdf)
+<use ./fig//phisica.pdf, page 1>
+Package pdftex.def Info: ./fig//phisica.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 108.60782pt x 53.6272pt.
+) [3] (build/syllabus.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 5087 strings out of 476029
- 86015 string characters out of 5794158
- 1862340 words of memory out of 5000000
- 25472 multiletter control sequences out of 15000+600000
- 516897 words of font info for 47 fonts, out of 8000000 for 9000
+ 6232 strings out of 476029
+ 103700 string characters out of 5794158
+ 1870340 words of memory out of 5000000
+ 26536 multiletter control sequences out of 15000+600000
+ 517150 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,27n,77p,587b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,28n,80p,1095b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on build/main.pdf (1 page, 285978 bytes).
+Output written on build/syllabus.pdf (3 pages, 303005 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

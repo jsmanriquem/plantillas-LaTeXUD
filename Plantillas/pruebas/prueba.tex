@@ -4,19 +4,45 @@
 \usepackage{booktabs}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{calc}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{etoolbox}
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[C]{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} c c c}
-            \includegraphics[width=\linewidth, height=\linewidth, keepaspectratio]{pollito.png} &
-            \begin{minipage}[t]{0.5\linewidth}
-                Siete líneas de texto en la columna central, Siete líneas de texto en la columna central, Siete líneas de texto en la columna central, Siete líneas de texto en la columna central, Siete líneas de texto en la columna central, Siete líneas de texto en la columna central, Siete líneas de texto en la columna central
-            \end{minipage} &
-            \includegraphics[width=\linewidth, height=\linewidth, keepaspectratio]{pollito.png}
-            \end{tabular*}}
+\newcommand{\respuesta}[1]{
+  \ifstrempty{#1}
+    {La respuesta es incorrecta.}
+    {La respuesta es correcta.}
+}
+
+\newlength{\tableheight}
 
 \begin{document}
 
-Tu contenido aquí
+\settoheight{\tableheight}{\begin{tabularx}{\textwidth}{| c | X | X | X |}
+    \hline
+    \textbf{Nombre del espacio académico} & \multicolumn{3}{l}{hola} \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline
+    \textbf{Código del espacio} & hola & \textbf{Número de créditos} & hola \\ \hline
+\end{tabularx}}
+
+La altura de la tabla es de \the\tableheight\ puntos.
+
+\begin{tabularx}{\textwidth}{|X|X|X|}
+    \hline
+    \multicolumn{2}{|c|}{Celda combinada} & Otra celda \\
+    \hline
+    Contenido & Contenido & Contenido \\
+    \hline
+\end{tabularx}
+
+\respuesta{Sí} % muestra "La respuesta es correcta."
+\respuesta{} % muestra "La respuesta es incorrecta."
 
 \end{document}
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  3 APR 2023 23:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  4 APR 2023 23:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -98,27 +98,62 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen164
 \Gin@req@width=\dimen165
-) (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count266
+\calc@Bcount=\count267
+\calc@Adimen=\dimen166
+\calc@Bdimen=\dimen167
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count268
+\calc@Cskip=\skip63
+) (c:/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty (c:/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (c:/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-07 L3 programming layer (loader) 
+ (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count266
+\l__color_backend_stack_int=\count269
 \l__pdf_internal_box=\box53
-) (build/prueba.aux)
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count270
+\l__lipsum_a_int=\count271
+\l__lipsum_b_int=\count272
+ (c:/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen168
+\TX@old@table=\dimen169
+\TX@old@col=\dimen170
+\TX@target=\dimen171
+\TX@delta=\dimen172
+\TX@cols=\count273
+\TX@ftn=\toks19
+) (c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count274
+)
+\tableheight=\skip64
+ (build/prueba.aux)
 \openout1 = `prueba.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -156,66 +191,78 @@ LaTeX Font Info:    ... okay on input line 18.
 
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count267
-\scratchdimen=\dimen166
+\scratchcounter=\count275
+\scratchdimen=\dimen173
 \scratchbox=\box54
-\nofMPsegments=\count268
-\nofMParguments=\count269
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count270
-\MPscratchDim=\dimen167
-\MPnumerator=\count271
-\makeMPintoPDFobject=\count272
-\everyMPtoPDFconversion=\toks20
+\nofMPsegments=\count276
+\nofMParguments=\count277
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen174
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
+\everyMPtoPDFconversion=\toks21
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
-<pollito.png, id=1, 476.78125pt x 476.78125pt>
-File: pollito.png Graphic file (type png)
-<use pollito.png>
-Package pdftex.def Info: pollito.png  used on input line 22.
-(pdftex.def)             Requested size: 472.05853pt x 472.05853pt.
-File: pollito.png Graphic file (type png)
-<use pollito.png>
-Package pdftex.def Info: pollito.png  used on input line 22.
-(pdftex.def)             Requested size: 472.05853pt x 472.05853pt.
-
-Overfull \hbox (738.10149pt too wide) has occurred while \output is active
-[] [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/n/12 N^^Sumero de
  []
 
 
-Package fancyhdr Warning: \headheight is too small (60.0pt): 
-(fancyhdr)                Make it at least 559.05853pt, for example:
-(fancyhdr)                \setlength{\headheight}{559.05853pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-499.05853pt}.
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/n/12 N^^Sumero de
+ []
 
-[1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./pollito.png>] (build/prueba.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/n/12 N^^Sumero de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/n/12 N^^Sumero de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/n/12 N^^Sumero de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/n/12 N^^Sumero de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/n/12 N^^Sumero de
+ []
+
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 42--43
+[][] 
+ []
+
+[1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (build/prueba.aux) ) 
 Here is how much of TeX's memory you used:
- 2196 strings out of 476029
- 35419 string characters out of 5794158
- 1852340 words of memory out of 5000000
- 22655 multiletter control sequences out of 15000+600000
- 515023 words of font info for 41 fonts, out of 8000000 for 9000
+ 3113 strings out of 476029
+ 52736 string characters out of 5794158
+ 1856340 words of memory out of 5000000
+ 23549 multiletter control sequences out of 15000+600000
+ 515330 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,20n,62p,438b,383s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,10n,77p,320b,221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on build/prueba.pdf (1 page, 109991 bytes).
+Output written on build/prueba.pdf (1 page, 13448 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
- 8 compressed objects within 1 object stream
+ 13 PDF objects out of 1000 (max. 8388607)
+ 7 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

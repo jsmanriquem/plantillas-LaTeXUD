@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber build/main"] 1678305621 "build/main.bcf" "build/main.bbl" "build/main" 1678492972 0
+["biber build/main"] 1678305621 "build/main.bcf" "build/main.bbl" "build/main" 1680658411 0
   "./biblio.bib" 1663098596 186 f2e2c3102cdccbf935bfcb249f47c6db ""
-  "build/main.bcf" 1678492971 106835 bb0985e6e0ab9041111ca5927a6d9b5a "pdflatex"
+  "build/main.bcf" 1680658410 106835 bb0985e6e0ab9041111ca5927a6d9b5a "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["pdflatex"] 1678492967 "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/TrabajosUD/main.tex" "build/main.pdf" "main" 1678492972 0
-  "build/main.aux" 1678492971 2118 6403e00c7634160d63b26faa6070c7cd "pdflatex"
+["pdflatex"] 1680658406 "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/TrabajosUD/main.tex" "build/main.pdf" "main" 1680658411 0
+  "build/main.aux" 1680658410 2118 6403e00c7634160d63b26faa6070c7cd "pdflatex"
   "build/main.bbl" 1678305623 486 ee04f40f768daeed26442158e95aba61 "biber build/main"
-  "build/main.out" 1678492971 864 1bdd0392c136892c761e4757d9ada4ba "pdflatex"
-  "build/main.run.xml" 1678492971 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
+  "build/main.out" 1680658410 864 1bdd0392c136892c761e4757d9ada4ba "pdflatex"
+  "build/main.run.xml" 1680658410 2301 13e8301fbdc44293469f5e9eeaf509b7 "pdflatex"
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1677099022 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1677094790 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1677094790 1004 54797486969f23fa377b128694d548df ""
@@ -297,13 +297,14 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1677109104 4662804 131178ccc9b2f4741a821427ce79dce1 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1677109220 7879594 831362a140075b5eae1355136d1c48d1 ""
   "c:/texlive/2022/texmf.cnf" 1677109072 713 614551405fc44b98efbf516466e3c909 ""
-  "fig//Escudo_UD.pdf" 1678300097 1447741 1fac6e65c19704584231d6c4c6a290e9 ""
+  "fig//Escudo_UD.eps" 1678765387 865460 e916e5f42e8f0e49904eada25e7928a3 ""
   "fig//pollito.png" 1678300097 99819 47230b96e20865c28338837a049e3dd8 ""
-  "lib/config.tex" 1678305560 3111 851f1b9c1b5439371932eb2cb59c36f2 ""
-  "lib/preambulo.tex" 1678492965 702 47284a5ff06fe63b55f2ef7c549aaf1f ""
+  "fig/Escudo_UD.eps_tex" 1678765387 2062 7c4b58ca217de02f2ed2500c267a1c34 ""
+  "lib/config.tex" 1680658273 3111 a0ab3ae9f65968d40d002c7950685d17 ""
+  "lib/preambulo.tex" 1678765622 719 1478a96d731aaad07a23471f21c9bd8f ""
   "lib/resumen.tex" 1678300097 446 436d884a722078155238c56973982630 ""
-  "main.tex" 1678305616 1468 5062b46034672bbfab2070debfcba7e1 ""
-  "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/TrabajosUD/main.tex" 1678305616 1468 5062b46034672bbfab2070debfcba7e1 ""
+  "main.tex" 1680658405 1468 36874e8189e056f9f2bf30b9cd00d2b0 ""
+  "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/TrabajosUD/main.tex" 1680658405 1468 36874e8189e056f9f2bf30b9cd00d2b0 ""
   (generated)
   "build/main.aux"
   "build/main.bcf"
