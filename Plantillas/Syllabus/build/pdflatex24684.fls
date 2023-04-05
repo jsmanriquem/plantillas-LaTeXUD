@@ -1,0 +1,5 @@
+PWD u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus
+INPUT c:/texlive/2022/texmf.cnf
+INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/syllabus.tex

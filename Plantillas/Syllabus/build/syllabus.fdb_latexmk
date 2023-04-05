@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1680671829 "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/syllabus.tex" "build/syllabus.pdf" "syllabus" 1680671831 0
-  "build/syllabus.aux" 1680671830 194 d12d2f42a1ce5499c2e0a2e2f9926e09 "pdflatex"
+["pdflatex"] 1680672530 "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/syllabus.tex" "build/syllabus.pdf" "syllabus" 1680672531 0
+  "build/syllabus.aux" 1680672531 194 d12d2f42a1ce5499c2e0a2e2f9926e09 "pdflatex"
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1677099022 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1677096917 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1677096917 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -72,10 +72,10 @@
   "fig//phisica.pdf" 1680668496 7041 cc9ae0039103268e9fc34cfc6a6f06fa ""
   "fig/Escudo_UD.eps_tex" 1678765387 2062 7c4b58ca217de02f2ed2500c267a1c34 ""
   "fig/phisica.pdf_tex" 1680668496 2069 e03482f56ca1388f9c4b938be0df49af ""
-  "lib/config.tex" 1680671359 2040 5de3c941ad62710e824939ff07a0ecf8 ""
-  "lib/contenido.tex" 1680671559 5074 1e81b5bd7224cfce743c3de6ba7c2d87 ""
-  "syllabus.tex" 1680671750 5832 75fe00c5280078b50d216fcf4c71b8d1 ""
-  "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/syllabus.tex" 1680671750 5832 75fe00c5280078b50d216fcf4c71b8d1 ""
+  "lib/config.tex" 1680672530 2270 981126f9d98a22e4692e087a390c9141 ""
+  "lib/contenido.tex" 1680672447 5290 4d9bbc0e919d4f4fd2e473422d76d739 ""
+  "syllabus.tex" 1680672515 5937 174cfcbb05289f634095f4c7a09f1e52 ""
+  "u:/OneDrive - Universidad Distrital Francisco José de Caldas/LaTeX/Plantillas/Syllabus/syllabus.tex" 1680672515 5937 174cfcbb05289f634095f4c7a09f1e52 ""
   (generated)
   "build/syllabus.aux"
   "build/syllabus.log"

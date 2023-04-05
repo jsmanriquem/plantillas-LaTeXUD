@@ -38,6 +38,20 @@
 
 \newcommand{\contenido}[1]{\def\contenidovar{#1}}
 
+\newcommand{\curso}[3]{
+    \ifstrempty{#1}
+    {\def\cursoA{}}
+    {\def\cursoA{X}}
+    
+    \ifstrempty{#2}
+    {\def\cursoB{}}
+    {\def\cursoB{X}}
+
+    \ifstrempty{#3}
+    {\def\cursoC{}}
+    {\def\cursoC{X}}
+}
+
 \newcommand{\obligatoriobasico}[2]{
     \ifstrempty{#1}
     {\def\obligatoriobasicoA{}}
