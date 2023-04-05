@@ -101,13 +101,19 @@
     \hline
 \end{tabularx}
 
-\begin{tabularx}{\textwidth}{|c|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{1cm}|c>{\centering\arraybackslash}X|}
+\begin{tabularx}{\textwidth}{|c|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}m{1cm}|>{\centering\arraybackslash}X|}
     \hline
-    TIPO DE ESPACIO ACADÉMICO: & SÍ & NO & \multicolumn{2}{c|}{NÚMERO DE HORAS:}  \\ \hline
-    Obligatorio básico & \obligatoriobasicoA & \obligatoriobasicoB & Trabajo directo & \trabajodirectovar \\ 
-    Obligatorio complementario & \obligatoriocomplementarioA & \obligatoriocomplementarioB & Trabajo mediano & \trabajomedianovar \\ 
-    Electivo intrínseco & \electivointrinsecoA & \electivointrinsecoB & Trabajo autónomo & \trabajoautonomovar \\ 
-    Electivo extrínseco & \electivoextrinsecoA & \electivoextrinsecoB &  &  \\ 
+    \makecell{TIPO DE ESPACIO ACADÉMICO:} & \makecell{SÍ} & \makecell{NO} & \makecell{NÚMERO DE HORAS:}  \\ \hline
+    Obligatorio básico & \obligatoriobasicoA & \obligatoriobasicoB & \multirow{4}{*}{
+        \begin{tabularx}{.963\linewidth}{c>{\centering\arraybackslash}X}
+            Trabajo directo & \trabajodirectovar \\
+            Trabajo mediano & \trabajomedianovar \\
+            Trabajo autónomo & \trabajoautonomovar
+        \end{tabularx}
+    } \\ 
+    Obligatorio complementario & \obligatoriocomplementarioA & \obligatoriocomplementarioB &  \\ 
+    Electivo intrínseco & \electivointrinsecoA & \electivointrinsecoB &  \\ 
+    Electivo extrínseco & \electivoextrinsecoA & \electivoextrinsecoB &   \\ 
     \hline
 \end{tabularx}
 
@@ -123,9 +129,10 @@
         \hline
         \cellcolor{gris} \makecell{\textbf{Justificación del espacio académico}}\\
         \hline
-        \vspace*{1pt}
-        \justificacionvar 
-       \\
+        \vspace*{6pt}
+        \justificacionvar
+        \vspace*{3pt}
+        \\
         \hline
     \end{tabularx}
 \end{minipage}
@@ -154,9 +161,10 @@
         \hline
             \cellcolor{gris} \makecell{\textbf{Estrategias}}\\
             \hline
-            \vspace*{1pt}
+            \vspace*{6pt}
             \estrategiasvar
-           \\
+            \vspace*{3pt}
+            \\
         \hline
     \end{tabularx}
 \end{minipage}

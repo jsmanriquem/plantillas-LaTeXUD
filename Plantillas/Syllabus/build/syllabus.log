@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  5 APR 2023 00:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.22)  5 APR 2023 01:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -159,39 +159,45 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \mult@nat@firstbox=\box95
 \colbreak@box=\box96
 \mc@col@check@num=\count278
+) (c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip52
+\multirow@cntb=\count279
+\multirow@dima=\skip53
+\bigstrutjot=\dimen161
 ) (c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
  (c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen161
+\col@sep=\dimen162
 \ar@mcellbox=\box97
-\extrarowheight=\dimen162
+\extrarowheight=\dimen163
 \NC@list=\toks19
-\extratabsurround=\skip52
-\backup@length=\skip53
+\extratabsurround=\skip54
+\backup@length=\skip55
 \ar@cellbox=\box98
 )
-\TX@col@width=\dimen163
-\TX@old@table=\dimen164
-\TX@old@col=\dimen165
-\TX@target=\dimen166
-\TX@delta=\dimen167
-\TX@cols=\count279
+\TX@col@width=\dimen164
+\TX@old@table=\dimen165
+\TX@old@col=\dimen166
+\TX@target=\dimen167
+\TX@delta=\dimen168
+\TX@cols=\count280
 \TX@ftn=\toks20
 ) (c:/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip54
-\f@nch@O@elh=\skip55
-\f@nch@O@erh=\skip56
-\f@nch@O@olh=\skip57
-\f@nch@O@orh=\skip58
-\f@nch@O@elf=\skip59
-\f@nch@O@erf=\skip60
-\f@nch@O@olf=\skip61
-\f@nch@O@orf=\skip62
+\f@nch@headwidth=\skip56
+\f@nch@O@elh=\skip57
+\f@nch@O@erh=\skip58
+\f@nch@O@olh=\skip59
+\f@nch@O@orh=\skip60
+\f@nch@O@elf=\skip61
+\f@nch@O@erf=\skip62
+\f@nch@O@olf=\skip63
+\f@nch@O@orf=\skip64
 ) (c:/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count280
+\c@float@type=\count281
 \float@exts=\toks21
 \float@box=\box99
 \@float@everytoks=\toks22
@@ -206,42 +212,42 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count281
+\etb@tempcnta=\count282
 )) (c:/texlive/2022/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip63
-\LTright=\skip64
-\LTpre=\skip65
-\LTpost=\skip66
-\LTchunksize=\count282
-\LTcapwidth=\dimen168
+\LTleft=\skip65
+\LTright=\skip66
+\LTpre=\skip67
+\LTpost=\skip68
+\LTchunksize=\count283
+\LTcapwidth=\dimen169
 \LT@head=\box101
 \LT@firsthead=\box102
 \LT@foot=\box103
 \LT@lastfoot=\box104
 \LT@gbox=\box105
-\LT@cols=\count283
-\LT@rows=\count284
-\c@LT@tables=\count285
-\c@LT@chunks=\count286
+\LT@cols=\count284
+\LT@rows=\count285
+\c@LT@tables=\count286
+\c@LT@chunks=\count287
 \LT@p@ftn=\toks23
 ) (c:/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen169
-\c@nlinenum=\count287
+\rotheadsize=\dimen170
+\c@nlinenum=\count288
 \TeXr@lab=\toks24
 ) (c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count288
-\calc@Bcount=\count289
-\calc@Adimen=\dimen170
-\calc@Bdimen=\dimen171
-\calc@Askip=\skip67
-\calc@Bskip=\skip68
+\calc@Acount=\count289
+\calc@Bcount=\count290
+\calc@Adimen=\dimen171
+\calc@Bdimen=\dimen172
+\calc@Askip=\skip69
+\calc@Bskip=\skip70
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count290
-\calc@Cskip=\skip69
+\calc@Ccount=\count291
+\calc@Cskip=\skip71
 ) (c:/texlive/2022/texmf-dist/tex/latex/printlen/printlen.sty
 Package: printlen 2009/09/03 v1.1a print lengths with units
 ) (c:/texlive/2022/texmf-dist/tex/latex/xpatch/xpatch.sty
@@ -257,8 +263,8 @@ Package xcolor Info: Driver file: pdftex.def on input line 227.
  (c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks25
-\minrowclearance=\skip70
-\rownum=\count291
+\minrowclearance=\skip72
+\rownum=\count292
 ) (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
@@ -270,7 +276,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ))
-\myspace=\skip71
+\myspace=\skip73
  (build/syllabus.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
@@ -295,16 +301,16 @@ LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
-\scratchdimen=\dimen172
+\scratchcounter=\count293
+\scratchdimen=\dimen173
 \scratchbox=\box106
-\nofMPsegments=\count293
-\nofMParguments=\count294
+\nofMPsegments=\count294
+\nofMParguments=\count295
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count295
-\MPscratchDim=\dimen173
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
+\MPscratchCnt=\count296
+\MPscratchDim=\dimen174
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
 \everyMPtoPDFconversion=\toks27
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -410,15 +416,15 @@ LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 6236 strings out of 476029
- 103723 string characters out of 5794158
- 1870340 words of memory out of 5000000
- 26540 multiletter control sequences out of 15000+600000
+ 6304 strings out of 476029
+ 105014 string characters out of 5794158
+ 1872340 words of memory out of 5000000
+ 26604 multiletter control sequences out of 15000+600000
  517150 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,28n,80p,1095b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on build/syllabus.pdf (3 pages, 303383 bytes).
+Output written on build/syllabus.pdf (3 pages, 303391 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
