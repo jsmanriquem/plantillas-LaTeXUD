@@ -13,40 +13,6 @@
 
 \renewcommand{\headrulewidth}{0pt}
 
-% Definir un estilo de página personalizado para la primera página
-\fancypagestyle{firstpagestyle}{
-  \fancyhf{} % Limpiar encabezado y pie de página
-  \chead{
-    \centering
-    \begin{tabularx}{\textwidth}{| >{\hsize=.5\hsize\linewidth=\hsize}X | X | >{\hsize=.5\hsize\linewidth=\hsize}X |} \hline
-            
-    \vspace*{5pt}
-    \begin{center} \begin{minipage}[c]{\linewidth}{\def\svgwidth{\columnwidth}\input{fig/Escudo_UD.eps_tex}}   \end{minipage} \end{center} & 
-    
-    \cellcolor{gris}
-    \begin{minipage}[b]{\linewidth}
-    \centering
-    \vspace*{5pt}
-    \large{\textbf{UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS}}
-    \vspace{5pt}
-
-    \Large{Facultad de Ciencias 
-    
-    Matemáticas y Naturales}
-    \vspace{5pt}
-            
-    \textbf{Syllabus}
-    \end{minipage} & 
-    
-    \vspace*{5pt}
-    \begin{center} \begin{minipage}[c]{\linewidth}{\def\svgwidth{\columnwidth}\input{fig/phisica.pdf_tex}}   \end{minipage} \end{center} \\
-        \hline
-    \end{tabularx}
-}
-}
-
-\thispagestyle{firstpagestyle}
-
 \fancyhf{}
 
 \chead{
