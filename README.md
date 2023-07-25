@@ -1,15 +1,9 @@
 # LaTeX
 
-Pasos a seguir para subir archivos a GitHub:
+¡Hola!, ¿cómo estás?, espero te encuentres muy bien. El día de hoy quiero presentarte mi repositorio personal enfocado en mi uso del sistema de composición tipográfica $\LaTeX$ el cual es conocido por varios como uno de los mejores compositores de texto técnico y que también es usado en su mayoría para la generación de texto científico.
 
-1. Ubicarse en la carpeta general.
-2. Mandar el comando "git pull" y luego "git push", para identificar que todo esté bien.
-3. Mandar el comando "git status" para conocer qué cambios hay que añadir.
-4. Mandando el comando "git add" y posteriormente colocando los cambios realizados, esperar a que haya confirmación de lo realizando.
-    * Usando "git add ." añade todos los cambios, usando "git add <<archivo>>" añade cada cambio por separado.
-5. Mandar el comando "git commit -m "<<Comentario>>"" para hacer un comentario sobre los cambios realizados y esperar confirmación.
-6. Finalmente, mandar el comando "git push origin main" para guardar todos los cambios realizados.
+Aquí podrás encontrar diferentes plantillas que he hecho a lo largo de mi carrera universitaria junto a algunos proyectos personales que si bien la razón de su creación han sido la necesidad de los mismos para la presentación de algún trabajo, también llevan un poco de mi toque tratando de llevarlos a otro nivel.
 
-Gracias por elegir este repositorio.
+A continuación te explico las diferentes carpetas que tengo para que más o menos conozcas su contenido y así poder escoger la mejor en tu caso y usarlo a tu gusto, a su vez quiero hacer la claridad que todo este contenido es libre tanto para cualquier usuario que tenga acceso a el como para la comunidad universitria a la que en principio algunos de los proyectos van dirigidos.
 
 by: jsmanriquem
