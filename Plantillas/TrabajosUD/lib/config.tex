@@ -65,46 +65,37 @@
 \newcommand{\contenidoa}{}
 
 \newcommand{\resumencommand}{
-    \if\relax\detokenize{\contenidor}\relax
-        % Si el argumento está vacío, no se imprime nada
-    \else
-        \begin{center} \Large \textbf{Resumen} \end{center} \vspace*{2pt}
+    \ifdefempty{\contenidor}{}{\begin{center} \Large \textbf{Resumen} \end{center} \vspace*{2pt}
 
-        \hspace{12pt}\begin{minipage}[H]{0.95\textwidth}
+    \hspace{12pt}\begin{minipage}[H]{0.95\textwidth}
 
-        \contenidor
+    \contenidor
 
-        \end{minipage}
-        
-        \hspace{11.5pt}\textbf{Palabras clave:} <<Texto>>
-    \fi
-    \if\relax\detokenize{\contenidoa}\relax
-        \centerline{\rule{0.95\textwidth}{0.4pt}}
-        \vspace{15pt}
-    \else
-        \begin{center} \Large \textbf{Abstract} \end{center}
+    \end{minipage}
+    
+    \hspace{11.5pt}\textbf{Palabras clave:} <<Texto>>}
+
+    \ifdefempty{\contenidoa}{\centerline{\rule{0.95\textwidth}{0.4pt}}
+    \vspace{15pt}}{\begin{center} \Large \textbf{Abstract} \end{center}
             
-        \hspace{12pt}\begin{minipage}[H]{0.95\textwidth}
-        
-        \contenidoa
-        
-        \end{minipage}
-        
-        \hspace{11.5pt}\textbf{Keywords:} <<Text>>
-        
-        \centerline{\rule{0.95\textwidth}{0.4pt}}
-        \vspace{15pt}
-    \fi
+    \hspace{12pt}\begin{minipage}[H]{0.95\textwidth}
+    
+    \contenidoa
+    
+    \end{minipage}
+    
+    \hspace{11.5pt}\textbf{Keywords:} <<Text>>
+    
+    \centerline{\rule{0.95\textwidth}{0.4pt}}
+    \vspace{15pt}}
 }
 
 \NewEnviron{resumen}{
     \global\renewcommand{\contenidor}{\BODY}
     \resumencommand
 }
-    
 
-
-\NewEnviron{abssds}{
+\NewEnviron{abs}{
     \global\renewcommand{\contenidoa}{\BODY}
     \resumencommand
 }
