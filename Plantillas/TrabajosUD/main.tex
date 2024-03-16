@@ -11,80 +11,17 @@
 % README.md que probablemente esté en la parte inferior o si clonaste el
 % repositorio, lo encuentras en la misma carpeta en la cual está este archivo.
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[opcion]{TrabajosUD}
 
-\input{lib/package.tex}
-
-\input{lib/config.tex}
+\titulo{}
+\autor{}
+\curso{}
+\fecha{}
 
 \begin{document}
 
-\input{lib/preambulo.tex}
-
-%\input{lib/resumen.tex}
-
-\begin{resumen}
-    La maravilla que es esto, se quedó cargando
-\end{resumen}
-
-\begin{abs}
-    Buenas tardes no entiendo nada
-\end{abs}
-
-\begin{multicols}{2}
-
-\section{Introducción}
-
-\section{Sección 1} 
-
-\begin{equation}
-    Ecuaciones
-\label{ecuacion}
-\end{equation}
-
-\begin{equation*} % Para ecuaciones sin número y que el igual se mantenga en la misma sangría
-\begin{split}
-    texto1 & = texto---2 \\
-    texto---2 & = texto------3 \\
-    texto------3 & = texto4
-\end{split}
-\end{equation*}
-
-\section{Sección 2}
-
-<<Texto>>
-
-\end{multicols}
-
-\subsection{Subsección 1}
-
-<<Variación entre dos y una columna>> -------------------------------------------------------------------
-
-\begin{multicols}{2}
-
-\subsection{Subsección 2}
-
-<<Texto>>
-
-\subsubsection{Subsubsección 1}.
-
-<<Texto>>
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.32]{pollito.png}
-    \caption{Inserción de una figura}
-    \label{figura}
-\end{figure}
-
-\section{Conclusiones}
-
-<<Conclusión>>
-
-\end{multicols}
-
-\section{Anexos}
-
-<<Anexo>>
+\begin{align}
+    \int x^{2} \Laplace{}{\sin(x)}
+\end{align}
 
 \end{document}
