@@ -59,7 +59,7 @@
 %%%%%%%%%%%%%%%%%%%
 % Configuraciones iniciales
 
-\graphicspath{{fig/}}
+\graphicspath{{img/}}
 \addbibresource{biblio.bib}
 \usepgfplotslibrary{colorbrewer}
 \pgfplotsset{width=8cm,compat=1.9}
@@ -230,7 +230,7 @@
     % Contenido con comandos
     \AtBeginDocument{
         \onecolumn\begin{@twocolumntrue}
-            \begin{minipage}{0.3\textwidth}{\includegraphics[width=\textwidth]{fig/Escudo_UD.pdf}}
+            \begin{minipage}{0.3\textwidth}{\includegraphics[width=\textwidth]{src/Escudo_UD.pdf}}
             \end{minipage}
             \vspace{10pt}
             \begin{minipage}{0.677\textwidth}
