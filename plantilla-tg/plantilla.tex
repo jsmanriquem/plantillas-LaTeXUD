@@ -1,0 +1,153 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               PROPUESTA DE TRABAJO DE GRADO (PLANTILLA)                  %
+%                                                                          %
+%   Hola, esta es una plantilla diseñada para escribir tú propuesta de     %
+%   trabajo de grado. Esta plantilla no requiere conocimientos avanzados   %
+%   en LaTeX más allá de lo que quieras implementar en tú propuesta.       %
+%   El uso del logo de la universidad junto a los pie de página están      %
+%   puestos con base en los membretes oficiales dispuestos en              %
+%   https://editorial.udistrital.edu.co/mii_desmembrete.php.               %
+%                                                                          %
+%   Esta plantilla fue diseñada en su totalidad por Sebastian Manrique,    %
+%   estudiante de Física de la Universidad Distrital Francisco José de     %
+%   Caldas.                                                                %
+%                                                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ==========================================================================
+% DEFINIR PROGRAMA Y MODALIDAD
+% ==========================================================================
+% En este apartado es necesario que especifiques el programa y la modalidad
+% bajo las siguientes convenciones:
+% - Para el programa:
+%   * biologia: Programa Académico de Biología.
+%   * fisica: Programa Académico de Física.
+%   * matematicas: Programa Académico de Matemáticas.
+%   * quimica: Programa Académico de Química.
+%   Es decir, el nombre de cada programa en minúscula y sin tildes.
+% - Para la modalidad:
+%   * investigacion: Investigación, Investigación-Creación, Innovación.
+%   * monografia: Monografía.
+%   * articulo: Producción de Artículos Académicos.
+%   * emprendimiento: Proyecto de emprendimiento.
+%   * pasantia: Pasantía.
+% Se indican dentro del corchete cuadrado de la forma [programa,modalidad].
+
+\documentclass[fisica,monografia]{src/plantilla-tg}
+
+% ==========================================================================
+% DATOS BÁSICOS DE AUTORES Y DIRECTORES
+% ==========================================================================
+
+\begin{document}
+
+% Acá debes llenar la fecha, esta debe estar en minúscula y sin formato.
+
+\begin{fecha}
+    \day{26} % Día
+    \month{agosto} % Mes
+    \year{2024} % Año
+\end{fecha}
+
+% A partir de acá llenas los datos básicos tuyos y de tus directores:
+% Nota: para el primer corchete o llaves del apartado \identificacion se
+% debe llenar a partir de la siguiente convención:
+% - ti: T.I. (tarjeta de identidad).
+% - ce: C.E. (cédula de extranjería).
+% - <vacío>: C.C. (cédula de ciudadanía).
+
+\begin{autor1}
+    % El nombre del primer autor
+    \nombre{Sebastian Manrique}
+    % La identificación del primer autor
+    \identificacion{}{123456}
+    % El código estudiantil del primer autor
+    \codigo{123456789}
+    % El correo electrónico institucional del primer autor
+    \correo{jsmanriquem@udistrital.edu.co}
+    % El programa al que pertenece el primer autor
+    \programa{Física}
+\end{autor1}
+
+% Si tú trabajo de grado consta de un solo autor, comenta o elimina todo
+% el entorno de "autor2".
+
+\begin{autor2}
+    % El nombre del segundo autor
+    \nombre{Sebastian Manrique}
+    % La identificación del segundo autor
+    \identificacion{}{123456}
+    % El código estudiantil del segundo autor
+    \codigo{123456789}
+    % El correo electrónico institucional del segundo autor
+    \correo{jsmanriquem@udistrital.edu.co}
+    % El programa al que pertenece el segundo autor
+    \programa{Física}
+\end{autor2}
+
+\begin{director}
+    % El nombre del director
+    \nombre{Juan Moreno}
+    % La identificación del director
+    \identificacion{}{123456789}
+    % El correo electrónico institucional del director
+    \correo{director@universidad.edu.co}
+    % La vinculación del director
+    \vinculacion{Su universidad o facultad}
+\end{director}
+
+% Si tú trabajo de grado consta de un solo director, comenta o elimina
+% todo el entorno de "codirector".
+
+\begin{codirector}
+    % El nombre del codirector
+    \nombre{Juan Moreno}
+    % La identificación del codirector
+    \identificacion{}{123456789}
+    % El correo electrónico institucional del codirector
+    \correo{codirector@universidad.edu.co}
+    % La vinculación del codirector
+    \vinculacion{Su universidad o facultad}
+\end{codirector}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                          %
+%   Acá termina el llenado de datos básicos, lo siguiente son dos          %
+%   configuraciones especiales que debes poner para ciertas modalidades    %
+%   de trabajo de grado, lee muy bien si es tú caso, si no es así, este    %
+%   archivo termina aquí para ti, de momento.                              %
+%                                                                          %
+%   Dirígete ahora a la carpeta llamada 'modalidad' ahí selecciona el      %
+%   archivo '.tex' que requieres con base en la modalidad que elegiste,    %
+%   su nombre es el mismo que tiene la convención que usaste al inicio     %
+%   para determinar la modalidad. A partir de ahí, llena cada entorno      %
+%   con el contenido de tú propuesta de trabajo de grado.                  %
+%                                                                          %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% ==========================================================================
+% PARA LA MODALIDAD DE INVESTIGACIÓN, INVESTIGACIÓN-CREACIÓN, INNOVACIÓN
+% ==========================================================================
+
+% En caso de que NO tenga financiamiento su proyecto, comente la línea
+% "\presupuesto" caso contrario, no comente la línea
+
+\presupuesto
+
+% ==========================================================================
+% PARA LA MODALIDAD DE PRODUCCIÓN DE ARTÍCULOS ACADÉMICOS
+% ==========================================================================
+
+% A continuación, indique el tipo de artículo con base en las siguientes
+% convenciones:
+% - ciencia: Artículo de investigación científica o tecnológica
+% - revision: Artículo de reflexión o de revisión
+
+\tipo{ciencia}
+
+% ==========================================================================
+\print % ¡PROHIBIDO ELIMINAR!
+% ==========================================================================
+
+\end{document}
