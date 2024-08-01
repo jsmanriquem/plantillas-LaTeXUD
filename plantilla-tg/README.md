@@ -1,6 +1,18 @@
 # Plantilla: Trabajo de grado UD
 
-A continuación, podrás conocer su instalación y uso:
+¡Hola!, y bienvenido a esta plantilla diseñada para la **presentación de tú propuesta de trabajo de grado**, esta plantilla se divulga con fines netamente educativos y sin ningún fin con ánimo de lucro, así, se prohibe su distribución con tales fines.
+
+Mí nombre es Sebastian Manrique, soy estudiante del Programa Académico de Física de la Universidad Distrital Francisco José de Caldas y soy el creador de esta plantilla, en este archivo `README.md` podrás conocer su instalación y uso. Cualquier duda, queja o crítica constructiva que desees dar para apoyar el continuo desarrollo de la misma o de algunas otras plantillas será muy bien recibido, puedes escribirme directamente a mí correo electrónico institucional de contacto: jsmanriquem@udistrital.edu.co; o realizando un _pull-request_ a este repositorio.
+
+No olvides que **esta plantilla no es oficial** por tanto, para usarla en tú trabajo de grado primero debes ponerte en comunicación con la coordinación de tú programa y solicitar autorización, además, esta plantilla solamente está diseñada para los programas académicos de la Facultad de Ciencias Matemáticas y Naturales de la Universidad Distrital Francisco José de Caldas bajo las siguientes modalidades de trabajo de grado:
+
+- Investigación, Investigación-Creación, Innovación.
+- Monografía.
+- Producción de Artículos Académicos.
+- Proyecto de emprendimiento.
+- Pasantía.
+
+Espero disfrutes esta plantilla y aprendas un poco sobre $\LaTeX$ algo más avanzado al habitual, no siendo más te dejo con su instalación y guía de uso.
 
 ## Instalación
 
@@ -109,17 +121,98 @@ Dependiendo de la modalidad que hayas elegido para desarrollar tú trabajo de gr
 
 - Para el caso de _Investigación, Investigación-Creación, Innovación_:
   Según lo exije el _Acuerdo 012 de 2022_, si trabajas bajo esta modalidad debes entregar un presupuesto para tú investigación, este presupuesto será con base en que tengas o no financiación, es decir, si no tienes financiación no hay presupuesto alguno para entregar, en cambio si tienes financiación sí debes entregar un presupuesto adjunto dado por tu semillero o grupo de investigación. Acá es donde debes comentar o no la siguiente línea de código:
+
   ```TeX
   \presupuesto
   ```
+
   En donde, si está comentada **no vas a tener financiación y por tanto no entregas presupuesto**; y si está sin comentar será directamente el caso contrario por lo que **debes entregar el presupuesto adjunto al formato**.
+
 - Para el caso de _Producción de Artículos Académicos_:
   Según lo exije el _Acuerdo 012 de 2022_, si trabajas bajo esta modalidad debes indicar el tipo de artículo académico que vas a realizar, entre ellos hay dos opciones con base en el sistema Publindex y debes mencionar la opción en la siguiente línea de código:
+
   ```TeX
   \tipo{ciencia}
   ```
-  Esto bajo las siguientes convenciones:
-  - ciencia: Artículo de investigación científica o tecnológica.
+
+  Esto bajo las siguientes convenciones:- ciencia: Artículo de investigación científica o tecnológica.
+
   - revision: Artículo de reflexión o de revisión.
 
-Y hasta aquí iría la edición del documento principal, ahora con base en la modalidad que hayas elegido debes ingresar a la carpeta llamada `/modalidad` y editar el documento con extensión `.tex` que requieras basándote en la convención dada para las modalidades al inicio de la _Guía de uso_.
+Y hasta aquí iría la edición del archivo principal, ahora con base en la modalidad que hayas elegido debes ingresar a la carpeta llamada `/modalidad` y editar el documento con extensión `.tex` que requieras basándote en la convención dada para las modalidades al inicio de la _Guía de uso_.
+
+### Manejo del archivo `.tex` de tú modalidad
+
+Si estás acá es porque ya llenaste todos los datos básicos necesarios para el oficio que se encuentra adjunto a la propuesta como tal de trabajo de grado, con ello implica que ya elegiste tú modalidad y conoces el contenido que exige la misma, en dado caso en el que no conozcas que exige tú modalidad te recomiendo leas el _Acuerdo 012 de 2022_ que reglamenta los trabajos de grado a nivel pregrado (y tecnológico pero no es nuestro caso).
+
+A continuación te explicaré cosas muy fundamentales y que funcionan como una base para hacer el llenado de la propuesta, esto se dividirá en los **entornos sencillos**, **variables especiales** y **entornos especiales**, todos estos se utilizan en mayor o menor medida en cada modalidad así que siempre es bueno comprender el uso de todos.
+
+#### Variables especiales
+
+Las variables especiales las puedes reconocer como un comando habitual, un ejemplo de ella es la variable `\titulo{}` que consta únicamente de un corchete, dentro de dicho corchete debes colocar el título de tú trabajo de grado. Este tipo de variables la encuentras en **todos** los archivos que correspondan a una modalidad.
+
+#### Entorno sencillos
+
+Los entornos sencillos son similares a los ya vistos en el llenado de datos básicos previo, sin embargo, estos comprenden únicamente de colocar texto. Su estructura es la siguiente:
+
+```TeX
+\begin{entorno_sencillo}
+    % Tú texto
+\end{entorno_sencillo}
+```
+
+Acá tú simplemente debes colocar texto, este puede venir formateado (negrita, itálica, etc), con ecuaciones, enumerados, items, tablas, imágenes, citas y todo lo que puedas realizar en un documento normal de $\LaTeX$. Este tipo de entornos se encuentra en **todos** los archivos que correspondan a una modalidad.
+
+Nota: como sugerencia, si vas a colocar títulos y demás, usa en vez del comando habitual de `\section{}`, el comando `\subsection*{}` (sí, con el asterisco); esto debido a que justamente los títulos de las secciones que corresponden a la entrega de la propuesta son en esencia secciones, por tanto, puede llegar a dañar la estética del documento.
+
+#### Entornos especiales
+
+Estos entornos, a diferencia de los anteriores se deben llenar de una forma en específico la cual no se puede alterar ya que generaría errores en la compilación del documento, de este tipo de entornos solamente hay tres: los relacionados a los objetivos y el cronograma. Estos entornos los puedes encontrar en todas las modalidades excepto en _Proyecto de emprendimiento_.
+
+Respecto a los entornos de los objetivos:
+
+- Entorno `objetivo_general`: este entorno, a pesar de que admite todo tipo de texto como si fuera un _entorno sencillo_, se recomienda que su uso se explícito y único para colocar una frase la cual corresponde al objetivo general de tú trabajo de grado. Tiene la siguiente estructura:
+
+```TeX
+\begin{objetivo_general}
+    Un objetivo general
+\end{objetivo_general}
+```
+
+Donde dice "Un objetivo general" debes colocar tú objetivo.
+
+- Entorno `objetivos específicos`: este entorno solamente admite texto que venga con el comando `\item` siendo necesario al menos para que la compilación sea exitosa, de lo contrario habrá un error al compilar. Este posee la siguiente estructura:
+
+```TeX
+\begin{objetivos_especificos}
+    \item Un objetivo específico
+    \item Dos objetivos específicos
+    \item Tres objetivos específicos
+\end{objetivos_especificos}
+```
+
+Al frente de cada `\item` debes colocar tú objetivo específico, se recomienda un máximo de tres (3) objetivos específicos, sin embargo, puedes colocar tantos como desees y requieras.
+
+Finalmente, respecto al entorno `cronograma`:
+
+Este es un entorno bastante especial ya que contiene un tipo de _variable sencilla_ en su contenido la cual se llama `\actividad{}{}{}` y posee tres corchetes de llenado distinos, aquí una descripción más a fondo:
+
+```TeX
+\begin{cronograma}
+    \actividad{1}{2}{Tú actividad}
+\end{cronograma}
+```
+
+- Primer corchete: en este corchete el cual en el ejemplo tiene el número `1`, es para que coloques la **semana de inicio** de tú actividad.
+- Primer corchete: en este corchete el cual en el ejemplo tiene el número `2`, es para que coloques la **semana de finalización** de tú actividad.
+- Tercer corchete: finalmente, en este corchete es para que coloques una descripción corta (o larga si lo precisas) de tú actividad.
+
+Esto se hace con base en un _diagrama de Gantt_, estos diagramas son especialmente útiles para mostrar y configurar cronogramas y aumentar tú productividad en el desarrollo de tus actividades permitiendo tener un espacio de trabajo organizado. El número máximo de semanas es treinta y dos (32) lo cual corresponde directamente a las semanas que se deben cursar en dos semestre académicos regulares y por tanto, a las semanas cursadas en _Trabajo de Grado 1_ y _Trabajo de Grado 2_.
+
+Es de crucial importancia que este entorno se llene tal cual se mencionó, en caso contrario puede presentar errores muy complicados de solucionar a primera vista, si por algún motivo no lo llenas de esa forma puedes comunicarte conmigo para darte una solución pronta.
+
+## ¡Usa la plantilla y aprende!
+
+No siendo más, como mencioné al principio esta plantilla se maneja también con fines educativos por lo que puedes ingresar al archivo `plantilla-tg.cls` y revisar como funciona esta plantilla e incluso, dar soluciones más optimizadas para seguir mejorando esta plantilla entre todos.
+
+Te agradezco enormemente por pasarte por acá y revisar un poco de mí trabajo que dispongo con mucho gusto y cariño a la comunidad universitaria. ¡Hasta pronto! 🤓
