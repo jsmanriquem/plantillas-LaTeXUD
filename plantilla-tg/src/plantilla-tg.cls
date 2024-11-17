@@ -38,6 +38,7 @@
 \RequirePackage{pgfgantt} % Manejo de diagramas de Gantt
 \RequirePackage{xcolor} % Manejo especial de colores
 \RequirePackage{colortbl} % Manejo especial de colores para tablas
+\RequirePackage{parskip} % Manejo especial de interlineado
 \RequirePackage{multicol} % Manejo de múltiples columnas
 \RequirePackage{etoolbox} % Manejo de condicionales
 \RequirePackage{environ} % Manejo de entornos
@@ -285,7 +286,14 @@
 % Definir el comando \actividad
 \newcommand{\actividad}[3]{%
     \stepcounter{actividadCounter}%
-    \xappto\listaItems{\noexpand\item \noexpand\textbf{Actividad de la semana #1 a la semana #2:}\newline #3}%
+    \protected@edef\@temp{\theactividadCounter}%
+    \expandafter\gappto\expandafter\listaItems{%
+        \item \ifnum#1=#2
+            \textbf{Actividad de la semana #1:}\newline #3%
+        \else
+            \textbf{Actividad de la semana #1 a la semana #2:}\newline #3%
+        \fi
+    }%
     \xappto\ganttItems{\noexpand\\ \noexpand\ganttbar{\theactividadCounter}{#1}{#2}}%
 }
 
@@ -347,7 +355,7 @@
 
 % Oficio
 
-\newcommand{\print}{
+\newcommand{\print}{ \setlength{\parskip}{0pt}
 \vspace{1cm}
 \textbf{Universidad Distrital Francisco José de Caldas}
 
@@ -410,7 +418,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
         Nombre: \dirnombre      \\
         Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
         Correo: \dircorreo      \\
-        Programa: \dirprograma
+        Vinculación: \dirprograma
 
         \columnbreak
 
@@ -420,7 +428,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
         Nombre: \codirnombre      \\
         Identificación: \ifdefstring{\tipocodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipocodiridentificacion}{ce}{C.E.}{C.C.}} \codiridentificacion \\
         Correo: \codircorreo      \\
-        Programa: \codirprograma
+        Vinculación: \codirprograma
     \end{multicols}
 }{
     Director: \vspace{3pt}
@@ -428,7 +436,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
     Nombre: \dirnombre      \\
     Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
     Correo: \dircorreo      \\
-    Programa: \dirprograma \\
+    Vinculación: \dirprograma \\
 }
 
 \ifdefstring{\@modalidad}{investigacion}{\ifbool{presu}{El trabajo de grado \textbf{sí cuenta con financiación} la cual se encontrará adjunto al formato}{El trabajo de grado \textbf{no cuenta con financiación} por tanto no se adjunta presupuesto alguno}.}{\ifdefstring{\@modalidad}{articulo}{\ifdefstring{\tipoo}{ciencia}{El tipo de artículo académico a presentar es \textbf{artículo de investigación científica o tecnológica}}{\ifdefstring{\tipoo}{revision}{El tipo de artículo académico a presentar es \textbf{artículo de reflexión o de revisión}}{}}.}{\ifdefstring{\@modalidad}{pasantia}{La \textbf{presentación de la institución o Unidad académica/administrativa receptora} la podrá encontrar adjunta al formato}{}}} A continuación, la propuesta de trabajo de grado.
@@ -445,6 +453,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
         \huge\tituloo
     \end{center}
     \centerline{\rule{\textwidth}{0.4pt}}
+    \setlength{\parskip}{\baselineskip}
     \section*{Descripción del problema}
     \descripcion
     \section*{Objetivos}
@@ -460,8 +469,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
     \begin{enumerate}[leftmargin=15pt]
         \listaActividadesGuardada
     \end{enumerate}
-    El siguiente cronograma se plantea con base en la lista de actividades, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:\\
-    \vspace*{5pt}
+    El siguiente cronograma se plantea con base en la lista de actividades, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:
 
     \resizebox{\linewidth}{!}{\guardargantt}
     \nocite{*}
@@ -475,6 +483,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
             \huge\tituloo
         \end{center}
         \centerline{\rule{\textwidth}{0.4pt}}
+        \setlength{\parskip}{\baselineskip}
         \section*{Identificación del problema}
         \identificacion
         \section*{Objetivos de la monografía}
@@ -493,8 +502,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
             \listaActividadesGuardada
         \end{enumerate}
         \section*{Cronograma}
-        El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:\\
-        \vspace*{5pt}
+        El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:
 
         \resizebox{\linewidth}{!}{\guardargantt}
         \nocite{*}
@@ -508,6 +516,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
                 \huge\tituloo
             \end{center}
             \centerline{\rule{\textwidth}{0.4pt}}
+            \setlength{\parskip}{\baselineskip}
             \section*{Temática asoaciada al perfil profesional}
             \tematica
             \section*{Objetivos}
@@ -524,8 +533,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
                 \listaActividadesGuardada
             \end{enumerate}
             \section*{Cronograma}
-            El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:\\
-            \vspace*{5pt}
+            El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:
 
             \resizebox{\linewidth}{!}{\guardargantt}
         }{\ifdefstring{\@modalidad}{emprendimiento}{
@@ -536,6 +544,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
                     \huge\tituloo
                 \end{center}
                 \centerline{\rule{\textwidth}{0.4pt}}
+                \setlength{\parskip}{\baselineskip}
                 \section*{Problema}
                 \problem
                 \section*{Descripción de la idea del emprendimiento}
@@ -557,6 +566,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
                         \huge\tituloo
                     \end{center}
                     \centerline{\rule{\textwidth}{0.4pt}}
+                    \setlength{\parskip}{\baselineskip}
                     \section*{Problema por resolver}
                     \problem
                     \section*{Justificación}
@@ -577,8 +587,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
                     \section*{Resultados esperados}
                     \resultados
                     \section*{Cronograma}
-                    El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:\\
-                    \vspace*{5pt}
+                    El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:
 
                     \resizebox{\linewidth}{!}{\guardargantt}
                 }{}}}}}
