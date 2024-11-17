@@ -1,0 +1,58 @@
+name: Update Release on Push
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - plantilla-tg/**
+
+jobs:
+  update-release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Compress folder to ZIP
+      run: |
+        zip -r plantilla-tg.zip plantilla-tg
+
+    - name: Update release with ZIP only
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Variables
+        REPO_NAME=${GITHUB_REPOSITORY}
+        RELEASE_TAG="plantilla-tg"
+        ASSET_NAME="plantilla-tg.zip"
+
+        # Obtén el ID de la release basada en el tag
+        RELEASE_ID=$(curl -s \
+          -H "Authorization: token $GITHUB_TOKEN" \
+          https://api.github.com/repos/$REPO_NAME/releases/tags/$RELEASE_TAG | jq -r '.id')
+
+        if [ "$RELEASE_ID" == "null" ]; then
+          echo "Release no encontrada para el tag $RELEASE_TAG"
+          exit 1
+        fi
+
+        # Elimina los assets existentes, incluyendo los de source code
+        ASSETS=$(curl -s \
+          -H "Authorization: token $GITHUB_TOKEN" \
+          https://api.github.com/repos/$REPO_NAME/releases/$RELEASE_ID/assets)
+
+        for ASSET_ID in $(echo "$ASSETS" | jq -r '.[].id'); do
+          curl -s -X DELETE \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/$REPO_NAME/releases/assets/$ASSET_ID
+        done
+
+        # Sube el nuevo ZIP como único asset del release
+        curl -s \
+          -X POST \
+          -H "Authorization: token $GITHUB_TOKEN" \
+          -H "Content-Type: application/zip" \
+          --data-binary @plantilla-tg.zip \
+          https://uploads.github.com/repos/$REPO_NAME/releases/$RELEASE_ID/assets?name=$ASSET_NAME
