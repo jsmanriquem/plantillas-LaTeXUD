@@ -31,6 +31,7 @@
 
 % Paquetes requeridos
 
+\RequirePackage[spanish,es-tabla]{babel} % Manejo del lenguaje: español
 \RequirePackage{lipsum} % Generación de texto automático
 \RequirePackage{hyperref} % Manejo avanzado de citas
 \RequirePackage{xstring} % Manejo especial de textos
@@ -45,6 +46,7 @@
 \RequirePackage{graphicx} % Manejo de gráficas
 \RequirePackage{enumitem} % Manejo de entornos de enumeración e items
 \RequirePackage{float} % Manejo de entornos flotantes
+\RequirePackage{csquotes} % Manejo avanzado de citas
 \RequirePackage[
     left=2cm,
     right=2cm,
