@@ -383,10 +383,12 @@ Por medio de la presente, \ifbool{coautor}{nos permitimos}{me permito} informarl
 
 Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}{del director, junto al codirector}{del director}, son los siguientes: \\
 
-\ifbool{coautor}{
-    Estudiantes: \vspace{-10pt}
+\ifboolexpr{not bool{coautor} and not bool{codirector}}{
+    \vspace{-13pt}
     \begin{multicols}{2}
         \noindent
+        Estudiante: \vspace{3pt}
+
         Nombre: \autornombree      \\
         Identificación: \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn \\
         Código: \autorcodigoo      \\
@@ -396,49 +398,71 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
         \columnbreak
 
         \noindent
-        Nombre: \autornombreee      \\
-        Identificación: \ifdefstring{\tipoautoridentificacionnn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionnn}{ce}{C.E.}{C.C.}} \autoridentificacionnn \\
-        Código: \autorcodigooo      \\
-        Correo: \autorcorreooo      \\
-        Programa: \autorprogramaaa
-    \end{multicols}
-}{
-    Estudiante: \vspace{3pt}
-
-    Nombre: \autornombree      \\
-    Identificación: \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn \\
-    Código: \autorcodigoo      \\
-    Correo: \autorcorreoo      \\
-    Programa: \autorprogramaa \\
-
-}
-\ifbool{codirector}{
-    \begin{multicols}{2}
-        \noindent
         Director: \vspace{3pt}
 
         Nombre: \dirnombre      \\
         Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
         Correo: \dircorreo      \\
         Vinculación: \dirprograma
-
-        \columnbreak
-
-        \noindent
-        Codirector: \vspace{3pt}
-
-        Nombre: \codirnombre      \\
-        Identificación: \ifdefstring{\tipocodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipocodiridentificacion}{ce}{C.E.}{C.C.}} \codiridentificacion \\
-        Correo: \codircorreo      \\
-        Vinculación: \codirprograma
     \end{multicols}
 }{
-    Director: \vspace{3pt}
+    \ifbool{coautor}{
+        Estudiantes: \vspace{-10pt}
+        \begin{multicols}{2}
+            \noindent
+            Nombre: \autornombree      \\
+            Identificación: \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn \\
+            Código: \autorcodigoo      \\
+            Correo: \autorcorreoo      \\
+            Programa: \autorprogramaa
 
-    Nombre: \dirnombre      \\
-    Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
-    Correo: \dircorreo      \\
-    Vinculación: \dirprograma \\
+            \columnbreak
+
+            \noindent
+            Nombre: \autornombreee      \\
+            Identificación: \ifdefstring{\tipoautoridentificacionnn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionnn}{ce}{C.E.}{C.C.}} \autoridentificacionnn \\
+            Código: \autorcodigooo      \\
+            Correo: \autorcorreooo      \\
+            Programa: \autorprogramaaa
+        \end{multicols}
+    }{
+        Estudiante: \vspace{3pt}
+
+        Nombre: \autornombree      \\
+        Identificación: \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn \\
+        Código: \autorcodigoo      \\
+        Correo: \autorcorreoo      \\
+        Programa: \autorprogramaa
+
+    }
+    \ifbool{codirector}{
+        \begin{multicols}{2}
+            \noindent
+            Director: \vspace{3pt}
+
+            Nombre: \dirnombre      \\
+            Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
+            Correo: \dircorreo      \\
+            Vinculación: \dirprograma
+
+            \columnbreak
+
+            \noindent
+            Codirector: \vspace{3pt}
+
+            Nombre: \codirnombre      \\
+            Identificación: \ifdefstring{\tipocodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipocodiridentificacion}{ce}{C.E.}{C.C.}} \codiridentificacion \\
+            Correo: \codircorreo      \\
+            Vinculación: \codirprograma
+        \end{multicols}
+    }{
+        Director: \vspace{3pt}
+
+        Nombre: \dirnombre      \\
+        Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
+        Correo: \dircorreo      \\
+        Vinculación: \dirprograma \\
+    }
 }
 
 \ifdefstring{\@modalidad}{investigacion}{\ifbool{presu}{El trabajo de grado \textbf{sí cuenta con financiación} la cual se encontrará adjunto al formato}{El trabajo de grado \textbf{no cuenta con financiación} por tanto no se adjunta presupuesto alguno}.}{\ifdefstring{\@modalidad}{articulo}{\ifdefstring{\tipoo}{ciencia}{El tipo de artículo académico a presentar es \textbf{artículo de investigación científica o tecnológica}}{\ifdefstring{\tipoo}{revision}{El tipo de artículo académico a presentar es \textbf{artículo de reflexión o de revisión}}{}}.}{\ifdefstring{\@modalidad}{pasantia}{La \textbf{presentación de la institución o Unidad académica/administrativa receptora} la podrá encontrar adjunta al formato}{}}} A continuación, la propuesta de trabajo de grado.
@@ -593,4 +617,60 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
 
                     \resizebox{\linewidth}{!}{\guardargantt}
                 }{}}}}}
+
+\noindent\begin{minipage}{\textwidth}
+    Sin otro particular,
+
+    \ifboolexpr{not bool{coautor} and not bool{codirector}}{
+        \vspace{80pt}
+        \begin{multicols}{2}
+            \noindent\rule{0.45\textwidth}{0.4pt} \\
+            \autornombree \\
+            \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn
+
+            \columnbreak
+
+            \noindent\rule{0.45\textwidth}{0.4pt} \\
+            \dirnombre \\
+            \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion
+        \end{multicols}
+    }{
+        \vspace{80pt}
+        \ifbool{coautor}{
+            \begin{multicols}{2}
+                \noindent\rule{0.45\textwidth}{0.4pt} \\
+                \autornombree \\
+                \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn
+
+                \columnbreak
+
+                \noindent\rule{0.45\textwidth}{0.4pt} \\
+                \autornombreee \\
+                \ifdefstring{\tipoautoridentificacionnn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionnn}{ce}{C.E.}{C.C.}} \autoridentificacionnn
+            \end{multicols}
+        }{
+            \noindent\rule{0.45\textwidth}{0.4pt} \\
+            \autornombree \\
+            \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn
+        }
+        \vspace{80pt}
+        \ifbool{codirector}{
+            \begin{multicols}{2}
+                \noindent\rule{0.45\textwidth}{0.4pt} \\
+                \dirnombre \\
+                \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion
+
+                \columnbreak
+
+                \noindent\rule{0.45\textwidth}{0.4pt} \\
+                \codirnombre \\
+                \ifdefstring{\tipocodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipocodiridentificacion}{ce}{C.E.}{C.C.}} \codiridentificacion
+            \end{multicols}
+        }{
+            \noindent\rule{0.45\textwidth}{0.4pt} \\
+            \dirnombre \\
+            \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion
+        }
+    }
+\end{minipage}
 }

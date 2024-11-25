@@ -12,6 +12,8 @@ No olvides que **esta plantilla no es oficial** por tanto, para usarla en tú tr
 - Proyecto de emprendimiento.
 - Pasantía.
 
+> **Nuevo:** la plantilla ahora cuenta con un apartado para que insertes la firma tuya y la de tú director. El documento está diseñado para _firma electrónica_ o en _firma en físico_, así que no podrás agregar la firma en archivo `.tex` principal.
+
 Espero disfrutes esta plantilla y aprendas un poco sobre $\LaTeX$ algo más avanzado al habitual, no siendo más te dejo con su instalación y guía de uso.
 
 ## Instalación
