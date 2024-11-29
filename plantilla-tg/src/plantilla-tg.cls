@@ -58,18 +58,28 @@
     footskip=33.59999pt,
     headheight=89.8119pt
 ]{geometry} % Define la geometría (diseño) del documento
-\usepackage[
-    style=numeric,
-    citestyle=numeric,
-    sorting=nyt,
-    sortcites=true,
-    autopunct=true,
-    autolang=hyphen,
-    hyperref=true,
-    abbreviate=false,
-    backref=true,
-    backend=biber,
-    defernumbers=true
+\RequirePackage[
+    style=numeric,           % Estilo numérico para la bibliografía.
+    citestyle=numeric,       % Estilo numérico para las citas en el texto.
+    sorting=nyt,             % Ordena por Autor, Año, Título.
+    sortcites=true,          % Ordena automáticamente múltiples citas en el texto.
+    autopunct=true,          % Ajusta puntuación automáticamente.
+    autolang=hyphen,         % Detecta idioma y aplica guiones según corresponda.
+    hyperref=true,           % Habilita enlaces en las citas/referencias.
+    abbreviate=false,        % Usa términos completos en vez de abreviaciones.
+    backref=true,            % Indica páginas donde se cita cada referencia.
+    backend=biber,           % Usa `biber` para procesar el archivo `.bib`.
+    defernumbers=true,       % Numera referencias solo al imprimir la bibliografía.
+    giveninits=true,         % Usa iniciales para los nombres de pila.
+    maxnames=3,              % Muestra hasta 3 autores antes de usar "et al."
+    minnames=1,              % Mínimo de nombres a mostrar antes de "et al."
+    maxcitenames=2,          % Máximo de autores en las citas antes de "et al."
+    mincitenames=1,          % Mínimo de autores en las citas antes de "et al."
+    date=year,               % Muestra solo el año en las referencias.
+    isbn=false,              % Oculta el ISBN en las referencias.
+    doi=true,                % Muestra el DOI si está disponible.
+    url=true,                % Muestra URLs en las referencias.
+    eprint=true              % Incluye identificadores ePrint (arXiv, etc.).
 ]{biblatex} % Define el estilo de la bibliografía
 
 % ==============================
@@ -487,6 +497,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
     \section*{Objetivos}
     \subsection*{Objetivo general}
     \generall
+    \setlength{\parskip}{0pt}
     \subsection*{Objetivos específicos}
     \begin{itemize}[leftmargin=15pt]
         \espe
@@ -494,9 +505,11 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
     \section*{Justificación}
     \justi
     \section*{Cronograma}
+    \setlength{\parskip}{5pt}
     \begin{enumerate}[leftmargin=15pt]
         \listaActividadesGuardada
     \end{enumerate}
+    \setlength{\parskip}{\baselineskip}
     El siguiente cronograma se plantea con base en la lista de actividades, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:
 
     \resizebox{\linewidth}{!}{\guardargantt}
@@ -517,18 +530,22 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
         \section*{Objetivos de la monografía}
         \subsection*{Objetivo general}
         \generall
+        \setlength{\parskip}{0pt}
         \subsection*{Objetivos específicos}
         \begin{itemize}[leftmargin=15pt]
             \espe
         \end{itemize}
+        \setlength{\parskip}{\baselineskip}
         \section*{Justificación}
         \justi
         \section*{Plan de trabajo}
         \plan
+        \setlength{\parskip}{5pt}
         \subsection*{Actividades acorde al plan de trabajo}
         \begin{enumerate}[leftmargin=15pt]
             \listaActividadesGuardada
         \end{enumerate}
+        \setlength{\parskip}{\baselineskip}
         \section*{Cronograma}
         El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:
 
@@ -550,16 +567,20 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
             \section*{Objetivos}
             \subsection*{Objetivo general}
             \generall
+            \setlength{\parskip}{0pt}
             \subsection*{Objetivos específicos}
             \begin{itemize}[leftmargin=15pt]
                 \espe
             \end{itemize}
+            \setlength{\parskip}{\baselineskip}
             \section*{Plan de trabajo}
             \plan
+            \setlength{\parskip}{5pt}
             \subsection*{Actividades acorde al plan de trabajo}
             \begin{enumerate}[leftmargin=15pt]
                 \listaActividadesGuardada
             \end{enumerate}
+            \setlength{\parskip}{\baselineskip}
             \section*{Cronograma}
             El siguiente cronograma se plantea con base en la lista de actividades presentada en el \textbf{Plan de trabajo}, así cada actividad está numerada. Este está diseñado como un \textit{diagrama de Gantt}:
 
@@ -602,16 +623,20 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
                     \section*{Objetivos}
                     \subsection*{Objetivo general}
                     \generall
+                    \setlength{\parskip}{0pt}
                     \subsection*{Objetivos específicos}
                     \begin{itemize}[leftmargin=15pt]
                         \espe
                     \end{itemize}
+                    \setlength{\parskip}{\baselineskip}
                     \section*{Plan de trabajo}
                     \plan
+                    \setlength{\parskip}{5pt}
                     \subsection*{Actividades acorde al plan de trabajo}
                     \begin{enumerate}[leftmargin=15pt]
                         \listaActividadesGuardada
                     \end{enumerate}
+                    \setlength{\parskip}{\baselineskip}
                     \section*{Resultados esperados}
                     \resultados
                     \section*{Cronograma}
