@@ -113,7 +113,13 @@
                 }
             }
         } &
-        {\Large \textbf{Propuesta de trabajo de grado}}
+        \minipage{\linewidth}
+        {\Large \textbf{Propuesta de trabajo de grado} \\[2.5pt]
+        {
+        \small Modalidad: \ifdefstring{\@modalidad}{investigacion}{Investigación, Investigación-Creación, Innovación}{\ifdefstring{\@modalidad}{monografia}{Monografía}{\ifdefstring{\@modalidad}{articulo}{Producción de Artículos Académicos}{\ifdefstring{\@modalidad}{emprendimiento}{Proyecto de Emprendimiento}{\ifdefstring{\@modalidad}{pasantia}{Pasantía}{}}}}}
+        }
+        }
+        \endminipage
     \end{tabular}
 }
 \renewcommand\headrule{} % Sin línea horizontal en el encabezado
