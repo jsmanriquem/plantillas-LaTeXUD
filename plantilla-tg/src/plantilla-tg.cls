@@ -392,7 +392,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
         Nombre: \autornombree      \\
         Identificación: \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn \\
         Código: \autorcodigoo      \\
-        Correo: \autorcorreoo      \\
+        Correo: \href{mailto:\autorcorreoo}{\texttt{\autorcorreoo}}      \\
         Programa: \autorprogramaa
 
         \columnbreak
@@ -402,7 +402,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
 
         Nombre: \dirnombre      \\
         Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
-        Correo: \dircorreo      \\
+        Correo: \href{mailto:\dircorreo}{\texttt{\dircorreo}}      \\
         Vinculación: \dirprograma
     \end{multicols}
 }{
@@ -413,7 +413,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
             Nombre: \autornombree      \\
             Identificación: \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn \\
             Código: \autorcodigoo      \\
-            Correo: \autorcorreoo      \\
+            Correo: \href{mailto:\autorcorreoo}{\texttt{\autorcorreoo}}      \\
             Programa: \autorprogramaa
 
             \columnbreak
@@ -422,7 +422,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
             Nombre: \autornombreee      \\
             Identificación: \ifdefstring{\tipoautoridentificacionnn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionnn}{ce}{C.E.}{C.C.}} \autoridentificacionnn \\
             Código: \autorcodigooo      \\
-            Correo: \autorcorreooo      \\
+            Correo: \href{mailto:\autorcorreooo}{\texttt{\autorcorreooo}}      \\
             Programa: \autorprogramaaa
         \end{multicols}
     }{
@@ -431,9 +431,8 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
         Nombre: \autornombree      \\
         Identificación: \ifdefstring{\tipoautoridentificacionn}{ti}{T.I.}{\ifdefstring{\tipoautoridentificacionn}{ce}{C.E.}{C.C.}} \autoridentificacionn \\
         Código: \autorcodigoo      \\
-        Correo: \autorcorreoo      \\
+        Correo: \href{mailto:\autorcorreoo}{\texttt{\autorcorreoo}}      \\
         Programa: \autorprogramaa
-
     }
     \ifbool{codirector}{
         \begin{multicols}{2}
@@ -442,7 +441,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
 
             Nombre: \dirnombre      \\
             Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
-            Correo: \dircorreo      \\
+            Correo: \href{mailto:\dircorreo}{\texttt{\dircorreo}}      \\
             Vinculación: \dirprograma
 
             \columnbreak
@@ -452,7 +451,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
 
             Nombre: \codirnombre      \\
             Identificación: \ifdefstring{\tipocodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipocodiridentificacion}{ce}{C.E.}{C.C.}} \codiridentificacion \\
-            Correo: \codircorreo      \\
+            Correo: \href{mailto:\codircorreo}{\texttt{\codircorreo}}      \\
             Vinculación: \codirprograma
         \end{multicols}
     }{
@@ -460,7 +459,7 @@ Los datos \ifbool{coautor}{de los suscritos}{del suscrito} y \ifbool{codirector}
 
         Nombre: \dirnombre      \\
         Identificación: \ifdefstring{\tipodiridentificacion}{ti}{T.I.}{\ifdefstring{\tipodiridentificacion}{ce}{C.E.}{C.C.}} \diridentificacion \\
-        Correo: \dircorreo      \\
+        Correo: \href{mailto:\dircorreo}{\texttt{\dircorreo}}      \\
         Vinculación: \dirprograma \\
     }
 }
